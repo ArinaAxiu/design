@@ -11,10 +11,11 @@
 (function(){
   if('scrollRestoration' in history) history.scrollRestoration='manual';
   var h=decodeURIComponent(location.hash.slice(1)); if(!h) return;
-  var tries=0, done=false;
-  function go(){var el=document.getElementById(h); if(el){el.scrollIntoView({block:'start'}); return true} return false}
-  var t=setInterval(function(){ if(go()||++tries>200){ clearInterval(t); } },30);
-  window.addEventListener('load',function(){ setTimeout(go,50); setTimeout(go,400); });
+  var stop=false, t0=Date.now();
+  ['wheel','touchstart','keydown','mousedown'].forEach(function(e){window.addEventListener(e,function(){stop=true},{passive:true,once:true})});
+  function go(){ if(stop) return; var el=document.getElementById(h); if(el){ var y=el.getBoundingClientRect().top+window.pageYOffset-84; if(Math.abs(window.pageYOffset-y)>2) window.scrollTo(0,y); return true } return false }
+  var t=setInterval(function(){ go(); if(stop||Date.now()-t0>4000) clearInterval(t) },60);
+  window.addEventListener('load',function(){ setTimeout(go,50); setTimeout(go,500) });
 })();
 </script>
 <style>#works{scroll-margin-top:84px}</style>
