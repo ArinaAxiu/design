@@ -1,0 +1,55 @@
+/* 02. Typography — values copied from the Figma "Typography styles" page.
+   Headlines: TT Chocolates Trl Bold. Body: Microsoft Sans Serif Regular. Buttons/links: Manrope Bold. */
+:root{
+  --font-display:"TT Chocolates Trl",-apple-system,"Segoe UI",sans-serif;
+  --font-body:"Microsoft Sans Serif",Arial,sans-serif;
+  --font-ui:"Manrope",-apple-system,"Segoe UI",sans-serif;
+  --font-spec:"Montserrat",-apple-system,"Segoe UI",sans-serif;
+
+  /* Headlines — desktop */
+  --h1-size:72px;--h1-lh:1;/* @kind other */
+  --h2-size:38px;--h2-lh:1.06;/* @kind other */
+  --h3-size:26px;--h3-lh:1.06;/* @kind other */
+  --h4-size:22px;--h4-lh:1.06;/* @kind other */
+  /* Headlines — mobile */
+  --h1-m-size:30px;--h2-m-size:24px;--h3-m-size:18px;--h4-m-size:14px;--h5-m-size:12px;--h-m-lh:1.06;/* @kind other */
+
+  /* Body — desktop */
+  --body-1-size:30px;--body-2-size:20px;--body-3-size:18px;--body-4-size:16px;--body-lh:1.36;/* @kind other */
+  --body-5-size:12px;--body-5-lh:1.18;/* @kind other */
+  /* Body — mobile */
+  --body-1-m-size:14px;--body-2-m-size:12px;--body-3-m-size:10px;--body-4-m-size:8px;
+
+  /* Button / link */
+  --btn-xl-size:20px;--btn-xl-lh:25px;
+  --btn-l-size:18px;--btn-l-lh:22px;
+  --btn-m-size:18px;--btn-m-lh:22px;
+  --btn-s-size:16px;--btn-s-lh:20px;
+
+  /* Spec meta line (under each style name in the file) */
+  --meta-size:16px;--meta-lh:1.2;/* @kind other */--meta-tracking:0.1px;
+}
+.sp-h1{font-family:var(--font-display);font-weight:700;font-size:var(--h1-size);line-height:var(--h1-lh)}
+.sp-h2{font-family:var(--font-display);font-weight:700;font-size:var(--h2-size);line-height:var(--h2-lh)}
+.sp-h3{font-family:var(--font-display);font-weight:700;font-size:var(--h3-size);line-height:var(--h3-lh)}
+.sp-h4{font-family:var(--font-display);font-weight:700;font-size:var(--h4-size);line-height:var(--h4-lh)}
+.sp-h5{font-family:var(--font-display);font-weight:700;font-size:var(--h5-m-size);line-height:var(--h-m-lh)}
+.sp-body-1{font-family:var(--font-body);font-weight:400;font-size:var(--body-1-size);line-height:var(--body-lh)}
+.sp-body-2{font-family:var(--font-body);font-weight:400;font-size:var(--body-2-size);line-height:var(--body-lh)}
+.sp-body-3{font-family:var(--font-body);font-weight:400;font-size:var(--body-3-size);line-height:var(--body-lh)}
+.sp-body-4{font-family:var(--font-body);font-weight:400;font-size:var(--body-4-size);line-height:var(--body-lh)}
+.sp-body-5{font-family:var(--font-body);font-weight:400;font-size:var(--body-5-size);line-height:var(--body-5-lh)}
+.sp-btn-xl{font-family:var(--font-ui);font-weight:700;font-size:var(--btn-xl-size);line-height:var(--btn-xl-lh)}
+.sp-btn-l{font-family:var(--font-ui);font-weight:700;font-size:var(--btn-l-size);line-height:var(--btn-l-lh)}
+.sp-btn-m{font-family:var(--font-ui);font-weight:700;font-size:var(--btn-m-size);line-height:var(--btn-m-lh)}
+.sp-btn-s{font-family:var(--font-ui);font-weight:700;font-size:var(--btn-s-size);line-height:var(--btn-s-lh)}
+@media (max-width:767px){
+  .sp-h1{font-size:var(--h1-m-size);line-height:var(--h-m-lh)}
+  .sp-h2{font-size:var(--h2-m-size)}
+  .sp-h3{font-size:var(--h3-m-size)}
+  .sp-h4{font-size:var(--h4-m-size)}
+  .sp-body-1{font-size:var(--body-1-m-size)}
+  .sp-body-2{font-size:var(--body-2-m-size)}
+  .sp-body-3{font-size:var(--body-3-m-size)}
+  .sp-body-4{font-size:var(--body-4-m-size)}
+}

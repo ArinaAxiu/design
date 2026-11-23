@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+<meta name="ext-resource-dependency" content="assets/meat-1.png" data-resource-id="meat1">
+<meta name="ext-resource-dependency" content="assets/meat-2.png" data-resource-id="meat2">
+<meta name="ext-resource-dependency" content="assets/meat-3.png" data-resource-id="meat3">
+<meta name="ext-resource-dependency" content="assets/meat-4.png" data-resource-id="meat4">
+<meta name="ext-resource-dependency" content="assets/meat-5.png" data-resource-id="meat5">
+</head>
+<body>
+<x-dc>
+<helmet>
+  <template id="__bundler_thumbnail" data-bg-color="#E80F71"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="#E80F71"></rect><text x="50" y="62" text-anchor="middle" font-family="sans-serif" font-weight="700" font-size="30" fill="#fff">W</text></svg></template>
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/fonts.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/fig-tokens.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/fig-typography.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/colors.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/typography.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/tokens/spacing.css">
+  <link rel="stylesheet" href="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/styles.css">
+  <script src="_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/_ds_bundle.js"></script>
+  <style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+    html,body{margin:0;background:#fff;color:#1E1E1E;-webkit-font-smoothing:antialiased}
+    a{color:#E80F71}a:hover{color:#1E1E1E}
+    *{box-sizing:border-box}
+    :root{--sp-top:113px}
+    @media (max-width:900px){.pc-bc-last{display:none!important}}
+    @media (max-width:640px){.pc-arrows{display:none!important}.pc-qlabel{flex-basis:100%}}
+    @media (max-width:640px){.sp-logo img{height:18px!important}}
+    h1,h2,h3{text-wrap:balance}p,li,blockquote,figcaption{text-wrap:pretty}
+    [id]{scroll-margin-top:120px}
+    .pc-wrap{max-width:1190px;margin:0 auto}
+    .pc-grid{display:grid;grid-template-columns:minmax(0,714px) minmax(0,428px);justify-content:space-between;gap:40px;align-items:start}
+    .pc-gal{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+    .pc-g{display:block;padding:0;border:0;background:#F5F5F7;cursor:zoom-in;aspect-ratio:1/1;overflow:hidden}
+    .pc-g img{display:block;width:100%;height:100%;object-fit:cover;transition:transform .4s ease}
+    .pc-g:hover img{transform:scale(1.02)}
+    .pc-g3{grid-column:span 2;order:1}.pc-g1{grid-column:span 6;order:2;background:#fff}.pc-g2{grid-column:span 3;order:3}
+    .pc-g-extra:not(.is-open){display:none}
+    .pc-dots{display:none}
+    .pc-chip{font:inherit;font-size:15px;line-height:1;padding:8px 11px;border-radius:999px;border:1px solid #1E1E1E;background:#fff;color:#1E1E1E;cursor:pointer;white-space:nowrap}
+    .pc-chip:hover{border-color:#E80F71}
+    .pc-chip[aria-pressed="true"]{background:#1E1E1E;border-color:#1E1E1E;color:#fff}
+    .pc-chip:disabled{border-color:#E4E4E4;color:#BDBDBD;cursor:default}
+    .pc-qbtn{font:inherit;background:none;border:0;padding:0;color:#1E1E1E;cursor:pointer;text-decoration:underline dotted;text-underline-offset:4px;font-size:15px}
+    .pc-qbtn[aria-pressed="true"]{color:#E80F71;text-decoration:underline solid}
+    .sp-top a,.sp-nav a{color:#1E1E1E;text-decoration:none}.sp-top a:hover,.sp-nav a:hover{color:#E80F71}
+    .sp-tabs{scrollbar-width:none}.sp-tabs::-webkit-scrollbar{display:none}
+    .sp-tab{flex:none;color:#4A4A4A;text-decoration:none;font-size:15px;height:48px;padding:2px 0 0;border-bottom:2px solid transparent;display:inline-flex;align-items:center;gap:6px}
+    .sp-tab:hover{color:#1E1E1E}.sp-tab[aria-current="true"]{color:#1E1E1E;border-bottom-color:#E80F71}
+    .sp-burger{display:none}
+    @media (max-width:1100px){.pc-grid{grid-template-columns:minmax(0,1.3fr) minmax(0,1fr)}.sp-nav-links{gap:18px!important}}
+    @media (max-width:900px){.pc-grid{grid-template-columns:minmax(0,1fr)}.sp-top{display:none!important}.sp-nav-links,.sp-login{display:none!important}.sp-burger{display:flex}}
+    @media (max-width:900px){.pc-gal{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;gap:8px;margin:0 -16px;padding:0 16px}.pc-gal::-webkit-scrollbar{display:none}.pc-g{flex:0 0 88%;scroll-snap-align:center;order:0!important}.pc-g-extra:not(.is-open){display:block}.pc-more{display:none!important}.pc-dots{display:flex}}
+    @media (max-width:640px){.pc-title{font-size:26px!important}.pc-chip{font-size:14px;padding:8px 10px}.sp-tabbtn{display:none!important}.sp-try{padding:0 14px!important;font-size:14px!important}}
+    .d95-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+    @media (max-width:760px){.d95-grid{grid-template-columns:minmax(0,1fr);gap:20px}}
+    .d95-track::-webkit-scrollbar{display:none}
+    @media (max-width:760px){.d3-lead{display:none}}
+    @media (max-width:640px){.d95-card{flex-basis:80%!important}.d95-arrows{display:none!important}.d95-nav{width:100%}.d95-lead{font-size:14px!important}}
+    .vet2-grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+    .vet2-img{position:relative;min-height:380px;margin-right:clamp(0px,6vw,88px);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 10%,#000 86%,transparent 100%);mask-image:linear-gradient(to right,transparent 0,#000 10%,#000 86%,transparent 100%)}
+    @media (max-width:760px){.vet2-grid{grid-template-columns:minmax(0,1fr)}.vet2-img{min-height:0;aspect-ratio:1/1;margin-right:0;-webkit-mask-image:none;mask-image:none}.vet-btn{padding:0 18px!important;font-size:16px!important}}
+    @media (max-width:640px){.tab-sub{display:none}.cons-img{width:min(100%,190px)!important}.b03-pl{left:0!important;bottom:0!important}.b03-pr{right:0!important;bottom:0!important}.s4-intro{font-size:12px!important;line-height:1.4!important}.cons-row{flex-wrap:nowrap!important;justify-content:flex-start!important;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 16px;margin:0 -16px;padding:0 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}.cons-row::-webkit-scrollbar{display:none}.cons-card{flex:0 0 74%!important;max-width:none!important;scroll-snap-align:start}.cons-card:only-child{flex:1 1 auto!important}}
+    .vet-grid{grid-template-columns:minmax(0,1.5fr) minmax(0,1fr)}
+    .vet-img{position:relative;min-height:0}
+    @media (max-width:760px){.vet-grid{grid-template-columns:minmax(0,1fr)}.vet-img{aspect-ratio:1572/1300}}
+    .bf-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
+    @media (max-width:960px){.bf-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+    @media (max-width:420px){.bf-grid{grid-template-columns:minmax(0,1fr)}}
+    @media (max-width:640px){.r95{row-gap:6px!important}.bf-grid{grid-template-columns:minmax(0,1fr)!important;gap:0!important;background:#F0ECF0;border-radius:20px;padding:4px 16px}.bf-item{background:none!important;border-radius:0!important;padding:12px 0!important;flex-direction:row!important;align-items:center;gap:12px!important;border-top:1px solid #E2D9E3}.bf-item:first-child{border-top:0}.bf-item>:not(p){flex:0 0 36px;width:36px!important;height:36px!important}.bf-item svg,.bf-item img{width:36px!important;height:36px!important}.bf-item p{font-size:14px!important;line-height:1.32!important;text-wrap:pretty!important}}
+  </style>
+</helmet>
+
+<div style="width:100%;background:#fff;font-family:var(--font-body);color:#1E1E1E">
+
+  <!-- ШАПКА САЙТА (как на superpet.ru) -->
+  <div class="sp-top" style="border-bottom:1px solid #EFEFEF;font-size:13px">
+    <div class="pc-wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;height:38px;padding:0 clamp(16px,4vw,40px);box-sizing:content-box">
+      <label style="display:flex;align-items:center">
+        <span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Регион доставки</span>
+        <select style="font:inherit;font-size:13px;color:#1E1E1E;border:1px solid #DCDCDC;border-radius:4px;padding:5px 28px 5px 8px;background:#fff;min-width:210px">
+          <option>Москва и&nbsp;область</option><option>Санкт‑Петербург и&nbsp;область</option><option>Россия (регионы)</option><option>Беларусь</option>
+        </select>
+      </label>
+      <nav aria-label="Информация" style="display:flex;gap:22px"><a href="#faq">Доставка</a><a href="#card">Акции</a><a href="#card">Благотворительность</a><a href="#card">Блог</a><a href="#card">Контакты</a></nav>
+      <div style="display:flex;align-items:center;gap:10px">
+        <a href="tel:88006002341" style="color:#1E1E1E;text-decoration:none;margin-right:6px">8 (800) 600-2341</a>
+        <a href="#card" aria-label="SUPERPET в Telegram" style="width:24px;height:24px;border-radius:50%;background:#2AABEE;display:flex;align-items:center;justify-content:center"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 4L3 11l6 2 2 6 3-4 5 4z" fill="#fff"></path></svg></a>
+        <a href="#card" aria-label="SUPERPET во ВКонтакте" style="width:24px;height:24px;border-radius:50%;background:#0077FF;display:flex;align-items:center;justify-content:center;color:#fff;font-size:9px;font-weight:700;text-decoration:none">VK</a>
+        <a href="#card" aria-label="SUPERPET в Макс" style="width:24px;height:24px;border-radius:50%;background:linear-gradient(135deg,#3D5AFE,#B23CFF);display:flex;align-items:center;justify-content:center"><span aria-hidden="true" style="width:10px;height:10px;border:2.5px solid #fff;border-radius:50%"></span></a>
+      </div>
+    </div>
+  </div>
+  <header class="sp-nav" style="position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid #EFEFEF">
+    <div class="pc-wrap" style="display:flex;align-items:center;justify-content:space-between;gap:24px;height:64px;padding:0 clamp(16px,4vw,40px);box-sizing:content-box">
+      <div style="display:flex;align-items:center;gap:12px">
+        <button type="button" class="sp-burger" aria-label="Меню" style="width:36px;height:36px;border:0;background:none;padding:0;align-items:center;justify-content:center;cursor:pointer"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="#1E1E1E" stroke-width="2" stroke-linecap="round"></path></svg></button>
+        <a href="#card" class="sp-logo" aria-label="SUPERPET — на главную" style="display:inline-flex;align-items:center;line-height:0"><img src="assets/superpet-logo.svg" alt="SUPERPET" width="167" height="22" style="display:block;height:22px;width:auto"></a>
+      </div>
+      <nav class="sp-nav-links" aria-label="Основное меню" style="display:flex;align-items:center;gap:28px;font-size:15px">
+        <a href="#card" style="display:inline-flex;align-items:center;gap:5px">Для&nbsp;кошек <svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <a href="#card" style="display:inline-flex;align-items:center;gap:5px">Для&nbsp;собак <svg width="10" height="10" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></a>
+        <a href="#reviews">Отзывы</a><a href="#faq">Вопросы и&nbsp;ответы</a><a href="#card">О&nbsp;нас</a>
+      </nav>
+      <div style="display:flex;align-items:center;gap:18px">
+        <a class="sp-login" href="#card" style="display:inline-flex;align-items:center;gap:8px;font-size:15px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><ellipse cx="12" cy="16" rx="5" ry="4.2" fill="#1E1E1E"></ellipse><circle cx="5" cy="10" r="2.2" fill="#1E1E1E"></circle><circle cx="19" cy="10" r="2.2" fill="#1E1E1E"></circle><circle cx="9" cy="5.5" r="2.2" fill="#1E1E1E"></circle><circle cx="15" cy="5.5" r="2.2" fill="#1E1E1E"></circle></svg>Войти</a>
+        <a class="sp-try" href="#card" style="display:inline-flex;align-items:center;height:40px;padding:0 20px;border-radius:6px;background:#E80F71;color:#fff;font-weight:700;font-size:15px;text-decoration:none">Попробовать</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ТЗ 1. Карточка товара: галерея 3-1-2 + выбор (как на superpet.ru) -->
+  <section id="card" data-screen-label="01 Карточка товара" style="padding:20px clamp(16px,4vw,40px) clamp(24px,3vw,40px);scroll-margin-top:64px">
+    <div class="pc-wrap">
+      <nav aria-label="Хлебные крошки" style="font-size:13px;color:#8A8A8A;display:flex;flex-wrap:wrap;gap:4px 12px;margin-bottom:20px">
+        <a href="#card" style="color:#1E1E1E;text-decoration:none">Главная страница</a><span aria-hidden="true">—</span>
+        <a href="#card" style="color:#1E1E1E;text-decoration:none">Магазин</a><span aria-hidden="true">—</span>
+        <a href="#card" style="color:#1E1E1E;text-decoration:none">Корм для&nbsp;кошек</a><span aria-hidden="true">—</span>
+        <a href="#card" style="color:#1E1E1E;text-decoration:none">Замороженный</a><span class="pc-bc-last" aria-hidden="true">—</span>
+        <span class="pc-bc-last">{{ pcTitle }}</span>
+      </nav>
+      <div class="pc-grid">
+
+        <!-- Галерея: 3 маленьких, 1 большое, далее по 2 в ряд; все фото сразу -->
+        <div style="min-width:0">
+          <div class="pc-gal">
+            <sc-for list="{{ pcGal }}" as="g" hint-placeholder-count="8">
+              <button type="button" class="{{ g.cls }}" aria-label="{{ g.label }}" onClick="{{ g.open }}"><img src="{{ g.src }}" alt=""></button>
+            </sc-for>
+          </div>
+          <div class="pc-dots" style="justify-content:center;gap:6px;margin-top:12px">
+            <sc-for list="{{ pcDots }}" as="d" hint-placeholder-count="8"><span style="width:6px;height:6px;border-radius:50%;background:#DCDCDC"></span></sc-for>
+          </div>
+        </div>
+
+        <!-- Информация и выбор -->
+        <div style="min-width:0">
+          <div style="display:flex;gap:16px;align-items:flex-start;justify-content:space-between">
+            <h1 class="pc-title" style="margin:0;flex:1 1 auto;min-width:0;font-family:var(--font-display);font-weight:700;font-size:34px;line-height:1.15;color:#1E1E1E;text-wrap:pretty">{{ pcTitle }}</h1>
+            <div class="pc-arrows" style="display:flex;gap:4px;flex:none;padding-top:8px">
+              <button type="button" aria-label="Предыдущий товар" style="width:22px;height:22px;border-radius:50%;border:1px solid #8A8A8A;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12H4m6-6l-6 6 6 6" fill="none" stroke="#6B6B6B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+              <button type="button" aria-label="Следующий товар" style="width:22px;height:22px;border-radius:50%;border:1px solid #8A8A8A;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;padding:0"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-6-6l6 6-6 6" fill="none" stroke="#6B6B6B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+            </div>
+          </div>
+          <p style="margin:14px 0 0;font-size:19px;color:#D10D65">159&nbsp;₽/пакетик</p>
+          <a href="#reviews" style="margin-top:10px;display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:#1E1E1E">
+            <span role="img" aria-label="Рейтинг 4,89 из 5" style="display:inline-flex;gap:2px"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#E80F71"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#E80F71"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#E80F71"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#E80F71"></path></svg><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.3l-5.9 3.3 1.3-6.6-4.9-4.6 6.6-.8z" fill="#E80F71"></path></svg></span>
+            <span style="font-size:13px;color:#4A4A4A">(1037&nbsp;отзывов клиентов)</span>
+          </a>
+
+          <div style="margin-top:22px;display:flex;flex-direction:column;gap:16px">
+            <div>
+              <p style="margin:0 0 8px;font-size:13px"><b style="text-transform:uppercase;letter-spacing:.06em">Питомец:</b>&nbsp; {{ pcPetName }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px">
+                <sc-for list="{{ pcPets }}" as="c" hint-placeholder-count="2"><button type="button" class="pc-chip" aria-pressed="{{ c.on }}" onClick="{{ c.pick }}">{{ c.name }}</button></sc-for>
+              </div>
+            </div>
+            <div>
+              <p style="margin:0 0 8px;font-size:13px"><b style="text-transform:uppercase;letter-spacing:.06em">Вкус:</b>&nbsp; {{ pcTasteName }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px">
+                <sc-for list="{{ pcTastes }}" as="c" hint-placeholder-count="8"><button type="button" class="pc-chip" aria-pressed="{{ c.on }}" disabled="{{ c.dis }}" onClick="{{ c.pick }}">{{ c.name }}</button></sc-for>
+              </div>
+            </div>
+            <div>
+              <p style="margin:0 0 8px;font-size:13px"><b style="text-transform:uppercase;letter-spacing:.06em">Консистенция:</b>&nbsp; {{ pcConsName }}</p>
+              <div style="display:flex;flex-wrap:wrap;gap:6px">
+                <sc-for list="{{ pcConsList }}" as="c" hint-placeholder-count="3"><button type="button" class="pc-chip" aria-pressed="{{ c.on }}" disabled="{{ c.dis }}" onClick="{{ c.pick }}">{{ c.name }}</button></sc-for>
+              </div>
+            </div>
+            <div style="display:flex;gap:16px;font-size:13px">
+              <button type="button" onClick="{{ pcReset }}" style="font:inherit;background:none;border:0;padding:0;color:#D10D65;text-decoration:underline;text-underline-offset:3px;cursor:pointer">Очистить</button>
+              <a href="#cons" style="color:#D10D65;text-underline-offset:3px">Что&nbsp;выбрать?</a>
+            </div>
+          </div>
+
+          <p style="margin:22px 0 0;font-family:var(--font-display);font-weight:700;font-size:26px;line-height:1">{{ pcTotal }}</p>
+          <div style="height:1px;background:#E4E4E4;margin:20px 0 16px"></div>
+          <p style="margin:0;display:flex;align-items:center;gap:10px;font-size:13px;color:#00804F"><svg width="14" height="14" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="#00804F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg>В&nbsp;наличии</p>
+          <div style="margin-top:14px;display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;font-size:15px">
+            <span class="pc-qlabel">Выбрать пакетиков:</span>
+            <sc-for list="{{ pcPresets }}" as="q" hint-placeholder-count="5"><button type="button" class="pc-qbtn" aria-pressed="{{ q.on }}" onClick="{{ q.pick }}">{{ q.label }}</button></sc-for>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:8px;align-items:stretch">
+            <div style="display:flex;align-items:center;border:1px solid #DCDCDC;border-radius:4px;height:52px;flex:none">
+              <label for="pc-qty" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Количество</label>
+              <input id="pc-qty" type="text" inputmode="numeric" value="{{ pcQty }}" onChange="{{ pcType }}" style="width:52px;height:100%;border:0;background:none;text-align:center;font:inherit;font-size:17px;color:#1E1E1E;outline-offset:-2px">
+              <div style="display:flex;flex-direction:column;border-left:1px solid #DCDCDC;height:100%">
+                <button type="button" aria-label="Больше" onClick="{{ pcInc }}" style="flex:1;width:34px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6" fill="none" stroke="#1E1E1E" stroke-width="2.4" stroke-linecap="round"></path></svg></button>
+                <button type="button" aria-label="Меньше" onClick="{{ pcDec }}" style="flex:1;width:34px;border:0;background:none;cursor:pointer;display:flex;align-items:center;justify-content:center"><svg width="11" height="11" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="#1E1E1E" stroke-width="2.4" stroke-linecap="round"></path></svg></button>
+              </div>
+            </div>
+            <button type="button" onClick="{{ pcAdd }}" style="flex:1;height:52px;border:0;border-radius:4px;background:{{ pcBtnBg }};color:#fff;font-weight:700;font-size:17px;letter-spacing:.02em;text-transform:uppercase;cursor:pointer">{{ pcBtn }}</button>
+          </div>
+          <div style="margin-top:16px;font-size:13px;line-height:1.6;color:#1E1E1E">
+            <p style="margin:0">Ближайшая дата доставки:</p>
+            <p style="margin:0">— Стандартная Завтра, успейте заказать до&nbsp;16:00</p>
+            <p style="margin:0">— Экспресс доставка Сегодня через 2&nbsp;часа. Успейте заказать&nbsp;до&nbsp;17:00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Вкладки страницы (липкие, как на сайте) -->
+  <nav aria-label="Разделы товара" style="position:sticky;top:64px;z-index:39;background:#fff;border-bottom:1px solid #EFEFEF">
+    <div class="pc-wrap" style="display:flex;align-items:center;justify-content:space-between;gap:16px;height:48px;padding:0 clamp(16px,4vw,40px);box-sizing:content-box">
+      <div class="sp-tabs" style="display:flex;gap:28px;overflow-x:auto">
+        <a class="sp-tab" href="#card" aria-current="true">Описание</a>
+        <a class="sp-tab" href="#reviews">Отзывы <span style="font-size:10px;font-weight:700;color:#fff;background:#E80F71;border-radius:999px;padding:3px 5px;line-height:1">1037</span></a>
+        <a class="sp-tab" href="#faq">Доставка</a>
+        <a class="sp-tab" href="#perehod">Как&nbsp;перейти</a>
+        <a class="sp-tab" href="#sostav">Состав</a>
+        <a class="sp-tab" href="#faq">Вопросы и&nbsp;ответы</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Просмотр фото на весь экран -->
+  <sc-if value="{{ pcLbOpen }}" hint-placeholder-val="{{ false }}">
+    <div role="dialog" aria-modal="true" aria-label="Фото товара" style="position:fixed;inset:0;z-index:100;background:rgba(20,20,20,.88);display:flex;align-items:center;justify-content:center;padding:24px">
+      <img src="{{ pcLbSrc }}" alt="{{ pcLbAlt }}" style="max-width:min(92vw,900px);max-height:86vh;width:auto;height:auto;display:block;background:#fff">
+      <button type="button" aria-label="Закрыть" onClick="{{ pcLbClose }}" style="position:absolute;top:16px;right:16px;width:44px;height:44px;border-radius:50%;border:0;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="#1E1E1E" stroke-width="2.4" stroke-linecap="round"></path></svg></button>
+      <button type="button" aria-label="Предыдущее фото" onClick="{{ pcLbPrev }}" style="position:absolute;left:16px;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:0;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="#1E1E1E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      <button type="button" aria-label="Следующее фото" onClick="{{ pcLbNext }}" style="position:absolute;right:16px;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:0;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="#1E1E1E" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+      <p style="position:absolute;bottom:16px;left:0;right:0;margin:0;text-align:center;color:#fff;font-size:14px">{{ pcLbCount }}</p>
+    </div>
+  </sc-if>
+
+  <!-- ТЗ 3. Из чего сделан корм -->
+  <section data-screen-label="03 Из чего сделан корм" ref="{{ b0Ref }}" style="padding:clamp(48px,7vw,96px) clamp(16px,4vw,40px) clamp(8px,1vw,16px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,40px)">
+      <div style="background:#ECE4EF;border-radius:20px;padding:clamp(16px,3vw,36px);display:flex;flex-wrap:wrap;gap:clamp(24px,4vw,56px);align-items:center">
+
+        <div ref="{{ stageRef }}" onPointerDown="{{ onDown }}" onPointerMove="{{ onMove }}" onPointerUp="{{ onUp }}" onPointerCancel="{{ onUp }}" style="flex:1 1 480px;min-width:0;aspect-ratio:1/1;max-height:620px;container-type:size;position:relative;overflow:hidden;border-radius:14px;cursor:ew-resize;touch-action:pan-y;user-select:none;background:#ECE4EF">
+          <img src="assets/b1-b-1200.jpg" alt="Мясо, субпродукты, овощи, ягоды и масло лосося" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;transform:scale(1.25)">
+          <div style="position:absolute;inset:0;overflow:hidden;clip-path:inset(0 {{ clipRight }}% 0 0)">
+            <img src="assets/b1-a-1200.jpg" alt="Готовый корм WILD в миске" draggable="false" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;transform:scale(1.25)">
+          </div>
+          <div style="position:absolute;top:0;bottom:0;left:{{ pos }}%;width:2px;margin-left:-1px;background:#fff"></div>
+          <div style="position:absolute;top:50%;left:{{ pos }}%;width:52px;height:52px;margin:-26px 0 0 -26px;border-radius:800px;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,.16);display:flex;align-items:center;justify-content:center;color:#E80F71">
+            <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.ChevronLeft" hint-size="18px,24px" style="margin-right:-6px"></x-import>
+            <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.ChevronRight" hint-size="18px,24px" style="margin-left:-6px"></x-import>
+          </div>
+          <div class="b03-pl" style="position:absolute;left:14px;bottom:14px;padding:8px 14px;border-radius:800px;background:#fff;font-family:var(--font-ui);font-weight:700;font-size:14px;line-height:1">В&nbsp;миске</div>
+          <div class="b03-pr" style="position:absolute;right:14px;bottom:14px;padding:8px 14px;border-radius:800px;background:#fff;font-family:var(--font-ui);font-weight:700;font-size:14px;line-height:1">Из&nbsp;чего сделан</div>
+        </div>
+
+        <div style="flex:1 1 300px;min-width:0;display:flex;flex-direction:column;gap:24px">
+          <div style="display:flex;flex-direction:column;gap:14px">
+            <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(32px,4.4vw,56px);line-height:.92;text-wrap:balance">Из&nbsp;чего сделан корм</h2>
+            <p style="margin:0;font-size:clamp(16px,1.4vw,18px);line-height:1.36;color:#5F5F5F;text-wrap:pretty">Двигайте границу и&nbsp;сравнивайте готовый корм с&nbsp;тем, из&nbsp;чего он&nbsp;приготовлен. Нажмите на&nbsp;ингредиент, чтобы узнать подробнее.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ ingredients }}" as="it" hint-placeholder-count="5">
+              <div style="opacity:{{ it.op }};transform:translateX({{ it.tx }}px);transition:opacity .5s ease, transform .5s ease">
+                <button type="button" onClick="{{ it.toggle }}" style="width:100%;text-align:left;border:none;cursor:pointer;background:#fff;border-radius:20px;padding:14px 18px;box-shadow:inset 0 0 0 1px {{ it.ring }};display:flex;flex-direction:column;gap:0;font:inherit;color:inherit" style-hover="box-shadow:inset 0 0 0 1px #E80F71">
+                  <span style="display:flex;align-items:center;gap:12px;width:100%">
+                    <span style="width:10px;height:10px;border-radius:50%;background:#E80F71;flex-shrink:0"></span>
+                    <span style="flex:1;font-family:var(--font-ui);font-weight:700;font-size:18px;line-height:22px">{{ it.name }}</span>
+                    <span style="font-family:var(--font-ui);font-weight:700;font-size:22px;line-height:1;color:#E80F71;width:16px;text-align:center">{{ it.sign }}</span>
+                  </span>
+                  <span style="display:grid;grid-template-rows:{{ it.rows }};transition:grid-template-rows .3s ease">
+                    <span style="overflow:hidden;font-size:16px;line-height:1.36;color:#5F5F5F;padding-left:22px">
+                      <span style="display:block;padding-top:8px">{{ it.text }}</span>
+                    </span>
+                  </span>
+                </button>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЗ 4. Состав / анализ -->
+  <section id="sostav" data-screen-label="04 Состав и анализ" style="padding:clamp(56px,8vw,112px) clamp(16px,4vw,40px) clamp(28px,4vw,56px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <div style="display:flex;flex-direction:column;gap:14px;max-width:880px">
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:.94;text-wrap:balance">Состав и&nbsp;анализ</h2>
+        <p class="s4-intro" style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F;text-wrap:pretty">SUPERPET соответствует требованиям ГОСТ&nbsp;Р&nbsp;55453‑2022&nbsp;и&nbsp;нормам AAFCO. Подходит для&nbsp;всех половозрастных групп, в&nbsp;том числе для&nbsp;котят: витаминно-минеральный премикс только из&nbsp;хелатных форм полностью покрывает потребности в&nbsp;нутриентах. Ниже&nbsp;— суммарное содержание питательных веществ с&nbsp;учётом премикса. <a href="https://superpet.ru/">Информация для&nbsp;ветдиетологов</a></p>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:14px">
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ s4.lines }}" as="ln" hint-placeholder-count="3">
+            <button type="button" aria-pressed="{{ ln.pressed }}" onClick="{{ ln.pick }}" style="border:none;cursor:pointer;display:inline-flex;align-items:baseline;gap:8px;height:48px;padding:0 20px;border-radius:800px;background:{{ ln.bg }};color:{{ ln.fg }};box-shadow:inset 0 0 0 1px {{ ln.ring }};font-family:var(--font-ui);font-weight:700;font-size:18px;line-height:48px">{{ ln.name }}<span class="tab-sub" style="font-family:var(--font-body);font-weight:400;font-size:14px;opacity:.8">{{ ln.sub }}</span></button>
+          </sc-for>
+        </div>
+        <div style="display:flex;flex-wrap:{{ s4.wrap }};overflow-x:auto;scrollbar-width:none;gap:8px;margin:0 {{ sl.mx }};padding:2px {{ sl.px }}">
+          <sc-for list="{{ s4.flavors }}" as="fl" hint-placeholder-count="10">
+            <button type="button" aria-pressed="{{ fl.pressed }}" onClick="{{ fl.pick }}" style="flex-shrink:0;border:none;cursor:pointer;height:36px;padding:0 16px;border-radius:800px;background:{{ fl.bg }};color:{{ fl.fg }};box-shadow:inset 0 0 0 1px {{ fl.ring }};font-family:var(--font-ui);font-weight:700;font-size:15px;line-height:36px;white-space:nowrap">{{ fl.name }}</button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(16px,2vw,24px);align-items:stretch">
+        <div style="flex:1 1 380px;min-width:0;background:{{ s4.bg }};border-radius:20px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:22px;transition:background .3s ease">
+          <div style="display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap">
+            <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(72px,8vw,112px);line-height:.82;color:#E80F71">{{ s4.r.meat }}</div>
+            <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(20px,2vw,26px);line-height:1.06;max-width:220px;padding-bottom:4px">свежего мяса и&nbsp;субпродуктов</div>
+          </div>
+          <sc-if value="{{ s4.r.hasTags }}" hint-placeholder-val="{{ true }}">
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ s4.r.tags }}" as="tg" hint-placeholder-count="2">
+                <span style="padding:7px 12px;border-radius:800px;background:#fff;font-family:var(--font-ui);font-weight:700;font-size:13px;line-height:1;color:#1E1E1E">{{ tg&nbsp;}}</span>
+              </sc-for>
+            </div>
+          </sc-if>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <div style="font-family:var(--font-ui);font-weight:700;font-size:16px;line-height:20px">Состав</div>
+            <p style="margin:0;font-size:16px;line-height:1.36;color:#1E1E1E;text-wrap:pretty">{{ s4.r.comp }}</p>
+          </div>
+          <img src="{{ s4.img }}" alt="{{ s4.imgAlt }}" style="width:100%;aspect-ratio:900/550;object-fit:contain;display:block;margin:-4px 0;transform:scale({{ s4.imgScale }});transform-origin:50% 50%">
+          <div style="margin-top:auto;display:flex;align-items:baseline;gap:8px;padding-top:16px;box-shadow:inset 0 1px 0 rgba(0,0,0,.12)">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:30px;line-height:1">{{ s4.r.kcal }}</span>
+            <span style="font-size:16px;line-height:1.36;color:#5F5F5F">ккал на&nbsp;100&nbsp;г</span>
+          </div>
+          <sc-if value="{{ s4.note }}" hint-placeholder-val="{{ false }}">
+            <p style="margin:0;font-size:13px;line-height:1.3;color:#5F5F5F">{{ s4.note }}</p>
+          </sc-if>
+        </div>
+
+        <div style="flex:1 1 460px;min-width:0;display:flex;flex-direction:column;gap:clamp(16px,2vw,24px)">
+          <div style="background:#fff;border-radius:20px;box-shadow:inset 0 0 0 1px #DCDCDC;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:14px">
+            <div style="font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.06">Пищевая ценность на&nbsp;100&nbsp;г</div>
+            <div style="display:flex;flex-direction:column">
+              <sc-for list="{{ s4.r.rows }}" as="rw" hint-placeholder-count="8">
+                <div style="display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) 64px;align-items:center;gap:12px;padding:9px 0;box-shadow:inset 0 -1px 0 #EDEDED">
+                  <span style="font-size:16px;line-height:1.3;color:{{ rw.fg }};font-weight:{{ rw.fw }}">{{ rw.name }}</span>
+                  <span style="height:6px;border-radius:800px;background:#F0ECF0;overflow:hidden;display:block"><span style="display:block;height:100%;width:{{ rw.w }}%;background:{{ rw.bar }};border-radius:800px;transition:width .4s ease"></span></span>
+                  <span style="text-align:right;font-family:var(--font-ui);font-weight:700;font-size:16px;line-height:20px;color:{{ rw.fg }}">{{ rw.val }}</span>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+
+          <div style="background:#FCE8F1;color:#1E1E1E;border-radius:20px;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:20px">
+            <div style="display:flex;flex-direction:column;gap:6px">
+              <div style="font-size:14px;line-height:1.3;color:#5F5F5F">В&nbsp;сравнении с&nbsp;сухим кормом*</div>
+              <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(22px,2.2vw,28px);line-height:1.06;text-wrap:balance">{{ s4.cmp.headline }}</div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px">
+              <sc-for list="{{ s4.cmp.cols }}" as="cc" hint-placeholder-count="2">
+                <div style="background:#FCE8F1;border-radius:16px;padding:16px;box-shadow:inset 0 0 0 1px rgba(232,15,113,.18);display:flex;flex-direction:column;gap:12px">
+                  <div style="display:flex;align-items:center;gap:12px">
+                    <img src="{{ cc.img }}" alt="{{ cc.alt }}" style="width:72px;height:72px;border-radius:50%;object-fit:cover;display:block;flex-shrink:0">
+                    <span style="font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.06;color:{{ cc.titleColor }}">{{ cc.name }}</span>
+                  </div>
+                  <sc-for list="{{ cc.items }}" as="ci" hint-placeholder-count="2">
+                    <div style="display:flex;flex-direction:column;gap:6px">
+                      <div style="display:flex;justify-content:space-between;gap:8px;font-size:15px;line-height:1.2"><span>{{ ci.name }}</span><span style="font-family:var(--font-ui);font-weight:700;color:{{ cc.titleColor }}">{{ ci.v&nbsp;}}</span></div>
+                      <span style="height:10px;border-radius:800px;background:#fff;overflow:hidden;display:block"><span style="display:block;height:100%;width:{{ ci.w }}%;background:{{ cc.bar }};border-radius:800px;transition:width .4s ease"></span></span>
+                    </div>
+                  </sc-for>
+                </div>
+              </sc-for>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="border-radius:20px;box-shadow:inset 0 0 0 1px {{ s4.moreRing }}">
+        <button type="button" aria-expanded="{{ s4.moreExpanded }}" onClick="{{ s4.toggleMore }}" style="width:100%;border:none;background:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:18px clamp(18px,2.5vw,28px);text-align:left;font:inherit;color:inherit">
+          <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconMobM" name="vitamins" hint-size="35px,35px"></x-import>
+          <span style="flex:1;font-family:var(--font-ui);font-weight:700;font-size:18px;line-height:22px">Витамины, минералы, жирные кислоты и&nbsp;аминокислоты</span>
+          <span style="font-family:var(--font-ui);font-weight:700;font-size:24px;line-height:1;color:#E80F71;width:18px;text-align:center">{{ s4.moreSign }}</span>
+        </button>
+        <sc-if value="{{ s4.moreOpen }}" hint-placeholder-val="{{ false }}">
+          <div style="padding:0 clamp(18px,2.5vw,28px) clamp(18px,2.5vw,28px);display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px 28px">
+            <sc-for list="{{ s4.r.tables }}" as="tb" hint-placeholder-count="4">
+              <div style="display:flex;flex-direction:column;gap:6px">
+                <div style="font-family:var(--font-ui);font-weight:700;font-size:15px;line-height:20px;color:#E80F71">{{ tb.title }}</div>
+                <sc-for list="{{ tb.items }}" as="ti" hint-placeholder-count="6">
+                  <div style="display:flex;justify-content:space-between;gap:12px;font-size:14px;line-height:1.3;padding:5px 0;box-shadow:inset 0 -1px 0 #EDEDED"><span style="color:#5F5F5F">{{ ti.n&nbsp;}}</span><span style="white-space:nowrap">{{ ti.v&nbsp;}}</span></div>
+                </sc-for>
+              </div>
+            </sc-for>
+          </div>
+        </sc-if>
+      </div>
+      <p style="margin:-8px 0 0;font-size:13px;line-height:1.3;color:#818181;text-wrap:pretty">* Белок и&nbsp;углеводы&nbsp;— в&nbsp;пересчёте на&nbsp;сухое вещество. Сухой корм&nbsp;— средние значения для&nbsp;популярных сухих кормов: белок ≈ 35%, углеводы ≈ 40% сухого вещества.</p>
+    </div>
+  </section>
+
+  <!-- ТЗ 5. Консистенции -->
+  <section id="cons" data-screen-label="05 Консистенции" style="padding:clamp(28px,4vw,56px) clamp(16px,4vw,40px)">
+    <div style="max-width:1200px;margin:0 auto;background:#F0ECF0;border-radius:20px;padding:clamp(28px,4vw,56px) clamp(16px,3vw,40px);display:flex;flex-direction:column;align-items:center;gap:clamp(24px,3vw,36px)">
+      <div style="display:flex;flex-direction:column;align-items:center;gap:12px;text-align:center">
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3.4vw,44px);line-height:.98;text-wrap:balance">{{ s5.title }}</h2>
+        <p style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F">Выбирайте консистенцию, которая подходит вашему питомцу</p>
+      </div>
+      <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:8px">
+        <sc-for list="{{ s5.lines }}" as="ln" hint-placeholder-count="3">
+          <button type="button" aria-pressed="{{ ln.pressed }}" onClick="{{ ln.pick }}" style="border:none;cursor:pointer;display:inline-flex;align-items:baseline;gap:8px;height:44px;padding:0 18px;border-radius:800px;background:{{ ln.bg2 }};color:{{ ln.fg }};box-shadow:inset 0 0 0 1px {{ ln.ring }};font-family:var(--font-ui);font-weight:700;font-size:17px;line-height:44px">{{ ln.name }}<span class="tab-sub" style="font-family:var(--font-body);font-weight:400;font-size:14px;opacity:.8">{{ ln.sub }}</span></button>
+        </sc-for>
+      </div>
+      <div class="cons-row" style="align-self:stretch;display:flex;flex-wrap:wrap;justify-content:center;gap:clamp(16px,2vw,24px)">
+        <sc-for list="{{ s5.items }}" as="cs" hint-placeholder-count="3">
+          <div class="cons-card" style="flex:1 1 260px;max-width:360px;min-width:0;background:#fff;border-radius:20px;padding:20px 20px 24px;display:flex;flex-direction:column;align-items:center;text-align:center;gap:14px">
+            <sc-if value="{{ cs.img }}" hint-placeholder-val="{{ true }}">
+              <img src="{{ cs.img }}" alt="{{ cs.name }} в миске" class="cons-img" style="width:min(100%,240px);aspect-ratio:1/1;object-fit:contain;display:block;mix-blend-mode:multiply">
+            </sc-if>
+            <sc-if value="{{ cs.noImg }}" hint-placeholder-val="{{ false }}">
+              <div style="width:min(100%,220px);aspect-ratio:200/155;border-radius:16px;background:#F0ECF0;display:flex;align-items:center;justify-content:center;font-size:13px;color:#818181">Фото {{ cs.name }}</div>
+            </sc-if>
+            <div style="font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1.06">{{ cs.name }}</div>
+            <p style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F;text-wrap:pretty">{{ cs.text }}</p>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ТЗ 6. Калькулятор — запасной вариант -->
+  <section id="calc-simple" data-screen-label="06b Калькулятор (запасной)" style="padding:clamp(28px,4vw,56px) clamp(16px,4vw,40px) clamp(16px,2vw,24px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,32px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px">
+        <div style="display:flex;flex-direction:column;gap:12px;max-width:640px">
+          <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:.94;text-wrap:balance">Сколько корма нужно вашему питомцу</h2>
+          <p style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F">Мы&nbsp;уже&nbsp;посчитали для&nbsp;средней кошки&nbsp;— поправьте вес и&nbsp;возраст под&nbsp;своего&nbsp;питомца.</p>
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          <sc-for list="{{ s6.lines }}" as="ln" hint-placeholder-count="3">
+            <button type="button" aria-pressed="{{ ln.pressed }}" onClick="{{ ln.pick }}" style="border:none;cursor:pointer;display:inline-flex;align-items:baseline;gap:8px;height:44px;padding:0 18px;border-radius:800px;background:{{ ln.bg }};color:{{ ln.fg }};box-shadow:inset 0 0 0 1px {{ ln.ring }};font-family:var(--font-ui);font-weight:700;font-size:17px;line-height:44px">{{ ln.name }}<span class="tab-sub" style="font-family:var(--font-body);font-weight:400;font-size:14px;opacity:.8">{{ ln.sub }}</span></button>
+          </sc-for>
+        </div>
+      </div>
+
+      <div style="background:{{ s6.panelBg }};border-radius:20px;padding:clamp(16px,3vw,36px);display:flex;flex-wrap:wrap;gap:clamp(16px,3vw,40px);transition:background-color .3s ease">
+        <div style="flex:1 1 400px;min-width:0;display:flex;flex-direction:column;gap:22px">
+          <sc-for list="{{ s6.groups }}" as="gr" hint-placeholder-count="3">
+            <div style="display:flex;flex-direction:column;gap:10px">
+              <div style="font-family:var(--font-ui);font-weight:700;font-size:15px;line-height:20px">{{ gr.title }}</div>
+              <div style="display:flex;flex-wrap:wrap;gap:8px">
+                <sc-for list="{{ gr.opts }}" as="op" hint-placeholder-count="3">
+                  <button type="button" aria-pressed="{{ op.pressed }}" onClick="{{ op.pick }}" style="border:none;cursor:pointer;height:40px;padding:0 16px;border-radius:8px;background:{{ op.bg }};color:{{ op.fg }};box-shadow:inset 0 0 0 1px {{ op.ring }};font-family:var(--font-ui);font-weight:700;font-size:15px;line-height:40px">{{ op.label }}</button>
+                </sc-for>
+              </div>
+            </div>
+          </sc-for>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <label for="calc-weight" style="font-family:var(--font-ui);font-weight:700;font-size:15px;line-height:20px">Вес питомца</label>
+            <div style="display:flex;align-items:center;gap:12px">
+              <button type="button" aria-label="Уменьшить вес" onClick="{{ s6.dec }}" style="width:44px;height:44px;flex-shrink:0;border:none;cursor:pointer;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 1px #DCDCDC;font-family:var(--font-ui);font-weight:700;font-size:22px;color:#E80F71">−</button>
+              <div style="min-width:96px;text-align:center;font-family:var(--font-display);font-weight:700;font-size:30px;line-height:1">{{ s6.weightTxt }}<span style="font-family:var(--font-body);font-weight:400;font-size:16px;color:#5F5F5F"> кг</span></div>
+              <button type="button" aria-label="Увеличить вес" onClick="{{ s6.inc }}" style="width:44px;height:44px;flex-shrink:0;border:none;cursor:pointer;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 1px #DCDCDC;font-family:var(--font-ui);font-weight:700;font-size:22px;color:#E80F71">+</button>
+            </div>
+            <input id="calc-weight" type="range" min="0.5" max="{{ s6.maxW }}" step="0.5" value="{{ s6.weight }}" onChange="{{ s6.onRange }}" style="width:100%;max-width:420px;accent-color:#E80F71">
+          </div>
+          <p style="margin:0;font-size:13px;line-height:1.3;color:#5F5F5F;max-width:460px">{{ s6.ageNote }}</p>
+        </div>
+
+        <div style="flex:1 1 360px;min-width:0;background:#fff;border-radius:20px;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:18px">
+          <div style="font-size:15px;line-height:1.3;color:#5F5F5F">Вашему питомцу нужно</div>
+          <div style="display:flex;align-items:flex-end;gap:12px;flex-wrap:wrap">
+            <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(56px,6vw,80px);line-height:.82;color:#E80F71">{{ s6.mainVal }}</div>
+            <div style="font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.06;padding-bottom:2px">{{ s6.mainUnit }}</div>
+          </div>
+          <div style="display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px">
+            <sc-for list="{{ s6.stats }}" as="st" hint-placeholder-count="3">
+              <div style="background:{{ s6.panelBg }};transition:background-color .3s ease;border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:4px">
+                <span style="font-family:var(--font-ui);font-weight:700;font-size:clamp(15px,4.2vw,20px);line-height:24px;white-space:nowrap">{{ st.v&nbsp;}}</span>
+                <span style="font-size:13px;line-height:1.25;color:#5F5F5F">{{ st.l&nbsp;}}</span>
+              </div>
+            </sc-for>
+          </div>
+          <button type="button" onClick="{{ s6.addWeek }}" style="border:none;cursor:pointer;min-height:56px;padding:10px 20px;border-radius:8px;background:{{ s6.btnBg }};color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;transition:background .2s ease">
+            <span style="font-family:var(--font-ui);font-weight:700;font-size:18px;line-height:22px">{{ s6.btnTitle }}</span>
+            <span style="font-family:var(--font-body);font-size:14px;line-height:1.2;opacity:.9">{{ s6.btnSub }}</span>
+          </button>
+          <p style="margin:0;font-size:13px;line-height:1.3;color:#818181">Дневная потребность&nbsp;— {{ s6.kcal }} ккал. Расчёт для&nbsp;{{ s6.lineLabel }}. Нормы носят рекомендательный характер и&nbsp;могут отличаться на&nbsp;практике.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЗ 8. В составе нет / 90% мяса -->
+  <section data-screen-label="08 В составе нет / 90% мяса" ref="{{ b1Ref }}" style="position:relative;height:{{ b1Height }};background:#fff">
+    <div ref="{{ stickyRef }}" style="position:sticky;top:var(--sp-top);height:{{ L.stickyH }};overflow:hidden;background:#fff">
+      <div style="max-width:{{ L.maxW }};height:{{ L.innerH }};margin:0 auto;padding:{{ L.pad }};display:flex;flex-direction:{{ L.dir }};align-items:{{ L.align }};justify-content:center;gap:{{ L.gap }}">
+
+        <div style="flex:{{ L.textFlex }};min-width:0;position:relative;z-index:2;padding-top:{{ L.textPt }};display:flex;flex-direction:column;align-items:{{ L.items }};text-align:{{ L.tAlign }};gap:{{ L.textGap }}">
+          <div style="position:relative;align-self:stretch;display:flex;flex-direction:column;align-items:{{ L.items }};gap:{{ L.textGap }}">
+          <h2 ref="{{ h2Ref }}" style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4.4vw,56px);line-height:.92;text-wrap:balance">Из&nbsp;чего сделан корм</h2>
+          <div style="position:relative;align-self:stretch;height:{{ L.panelH }}">
+            <div ref="{{ pA }}" style="position:absolute;left:0;right:0;top:0;opacity:0;display:flex;flex-direction:column;align-items:{{ L.items }};gap:{{ L.aGap }}">
+              <div ref="{{ numRef }}" style="font-family:var(--font-display);font-weight:700;font-size:{{ L.bigFs }};line-height:.86;color:#E80F71;font-variant-numeric:tabular-nums">90%</div>
+              <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(18px,1.9vw,24px);line-height:1.06;max-width:360px">свежего мяса, мясных и&nbsp;костных субпродуктов</div>
+              <p style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F;max-width:380px;display:{{ L.pDisplay }}">Остальное&nbsp;— овощи и&nbsp;суперфуды.<br>Почему важна доля свежего мяса?<br>Узнайте <a href="https://blog.superpet.ru/sistema_barf_put_k_zdorovyu_i_dolgoletiyu_vashih_pitomcev/">в&nbsp;блоге</a>.</p>
+            </div>
+            <div ref="{{ pB }}" style="position:absolute;left:0;right:0;top:0;display:flex;flex-direction:column;align-items:{{ L.items }};gap:10px">
+              <div style="font-family:var(--font-display);font-weight:700;font-size:{{ L.midFs }};line-height:.96">В&nbsp;составе нет</div>
+              <p style="margin:0;font-size:16px;line-height:1.36;color:#5F5F5F;max-width:340px">Злаков, растительных белков и&nbsp;наполнителей</p>
+            </div>
+          </div>
+            <div ref="{{ pC }}" style="position:absolute;left:0;right:0;top:0;opacity:0;display:flex;flex-direction:column;align-items:{{ L.items }};gap:{{ L.cGap }}">
+              <div ref="{{ tempRef }}" aria-hidden="true" style="font-family:var(--font-display);font-weight:700;font-size:{{ L.bigFs }};line-height:.86;color:#3F7FBF;font-variant-numeric:tabular-nums;white-space:nowrap">−35 °C</div>
+              <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:{{ L.cTitleFs }};line-height:1.02;text-wrap:balance">Шоковая заморозка<span style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)"> при&nbsp;−35&nbsp;°C</span></h2>
+              <p style="margin:0;font-size:{{ L.cPFs }};line-height:1.36;color:#5F5F5F;max-width:380px;text-wrap:pretty">Гарантирует пользу и&nbsp;безопасность сырых натуральных ингредиентов.<br>Без&nbsp;искусственных добавок.</p>
+            </div>
+          </div>
+          <div style="display:flex;justify-content:{{ L.items }};gap:6px">
+            <sc-for list="{{ bars }}" as="b" hint-placeholder-count="3">
+              <span style="width:44px;height:3px;border-radius:800px;background:#EDEDED;overflow:hidden;display:block"><span ref="{{ b.ref }}" style="display:block;width:100%;height:100%;background:#E80F71;transform-origin:left center;transform:scaleX(0)"></span></span>
+            </sc-for>
+          </div>
+        </div>
+
+        <div style="flex:{{ L.stageFlex }};height:{{ L.stageH }};min-width:0;min-height:0;align-self:{{ L.stageAlign }};position:relative">
+          <div ref="{{ stackRef }}" style="position:absolute;left:50%;bottom:0;height:100%;aspect-ratio:1060/1420;transform:translateX(-50%);transform-origin:50% 100%">
+            <img src="assets/bowl-1-s.jpg" decoding="async" alt="Корм WILD в миске" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block">
+            <img ref="{{ img2 }}" src="assets/bowl-2-s.jpg" decoding="async" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;-webkit-mask-image:linear-gradient(to top,#000 -15%,transparent 0%);mask-image:linear-gradient(to top,#000 -15%,transparent 0%)">
+            <img ref="{{ img3 }}" src="assets/bowl-3-s.jpg" decoding="async" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block;-webkit-mask-image:linear-gradient(to top,#000 -15%,transparent 0%);mask-image:linear-gradient(to top,#000 -15%,transparent 0%)">
+          </div>
+          <sc-for list="{{ noPills }}" as="pl" hint-placeholder-count="0">
+            <span ref="{{ pl.ref }}" style="position:absolute;left:{{ pl.x }}%;top:{{ pl.y }}%;opacity:0;white-space:nowrap;background:#fff;border-radius:800px;box-shadow:0 6px 20px rgba(30,30,30,.08),inset 0 0 0 1px #E6E6E6;padding:{{ L.pillPad }};font-family:var(--font-body);font-size:{{ L.pillFs }};line-height:1.2;color:#5F5F5F;will-change:transform,opacity,filter"><span style="position:relative;display:inline-block">{{ pl.t&nbsp;}}<span data-strike="1" style="position:absolute;left:-4px;right:-4px;top:55%;height:2px;margin-top:-1px;border-radius:2px;background:#E80F71;transform:scaleX(0);transform-origin:left center"></span></span></span>
+          </sc-for>
+          <sc-for list="{{ snow }}" as="sn" hint-placeholder-count="0">
+            <span ref="{{ sn.ref }}" style="position:absolute;left:{{ sn.x }}%;top:{{ sn.y }}%;opacity:0;display:block;line-height:0;pointer-events:none;will-change:transform,opacity"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.Icon" name="freezing" size="{{ sn.s }}" hint-size="30px,30px"></x-import></span>
+          </sc-for>
+          <sc-for list="{{ yesPills }}" as="pl" hint-placeholder-count="0">
+            <span ref="{{ pl.ref }}" style="position:absolute;left:{{ pl.x }}%;top:{{ pl.y }}%;opacity:0;white-space:nowrap;background:#fff;border-radius:800px;box-shadow:0 6px 20px rgba(30,30,30,.08),inset 0 0 0 1px #E6E6E6;padding:{{ L.pillPad }};font-family:var(--font-body);font-size:{{ L.pillFs }};line-height:1.2;color:#1E1E1E;display:flex;align-items:center;gap:8px;will-change:transform,opacity,filter"><span style="width:8px;height:8px;border-radius:50%;background:#E80F71;flex-shrink:0"></span>{{ pl.t&nbsp;}}</span>
+          </sc-for>
+        </div>
+      </div>
+      <div ref="{{ hintRef }}" style="position:absolute;left:50%;bottom:20px;transform:translateX(-50%);display:{{ L.hintDisplay }};align-items:center;gap:6px;font-family:var(--font-ui);font-weight:700;font-size:14px;line-height:1;color:#818181;pointer-events:none">Листайте вниз</div>
+    </div>
+  </section>
+
+  <!-- ТЗ 9. 95% питомцев — вариант 2 (стопка карточек) -->
+  <section data-screen-label="09b 95% питомцев (вариант 2)" style="padding:clamp(40px,6vw,80px) 0;background:#fff">
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px);display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <div style="display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:16px 32px">
+        <div style="display:flex;flex-direction:column;gap:clamp(8px,1.2vw,16px);min-width:0;max-width:640px">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:clamp(64px,8vw,120px);line-height:.8;color:#E80F71;letter-spacing:-.02em">95<span style="font-size:.5em;vertical-align:top;line-height:1">%</span></div>
+          <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.6vw,36px);line-height:1.04;text-wrap:balance">питомцев чувствуют себя лучше на&nbsp;SUPERPET*</h2>
+          <p class="d95-lead" style="margin:0;font-size:16px;line-height:1.4;color:#5F5F5F;max-width:460px;text-wrap:pretty">Всё&nbsp;благодаря высокому содержанию натурального мяса: животный белок максимально усваивается организмом хищника.</p>
+        </div>
+        <div class="d95-nav" style="display:flex;align-items:center;gap:14px">
+          <span ref="{{ d95Count }}" style="font-family:var(--font-ui);font-weight:700;font-size:15px;min-width:56px">01 / 08</span>
+          <span style="width:120px;height:3px;border-radius:800px;background:#EDEDED;overflow:hidden;display:block"><span ref="{{ d95Bar }}" style="display:block;height:100%;width:100%;background:#E80F71;transform-origin:left center;transform:scaleX(.125);transition:transform .25s ease"></span></span>
+          <span class="d95-arrows" style="display:flex;gap:8px"><button type="button" aria-label="Назад" onClick="{{ prev95 }}" style="width:44px;height:44px;border:none;cursor:pointer;border-radius:800px;background:#F0ECF0;color:#E80F71;display:flex;align-items:center;justify-content:center;padding:0"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.ChevronLeft" hint-size="18px,24px"></x-import></button><button type="button" aria-label="Вперёд" onClick="{{ next95 }}" style="width:44px;height:44px;border:none;cursor:pointer;border-radius:800px;background:#F0ECF0;color:#E80F71;display:flex;align-items:center;justify-content:center;padding:0"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.ChevronRight" hint-size="18px,24px"></x-import></button></span>
+        </div>
+      </div>
+    </div>
+    <div ref="{{ d95Ref }}" onScroll="{{ upd95 }}" class="d95-track" style="display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;overscroll-behavior-x:contain;-webkit-overflow-scrolling:touch;scrollbar-width:none;margin-top:clamp(20px,2.5vw,28px);padding:4px max(clamp(16px,4vw,40px),calc((100% - 1200px) / 2 + 40px)) 24px;scroll-padding:0 max(clamp(16px,4vw,40px),calc((100% - 1200px) / 2 + 40px))">
+      <sc-for list="{{ deck95 }}" as="cd" hint-placeholder-count="8">
+        <article class="d95-card" style="flex:0 0 clamp(260px,30vw,360px);scroll-snap-align:start;background:#fff;border-radius:20px;box-shadow:0 12px 32px -20px rgba(60,20,40,.35), inset 0 0 0 1px #EDE6EC;overflow:hidden;display:flex;flex-direction:column">
+          <div style="aspect-ratio:2040/1266;background:#F1ECF0;position:relative"><img src="{{ cd.img }}" alt="" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+          <div style="flex:1 1 auto;padding:18px 20px 20px;display:flex;align-items:flex-start;gap:14px">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:15px;line-height:1;color:#E80F71;padding-top:5px">{{ cd.n&nbsp;}}</span>
+            <span style="display:flex;flex-direction:column;gap:6px;min-width:0">
+              <span style="font-family:var(--font-display);font-weight:700;font-size:clamp(18px,1.7vw,22px);line-height:1.08">{{ cd.t&nbsp;}}</span>
+              <span style="font-size:15px;line-height:1.36;color:#5F5F5F">{{ cd.d&nbsp;}}</span>
+            </span>
+          </div>
+        </article>
+      </sc-for>
+    </div>
+    <div style="max-width:1200px;margin:0 auto;padding:0 clamp(16px,4vw,40px)"><span style="font-size:13px;color:#818181">* По&nbsp;опросу покупателей SUPERPET, 2026&nbsp;г.</span></div>
+  </section>
+
+  <!-- ТЗ 10. Переход на новое питание -->
+  <section id="perehod" data-screen-label="10 Переход за 4 дня" ref="{{ b6Ref }}" style="padding:clamp(56px,8vw,112px) clamp(16px,4vw,40px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(32px,4vw,48px)">
+      <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:.94;max-width:760px;text-wrap:balance">Переход на&nbsp;здоровое питание за&nbsp;4&nbsp;дня</h2>
+
+      <div style="display:flex;flex-direction:column;gap:20px">
+      <div onScroll="{{ onScroll2 }}" style="display:{{ sl.display2 }};grid-template-columns:repeat(auto-fill,minmax(clamp(25% - 18px,(880px - 100%) * 999,50% - 12px),1fr));overflow-x:{{ sl.ox }};scroll-snap-type:{{ sl.snap }};scrollbar-width:none;margin:0 {{ sl.mx }};padding:0 {{ sl.px }};scroll-padding:0 {{ sl.px }};gap:{{ sl.gap2 }}">
+        <sc-for list="{{ days }}" as="d" hint-placeholder-count="4">
+          <div style="flex:{{ sl.item2 }};scroll-snap-align:start;background:#F0ECF0;border-radius:20px;padding:28px 24px;display:flex;flex-direction:column;align-items:center;gap:22px">
+            <div style="width:min(100%,190px);flex-shrink:0;position:relative"><div style="padding-top:100%"></div>
+            <div style="position:absolute;inset:0;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 1px #DCDCDC, 0 18px 30px -18px rgba(0,0,0,.3);padding:11%">
+              <div style="width:100%;height:100%;border-radius:50%;overflow:hidden;position:relative;background:#cfcfcf">
+                <img src="assets/old-food-2.png" alt="" style="position:absolute;inset:-4%;width:108%;height:108%;object-fit:cover">
+                <img src="assets/mince.png" alt="" ref="{{ d.ref }}" style="position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover">
+              </div>
+              <div style="position:absolute;right:-4px;top:-4px;min-width:54px;height:54px;padding:0 8px;border-radius:800px;background:#E80F71;color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-ui);font-weight:700;font-size:16px;line-height:1;box-shadow:0 0 0 4px #F0ECF0">{{ d.pct }}</div>
+            </div>
+            </div>
+            <div style="width:100%;display:flex;flex-direction:column;gap:8px">
+              <div style="font-family:var(--font-display);font-weight:700;font-size:24px;line-height:1.06;color:#E80F71">{{ d.title }}</div>
+              <div style="display:flex;flex-direction:column;gap:4px;font-size:16px;line-height:1.36">
+                <span style="display:flex;align-items:center;gap:8px"><span style="width:10px;height:10px;border-radius:50%;background:#E80F71;flex-shrink:0"></span>{{ d.a&nbsp;}}</span>
+                <sc-if value="{{ d.b }}" hint-placeholder-val="{{ true }}">
+                  <span style="display:flex;align-items:center;gap:8px;color:#5F5F5F"><span style="width:10px;height:10px;border-radius:50%;background:#A8A8A8;flex-shrink:0"></span>{{ d.b&nbsp;}}</span>
+                </sc-if>
+              </div>
+            </div>
+          </div>
+        </sc-for>
+      </div>
+      <sc-if value="{{ mob }}" hint-placeholder-val="{{ false }}">
+        <div style="display:flex;justify-content:center;gap:8px">
+          <sc-for list="{{ dots2 }}" as="dt" hint-placeholder-count="4">
+            <span style="width:{{ dt.w }}px;height:8px;border-radius:800px;background:{{ dt.c }};transition:width .25s ease, background .25s ease"></span>
+          </sc-for>
+        </div>
+      </sc-if>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(16px,2vw,24px)">
+        <div style="flex:1 1 380px;min-width:0;border-radius:20px;box-shadow:inset 0 0 0 1px #E80F71;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;justify-content:center;gap:8px">
+          <div style="font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1.06;color:#E80F71">Внимание!</div>
+          <p style="margin:0;font-size:18px;line-height:1.36;text-wrap:pretty">Этот корм гораздо калорийнее обычного. Строго следуйте рекомендованным нормам кормления.</p>
+        </div>
+        <div style="flex:1 1 380px;min-width:0;border-radius:20px;background:#F0ECF0;padding:clamp(20px,2vw,16px) clamp(20px,2.5vw,32px) clamp(24px,2vw,16px) clamp(20px,1vw,16px);display:flex;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:clamp(16px,2vw,24px) clamp(16px,2vw,24px);overflow:hidden">
+          <img src="assets/instruction.png" alt="Инструкция SUPERPET «Лёгкий переход к правильному питанию»" style="width:clamp(150px,17vw,210px);height:auto;display:block;flex-shrink:0;mix-blend-mode:multiply;transform:rotate(-6deg);margin:-8px 0">
+          <div style="flex:1 1 220px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:0 4px">
+          <p style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(20px,1.9vw,24px);line-height:1.06;text-wrap:pretty">Перейти на&nbsp;новый корм поможет подробная инструкция SUPERPET</p>
+          <a href="https://superpet.ru/instruction/" style="text-decoration:none">
+            <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.Button" variant="primary" size="m" hint-size="180px,48px">Открыть инструкцию</x-import>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЗ 12. Отзывы -->
+  <section id="reviews" data-screen-label="12 Отзывы" style="padding:clamp(56px,8vw,112px) clamp(16px,4vw,40px);background:#F0ECF0">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(24px,3vw,36px)">
+      <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:.94">Отзывы</h2>
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(16px,2vw,24px);align-items:flex-start">
+        <div style="flex:1 1 300px;max-width:400px;min-width:0;background:#fff;border-radius:20px;padding:clamp(20px,2.5vw,32px);display:flex;flex-direction:column;gap:18px">
+          <div style="display:flex;align-items:flex-end;gap:14px">
+            <span style="font-family:var(--font-display);font-weight:700;font-size:72px;line-height:.82">{{ rv.avg }}</span>
+            <span style="display:flex;flex-direction:column;gap:6px;padding-bottom:2px">
+              <span style="display:flex;gap:2px"><sc-for list="{{ rv.five }}" as="sx" hint-placeholder-count="5"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconMobXS" name="star" hint-size="20px,20px"></x-import></sc-for></span>
+              <span style="font-size:14px;line-height:1.2;color:#5F5F5F">На&nbsp;основании {{ rv.countTxt }} отзывов</span>
+            </span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <sc-for list="{{ rv.dist }}" as="ds" hint-placeholder-count="5">
+              <div style="display:grid;grid-template-columns:70px minmax(0,1fr) 40px;align-items:center;gap:10px;font-size:14px;line-height:1.2">
+                <span style="color:#5F5F5F">{{ ds.l&nbsp;}}</span>
+                <span style="height:8px;border-radius:800px;background:#F0ECF0;overflow:hidden;display:block"><span style="display:block;height:100%;width:{{ ds.p }}%;background:#E80F71;border-radius:800px"></span></span>
+                <span style="text-align:right;font-family:var(--font-ui);font-weight:700">{{ ds.p&nbsp;}}%</span>
+              </div>
+            </sc-for>
+          </div>
+          <a href="https://superpet.ru/" style="text-decoration:none;display:flex;align-items:center;justify-content:center;height:48px;border-radius:8px;box-shadow:inset 0 0 0 1px #DCDCDC;color:#1E1E1E;font-family:var(--font-ui);font-weight:700;font-size:16px">Добавить отзыв</a>
+        </div>
+        <div style="flex:999 1 480px;min-width:0;display:flex;flex-direction:column;gap:12px">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+            <span style="font-size:14px;color:#5F5F5F">1–{{ rv.shown }} из&nbsp;{{ rv.countTxt }}</span>
+            <span style="padding:8px 14px;border-radius:800px;background:#fff;font-family:var(--font-ui);font-weight:700;font-size:14px;line-height:1">Самые свежие</span>
+          </div>
+          <sc-for list="{{ rv.items }}" as="it" hint-placeholder-count="4">
+            <article style="background:#fff;border-radius:20px;padding:20px 22px;display:flex;flex-direction:column;gap:10px">
+              <div style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+                <span style="display:flex;align-items:center;gap:10px">
+                  <span aria-hidden="true" style="width:36px;height:36px;border-radius:50%;background:#FCE8F1;color:#E80F71;display:flex;align-items:center;justify-content:center;font-family:var(--font-ui);font-weight:700;font-size:15px">{{ it.ini }}</span>
+                  <span style="font-family:var(--font-ui);font-weight:700;font-size:16px">{{ it.name }}</span>
+                </span>
+                <span style="font-size:14px;color:#818181">{{ it.date }}</span>
+              </div>
+              <span style="display:flex;gap:2px"><sc-for list="{{ rv.five }}" as="sx" hint-placeholder-count="5"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconMobXS" name="star" hint-size="20px,20px"></x-import></sc-for></span>
+              <p style="margin:0;font-size:16px;line-height:1.36;white-space:pre-line;text-wrap:pretty">{{ it.text }}</p>
+            </article>
+          </sc-for>
+          <sc-if value="{{ rv.canMore }}" hint-placeholder-val="{{ true }}">
+            <button type="button" onClick="{{ rv.more }}" style="align-self:center;margin-top:16px;border:none;cursor:pointer;height:48px;padding:0 24px;border-radius:8px;background:#fff;box-shadow:inset 0 0 0 1px #DCDCDC;font-family:var(--font-ui);font-weight:700;font-size:16px;color:#1E1E1E">Показать ещё&nbsp;({{ rv.restTxt }})</button>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТЗ 13. Гарантии + FAQ + Доставка + Cross-sell -->
+  <section id="faq" data-screen-label="13 FAQ, доставка, cross-sell" style="padding:clamp(56px,8vw,112px) clamp(16px,4vw,40px)">
+    <div style="max-width:1200px;margin:0 auto;display:flex;flex-direction:column;gap:clamp(36px,5vw,64px)">
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+        <sc-for list="{{ guarantees }}" as="g" hint-placeholder-count="3">
+          <a href="{{ g.href }}" style="text-decoration:none;color:#1E1E1E;border-radius:20px;box-shadow:inset 0 0 0 1px #DCDCDC;padding:20px;display:flex;align-items:center;gap:16px">
+            <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconL" name="{{ g.icon }}" hint-size="45px,45px"></x-import>
+            <span style="display:flex;flex-direction:column;gap:4px">
+              <span style="font-family:var(--font-display);font-weight:700;font-size:28px;line-height:1;color:#E80F71">{{ g.big }}</span>
+              <span style="font-size:15px;line-height:1.3">{{ g.small }}</span>
+            </span>
+          </a>
+        </sc-for>
+      </div>
+
+      <div style="display:flex;flex-wrap:wrap;gap:clamp(24px,3vw,40px);align-items:flex-start">
+        <div id="faq" style="flex:999 1 520px;min-width:0;display:flex;flex-direction:column;gap:20px">
+          <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(30px,4vw,52px);line-height:.94">Вопросы и&nbsp;ответы</h2>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <sc-for list="{{ faq }}" as="q" hint-placeholder-count="6">
+              <div style="border-radius:20px;background:#fff;box-shadow:inset 0 0 0 1px {{ q.ring }}">
+                <button type="button" aria-expanded="{{ q.exp }}" onClick="{{ q.toggle }}" style="width:100%;border:none;background:none;cursor:pointer;display:flex;align-items:center;gap:12px;padding:16px 20px;text-align:left;font:inherit;color:inherit">
+                  <span style="flex:1;font-family:var(--font-ui);font-weight:700;font-size:17px;line-height:22px">{{ q.q&nbsp;}}</span>
+                  <span style="font-family:var(--font-ui);font-weight:700;font-size:22px;line-height:1;color:#E80F71;width:16px;text-align:center">{{ q.sign }}</span>
+                </button>
+                <span style="display:grid;grid-template-rows:{{ q.rows }};transition:grid-template-rows .3s ease">
+                  <span style="overflow:hidden"><span style="display:block;padding:0 20px 18px;font-size:16px;line-height:1.36;color:#5F5F5F;text-wrap:pretty">{{ q.a&nbsp;}}</span></span>
+                </span>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+        <div style="flex:1 1 320px;min-width:0;background:#222;color:#fff;border-radius:20px;padding:clamp(24px,3vw,36px);display:flex;flex-direction:column;gap:22px">
+          <h3 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(24px,2.4vw,32px);line-height:1.06">Доставка</h3>
+          <sc-for list="{{ delivery }}" as="dv" hint-placeholder-count="3">
+            <div style="display:flex;gap:14px;align-items:flex-start">
+              <x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconMobM" name="{{ dv.icon }}" hint-size="35px,35px"></x-import>
+              <span style="display:flex;flex-direction:column;gap:4px">
+                <span style="font-family:var(--font-ui);font-weight:700;font-size:16px;line-height:20px">{{ dv.t&nbsp;}}</span>
+                <span style="font-size:15px;line-height:1.36;color:rgba(255,255,255,.8)">{{ dv.d&nbsp;}}</span>
+              </span>
+            </div>
+          </sc-for>
+          <a href="https://superpet.ru/" style="margin-top:4px;text-decoration:none;display:flex;align-items:center;justify-content:center;height:48px;border-radius:8px;box-shadow:inset 0 0 0 1px #fff;color:#fff;font-family:var(--font-ui);font-weight:700;font-size:16px">Условия доставки</a>
+        </div>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:20px">
+        <h2 style="margin:0;font-family:var(--font-display);font-weight:700;font-size:clamp(28px,3.4vw,44px);line-height:.98">Попробуйте также</h2>
+        <div style="display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:{{ sl.px }};scrollbar-width:none;gap:16px;margin:0 {{ sl.mx }};padding:2px {{ sl.px }}">
+          <sc-for list="{{ cross }}" as="cr" hint-placeholder-count="4">
+            <div style="flex:1 0 {{ crossW }};scroll-snap-align:start;min-width:0;border-radius:20px;box-shadow:inset 0 0 0 1px #DCDCDC;padding:14px 14px 18px;display:flex;flex-direction:column;gap:12px">
+              <div style="aspect-ratio:1/1;border-radius:14px;background:#fff;overflow:hidden">
+                <img src="{{ cr.img }}" alt="{{ cr.name }}" style="display:block;width:100%;height:100%;object-fit:cover">
+              </div>
+              <div style="display:flex;align-items:center;gap:4px;font-size:13px;color:#5F5F5F"><x-import component-from-global-scope="SUPERPETDesignSystem_96891f.IconMobXS" name="star" hint-size="20px,20px"></x-import>{{ cr.rate }}</div>
+              <div style="font-family:var(--font-ui);font-weight:700;font-size:16px;line-height:20px;min-height:40px">{{ cr.name }}</div>
+              <div style="margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:8px">
+                <span style="font-family:var(--font-display);font-weight:700;font-size:22px;line-height:1">{{ cr.price }}</span>
+                <button type="button" onClick="{{ cr.add }}" style="border:none;cursor:pointer;height:40px;padding:0 16px;border-radius:8px;background:{{ cr.bg }};color:#fff;font-family:var(--font-ui);font-weight:700;font-size:15px">{{ cr.btn }}</button>
+              </div>
+            </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;sliderHint&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Анимация&quot;},&quot;animateOnScroll&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Анимация&quot;},&quot;fillStyle&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;по кругу&quot;,&quot;снизу&quot;],&quot;default&quot;:&quot;по кругу&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Переход за 4 дня&quot;}}">
+const __A = {"assets/line-wild.png": "assets/963c7cc78933.png", "assets/line-easy.png": "assets/a33fc6cea692.png", "assets/line-air.png": "assets/ad906f229e41.png", "assets/c-wild-pieces-2.jpg": "assets/9927e9d94e33.jpg", "assets/c-wild-mince-2.jpg": "assets/b118fff4b274.jpg", "assets/c-wild-knf-2.jpg": "assets/b1a96c35c672.jpg", "assets/c-easy-pate-2.jpg": "assets/2125fcf09877.jpg", "assets/c-easy-jelly-2.jpg": "assets/6c473223ece3.jpg", "assets/c-air-2.jpg": "assets/212dcf1cbe81.jpg", "assets/cross/toy.jpg": "assets/7521d9b4b1df.jpg", "assets/cross/udochka.jpg": "assets/46690a7e9018.jpg", "assets/cross/litter20.jpg": "assets/34863f754a18.jpg", "assets/cross/shrimp.jpg": "assets/e1044e49d4db.jpg", "assets/bowl-dry.jpg": "assets/7984b48c4962.jpg", "assets/bowl-sp.jpg": "assets/0f787da3ed0a.jpg", "assets/pet-1.svg": "assets/f44f9bcb8972.svg", "assets/pet-2.svg": "assets/c8affe1d3f54.svg", "assets/gal-1.jpg": "assets/9035130dafa2.jpg", "assets/gal-2.jpg": "assets/e6a2b57294f5.jpg", "assets/gal-3.jpg": "assets/1d180ba3e84c.jpg", "assets/gal-4.jpg": "assets/29899bbf1805.jpg", "assets/gal-5.jpg": "assets/3def62dbe66b.jpg", "assets/gal-6.jpg": "assets/f38d4f4c3c99.jpg", "assets/gal-7.jpg": "assets/9e845da203d6.jpg", "assets/gal-8.jpg": "assets/b0d678e76684.jpg", "assets/b95-1.jpg": "assets/a5691516a3bd.jpg", "assets/b95-2.jpg": "assets/11c623e66bef.jpg", "assets/b95-3.jpg": "assets/dc3e530c5aa7.jpg", "assets/b95-4.jpg": "assets/2e43e6949873.jpg", "assets/b95-5.jpg": "assets/f3075cc5028e.jpg", "assets/b95-6.jpg": "assets/28fd068b9d63.jpg", "assets/b95-7.jpg": "assets/e0a039bd791b.jpg", "assets/b95-8.jpg": "assets/d485f19fbd07.jpg", "assets/meat-1.png": "assets/f7b22cea6837.png", "assets/meat-2.png": "assets/85a1bb0ee8ea.png", "assets/meat-3.png": "assets/2660d3202d94.png", "assets/meat-4.png": "assets/cab7354f53f3.png", "assets/meat-5.png": "assets/4a69c55c2faf.png", "assets/gal/cat-beef-farsh-1.jpg": "assets/e18d2bfc0576.jpg", "assets/gal/cat-beef-farsh-2.jpg": "assets/e05480589491.jpg", "assets/gal/cat-beef-kus-1.jpg": "assets/6c463fdefd67.jpg", "assets/gal/cat-beef-kus-2.jpg": "assets/8b9dfc08e0fa.jpg", "assets/gal/cat-chicken-farsh-1.jpg": "assets/693072805d86.jpg", "assets/gal/cat-chicken-farsh-2.jpg": "assets/b367b519b6d3.jpg", "assets/gal/cat-chicken-knf-1.jpg": "assets/f3cfdf01ef46.jpg", "assets/gal/cat-chicken-knf-2.jpg": "assets/be708eae7581.jpg", "assets/gal/cat-chicken-kus-1.jpg": "assets/6cd3b20df5dc.jpg", "assets/gal/cat-chicken-kus-2.jpg": "assets/a06fc01ef0de.jpg", "assets/gal/cat-duck-farsh-1.jpg": "assets/a76c614059c7.jpg", "assets/gal/cat-duck-farsh-2.jpg": "assets/aace4311f9e4.jpg", "assets/gal/cat-duckturkey-knf-1.jpg": "assets/9e132838accd.jpg", "assets/gal/cat-duckturkey-knf-2.jpg": "assets/f4503b652ed2.jpg", "assets/gal/cat-rabbit-farsh-1.jpg": "assets/76f3bcbfd541.jpg", "assets/gal/cat-rabbit-farsh-2.jpg": "assets/f30e7cf6ee41.jpg", "assets/gal/cat-rabbitturkey-knf-1.jpg": "assets/5b9ef3f76099.jpg", "assets/gal/cat-rabbitturkey-knf-2.jpg": "assets/7b25782ae5ea.jpg", "assets/gal/cat-turkey-farsh-1.jpg": "assets/70f64b196a8a.jpg", "assets/gal/cat-turkey-farsh-2.jpg": "assets/e91e9b7b13c3.jpg", "assets/gal/cat-turkey-knf-1.jpg": "assets/dd196769369c.jpg", "assets/gal/cat-turkey-knf-2.jpg": "assets/1ef5b8721787.jpg", "assets/gal/cat-turkey-kus-1.jpg": "assets/980f8f83657b.jpg", "assets/gal/cat-turkey-kus-2.jpg": "assets/4ce63365406b.jpg", "assets/gal/dog-3.jpg": "assets/901509bd5c14.jpg", "assets/gal/dog-4.jpg": "assets/d7544725aceb.jpg", "assets/gal/dog-5.jpg": "assets/ee1ad93c787b.jpg", "assets/gal/dog-6.jpg": "assets/2d2112d1fcf3.jpg", "assets/gal/dog-7.jpg": "assets/0fac5ff41240.jpg", "assets/gal/dog-8.jpg": "assets/b41001eaedd9.jpg", "assets/gal/dog-beef-knf-1.jpg": "assets/0e84984b9224.jpg", "assets/gal/dog-beef-knf-2.jpg": "assets/454a413af477.jpg", "assets/gal/dog-chicken-knf-1.jpg": "assets/3381c7e0d0dd.jpg", "assets/gal/dog-chicken-knf-2.jpg": "assets/8c75690d627d.jpg", "assets/gal/dog-duckturkey-knf-1.jpg": "assets/ee0bc2fa919d.jpg", "assets/gal/dog-duckturkey-knf-2.jpg": "assets/900d9bba926f.jpg", "assets/gal/dog-rabbitturkey-knf-1.jpg": "assets/e8cf1870c8d1.jpg", "assets/gal/dog-rabbitturkey-knf-2.jpg": "assets/687b2550b66d.jpg", "assets/gal/dog-turkey-knf-1.jpg": "assets/b3a9a24c0f3f.jpg", "assets/gal/dog-turkey-knf-2.jpg": "assets/31de06038a15.jpg", "assets/gal/x-gorbusha-farsh-1.jpg": "assets/9cbb5271edad.jpg", "assets/gal/x-gorbusha-farsh-2.jpg": "assets/b3fee36a9daf.jpg"};
+const __a = (p) => __A[p] || p;
+
+class Component extends DCLogic {
+  state = { shown2: 0, shown1: 0, pos: 50, open: -1 };
+  b0Ref = React.createRef(); stageRef = React.createRef(); gaugeRef = React.createRef(); t95Ref = React.createRef(); d95Ref = React.createRef(); d3Ref = React.createRef(); d3Count = React.createRef(); d3Bar = React.createRef(); d3Els = []; d95Count = React.createRef(); d95Bar = React.createRef(); d95Els = []; s95Ref = React.createRef(); vetRef = React.createRef();
+  b1Ref = React.createRef(); b2Ref = React.createRef(); b6Ref = React.createRef();
+  numRef = React.createRef(); tempRef = React.createRef();
+  pA = React.createRef(); pB = React.createRef(); pC = React.createRef(); img2 = React.createRef(); img3 = React.createRef(); stackRef = React.createRef(); hintRef = React.createRef(); h2Ref = React.createRef(); stickyRef = React.createRef();
+  barEls = []; noEls = []; yesEls = []; snowEls = [];
+  SNOW = [[22, 26, 44, 18, 40], [80, 18, 34, -10, -50], [14, 52, 30, 24, 70], [86, 46, 48, 14, -30], [34, 10, 26, 30, 90], [68, 64, 30, -16, 60], [20, 74, 38, 10, -80], [62, 6, 24, 22, 45], [50, 40, 22, -20, -60], [78, 82, 26, 12, 50]];
+  NO = [['Горох и соя', 22, 22, -38], ['Мука из мяса', 79, 16, 44], ['Изолят белка', 16, 40, -60], ['Злаки и крупы', 84, 36, 30], ['Пшеница', 22, 58, 52], ['Кукуруза', 78, 56, -24]];
+  YES = [['Свежее мясо', 21, 18], ['Овощи и ягоды', 80, 24], ['Субпродукты', 17, 40], ['Костная составляющая', 81, 46], ['Масло лосося', 23, 62]];
+  dayRefs = [0,1,2,3].map(() => React.createRef());
+  timers = [];
+
+  // ===== Данные для блоков 4–13 =====
+  // Составы: документ «СОСТАВЫ. ЛИНЕЙКИ ПИТАНИЯ WILD EASY» (на проверке).
+  RECIPES = {"chicken":{"comp":"88% свежая курица (грудка, шея, желудок, сердце, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 2% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"120","protein":"19","fat":"4,5","carb":"1","fiber":"0,5","ash":"2","moist":"72","ca":"0,25","p":"0,19","caP":"1,3:1","tables":[["Минералы",[["Железо (Fe)","4,40","мг"],["Медь (Cu)","0,29","мг"],["Натрий","93,27","мг"],["Хлориды","98,96","мг"],["Магний","34,50","мг"],["Цинк (Zn)","5,18","мг"],["Марганец (Mn)","0,47","мг"],["Селен (Se)","16,51","мкг"],["Йод (I)","93,40","мкг"],["Калий","233,29","мг"],["Кальций","258,96","мг"],["Фосфор","193,28","мг"]]],["Витамины",[["Витамин А (ретинол)","612,0","МЕ"],["Витамин D3 (холекальциферол)","20,0","МЕ"],["Витамин Е (альфа-токоферол)","5,0","МЕ"],["Витамин В1 (тиамин)","0,70","мг"],["Витамин В2 (рибофлавин)","0,77","мг"],["Витамин В3 (ниацин)","6,98","мг"],["Витамин В4 (холин)","112,99","мг"],["Витамин В5 (пантотеновая кислота)","1,66","мг"],["Витамин В6 (пиридоксин)","0,53","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","98,17","мкг"],["Витамин В12 (цианокобаламин)","2,56","мкг"],["Витамин C","2,50","мг"]]],["Жирные кислоты",[["Линолевая кислота","1239,87","мг"],["Альфа-линоленовая кислота","66,87","мг"],["Арахидоновая кислота","7,27","мг"],["Эйкозапентаеновая кислота","34,08","мг"]]],["Незаменимые аминокислоты",[["Докозагексаеновая кислота","22,02","мг"],["Таурин","99,60","мг"],["Аргинин","1434,66","мг"],["Гистидин","749,76","мг"],["Изолейцин","858,25","мг"],["Лейцин","1692,43","мг"],["Лизин","1903,60","мг"],["Метионин","469,08","мг"],["Фенилаланин","885,92","мг"],["Треонин","934,38","мг"],["Триптофан","282,47","мг"],["Валин","1015,58","мг"]]]]},"chicken_k":{"comp":"87,9% свежая курица (грудка, сердце, желудок, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 2,1% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"125,2","protein":"18,6","fat":"5,2","carb":"1","fiber":"0,5","ash":"2,1","moist":"73,5","ca":"0,3","p":"0,22","caP":"1,3:1","tables":[["Минералы",[["Железо (Fe)","4,60","мг"],["Медь (Cu)","0,58","мг"],["Цинк (Zn)","4,81","мг"],["Марганец (Mn)","0,56","мг"],["Селен (Se)","26,86","мкг"],["Йод (I)","172,50","мкг"],["Калий","242,83","мг"],["Натрий","141,35","мг"],["Хлориды","160,50","мг"],["Магний","38,06","мг"],["Кальций","318,70","мг"],["Фосфор","224,27","мг"]]],["Витамины",[["Витамин А (ретинол)","1183,72","МЕ"],["Витамин D3 (холекальциферол)","35,70","МЕ"],["Витамин Е (альфа-токоферол)","5,18","МЕ"],["Витамин В1 (тиамин)","0,70","мг"],["Витамин В2 (рибофлавин)","0,74","мг"],["Витамин В3 (ниацин)","7,03","мг"],["Витамин В4 (холин)","112,80","мг"],["Витамин В5 (пантотеновая кислота)","1,62","мг"],["Витамин В6 (пиридоксин)","0,53","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","96,08","мкг"],["Витамин В12 (цианокобаламин)","3,29","мкг"],["Витамин C","2,21","мг"]]],["Жирные кислоты",[["Линолевая кислота","1249,43","мг"],["Альфа-линоленовая кислота","67,36","мг"],["Арахидоновая кислота","7,32","мг"],["Эйкозапентаеновая кислота","34,08","мг"],["Докозагексаеновая кислота","22,02","мг"]]],["Незаменимые аминокислоты",[["Таурин","100,0","мг"],["Аргинин","1503,61","мг"],["Гистидин","874,51","мг"],["Изолейцин","907,45","мг"],["Лейцин","1721,29","мг"],["Лизин","2021,90","мг"],["Метионин","446,81","мг"],["Цистеин","314,22","мг"],["Фенилаланин","908,47","мг"],["Тирозин","745,79","мг"],["Треонин","941,91","мг"],["Триптофан","289,94","мг"],["Валин","1060,16","мг"]]]]},"turkey":{"comp":"89% свежая индейка (грудка, желудок, сердце, шея, печень); 9% овощи и ягоды: морковь, тыква, клюква, черника; 2% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"124","protein":"20","fat":"4","carb":"1","fiber":"0,5","ash":"2","moist":"71","ca":"0,29","p":"0,26","caP":"1,1:1","tables":[["Минералы",[["Железо (Fe)","4,61","мг"],["Медь (Cu)","0,35","мг"],["Натрий","106,14","мг"],["Хлориды","108,96","мг"],["Магний","33,53","мг"],["Цинк (Zn)","5,31","мг"],["Марганец (Mn)","0,47","мг"],["Селен (Se)","16,55","мкг"],["Йод (I)","93,40","мкг"],["Калий","219,15","мг"],["Кальций","292,29","мг"],["Фосфор","261,73","мг"]]],["Витамины",[["Витамин А (ретинол)","890,29","МЕ"],["Витамин D3 (холекальциферол)","25,50","МЕ"],["Витамин Е (альфа-токоферол)","5,93","МЕ"],["Витамин В1 (тиамин)","0,70","мг"],["Витамин В2 (рибофлавин)","0,77","мг"],["Витамин В3 (ниацин)","6,98","мг"],["Витамин В4 (холин)","107,10","мг"],["Витамин В5 (пантотеновая кислота)","1,66","мг"],["Витамин В6 (пиридоксин)","0,53","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","98,11","мкг"],["Витамин В12 (цианокобаламин)","2,56","мкг"],["Витамин C","2,50","мг"]]],["Жирные кислоты",[["Линолевая кислота","1239,09","мг"],["Альфа-линоленовая кислота","66,83","мг"],["Арахидоновая кислота","7,26","мг"],["Эйкозапентаеновая кислота","34,08","мг"]]],["Незаменимые аминокислоты",[["Докозагексаеновая кислота","22,02","мг"],["Таурин","79,60","мг"],["Аргинин","1434,66","мг"],["Гистидин","749,76","мг"],["Изолейцин","857,82","мг"],["Лейцин","1691,83","мг"],["Лизин","1903,60","мг"],["Метионин","469,03","мг"],["Фенилаланин","885,62","мг"],["Треонин","933,99","мг"],["Триптофан","282,42","мг"],["Валин","1015,13","мг"]]]]},"turkey_k":{"comp":"87% свежая индейка (грудка, филе бедра, желудок, сердце, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 3% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"120","protein":"18,6","fat":"4,8","carb":"0,6","fiber":"0,5","ash":"2","moist":"73,5","ca":"0,3","p":"0,22","caP":"1,3:1","tables":[["Минералы",[["Железо (Fe)","4,25","мг"],["Медь (Cu)","0,39","мг"],["Цинк (Zn)","5,01","мг"],["Марганец (Mn)","0,46","мг"],["Селен (Se)","25,68","мкг"],["Йод (I)","122,50","мкг"],["Калий","221,25","мг"],["Натрий","160,83","мг"],["Хлориды","160,50","мг"],["Магний","27,20","мг"],["Кальций","319,48","мг"],["Фосфор","224,73","мг"]]],["Витамины",[["Витамин А (ретинол)","1100,70","МЕ"],["Витамин D3 (холекальциферол)","35,70","МЕ"],["Витамин Е (альфа-токоферол)","4,93","МЕ"],["Витамин В1 (тиамин)","0,70","МЕ"],["Витамин В2 (рибофлавин)","0,74","мг"],["Витамин В3 (ниацин)","7,03","мг"],["Витамин В4 (холин)","107,97","мг"],["Витамин В5 (пантотеновая кислота)","1,62","мг"],["Витамин В6 (пиридоксин)","0,53","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","96,08","мкг"],["Витамин В12 (цианокобаламин)","3,29","мкг"]]],["Жирные кислоты",[["Линолевая кислота","960,22","мг"],["Альфа-линоленовая кислота","37,35","мг"],["Арахидоновая кислота","88,01","мг"],["Эйкозапентаеновая кислота","90,08","мг"],["Докозагексаеновая кислота","13,02","мг"]]],["Незаменимые аминокислоты",[["Таурин","100,0","мг"],["Аргинин","1503,32","мг"],["Гистидин","874,39","мг"],["Изолейцин","907,33","мг"],["Лейцин","1720,95","мг"],["Лизин","2021,50","мг"],["Метионин","446,67","мг"],["Цистеин","314,16","мг"],["Фенилаланин","908,29","мг"],["Тирозин","745,62","мг"],["Треонин","941,75","мг"],["Триптофан","289,88","мг"],["Валин","1060,01","мг"]]]]},"beef":{"comp":"60% свежая говядина (мышечное мясо, сердце, печень); 27,5% свежая шея индейки; 10% овощи и ягоды: морковь, тыква, клюква, черника; 2,5% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"125","protein":"19","fat":"5","carb":"1","fiber":"0,5","ash":"1,5","moist":"73","ca":"0,27","p":"0,22","caP":"1,2:1","tables":[["Минералы",[["Железо (Fe)","4,84","мг"],["Медь (Cu)","0,30","мг"],["Натрий","80,93","мг"],["Хлориды","79,15","мг"],["Магний","38,93","мг"],["Цинк (Zn)","5,41","мг"],["Марганец (Mn)","0,46","мг"],["Селен (Se)","18,09","мкг"],["Йод (I)","93,82","мкг"],["Калий","262,4","мг"],["Кальций","270,6","мг"],["Фосфор","220,51","мг"]]],["Витамины",[["Витамин А (ретинол)","843,25","МЕ"],["Витамин D3 (холекальциферол)","27,00","МЕ"],["Витамин Е (альфа-токоферол)","6,06","МЕ"],["Витамин В1 (тиамин)","0,93","мг"],["Витамин В2 (рибофлавин)","0,98","мг"],["Витамин В3 (ниацин)","5,67","мг"],["Витамин В4 (холин)","124,34","мг"],["Витамин В5 (пантотеновая кислота)","1,94","мг"],["Витамин В6 (пиридоксин)","0,49","мг"],["Витамин В7 (биотин)","0,02","мг"],["Витамин В9 (фолиевая кислота)","77,83","мкг"],["Витамин В12 (цианокобаламин)","8,35","мкг"],["Витамин C","3,44","мг"]]],["Жирные кислоты",[["Линолевая кислота","883,69","мг"],["Альфа-линоленовая кислота","56,37","мг"],["Арахидоновая кислота","83,92","мг"],["Эйкозапентаеновая кислота","111,77","мг"]]],["Незаменимые аминокислоты",[["Докозагексаеновая кислота","22,02","мг"],["Таурин","99,50","мг"],["Аргинин","1082,70","мг"],["Гистидин","598,78","мг"],["Изолейцин","879,62","мг"],["Лейцин","1581,73","мг"],["Лизин","1649,02","мг"],["Метионин","476,09","мг"],["Фенилаланин","772,97","мг"],["Треонин","863,03","мг"],["Триптофан","237,75","мг"],["Валин","981,56","мг"]]]]},"beef_k":{"comp":"86,9% свежая говядина (мышечное мясо, сердце, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 3,1% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"128","protein":"17,5","fat":"6","carb":"1","fiber":"0,5","ash":"2,2","moist":"72,8","ca":"0,3","p":"0,25","caP":"1,2:1","tables":[["Минералы",[["Железо (Fe)","4,15","мг"],["Медь (Cu)","0,38","мг"],["Цинк (Zn)","4,72","мг"],["Марганец (Mn)","0,65","мг"],["Селен (Se)","21,53","мкг"],["Йод (I)","93,92","мкг"],["Калий","289,58","мг"],["Натрий","157,68","мг"],["Хлориды","162,40","мг"],["Магний","34,00","мг"],["Кальций","332,69","мг"],["Фосфор","259,46","мг"]]],["Витамины",[["Витамин А (ретинол)","1049,63","МЕ"],["Витамин D3 (холекальциферол)","35,00","МЕ"],["Витамин Е (альфа-токоферол)","9,87","МЕ"],["Витамин В2 (рибофлавин)","0,91","мг"],["Витамин В3 (ниацин)","4,53","мг"],["Витамин В4 (холин)","123,14","мг"],["Витамин В5 (пантотеновая кислота)","1,52","мг"],["Витамин В6 (пиридоксин)","0,41","мг"],["Витамин В7 (биотин)","0,02","мг"],["Витамин В9 (фолиевая кислота)","78,68","мкг"],["Витамин В12 (цианокобаламин)","7,93","мкг"],["Витамин C","2,94","мг"]]],["Жирные кислоты",[["Линолевая кислота","760,51","мг"],["Альфа-линоленовая кислота","54,34","мг"],["Арахидоновая кислота","103,28","мг"],["Эйкозапентаеновая кислота","34,08","мг"],["Докозагексаеновая кислота","22,02","мг"]]],["Незаменимые аминокислоты",[["Таурин","100,0","мг"],["Аргинин","1244,94","мг"],["Гистидин","702,48","мг"],["Изолейцин","969,42","мг"],["Лейцин","1741,83","мг"],["Лизин","1843,58","мг"],["Метионин","533,94","мг"],["Цистеин","256,51","мг"],["Фенилаланин","831,14","мг"],["Тирозин","714,40","мг"],["Треонин","926,72","мг"],["Триптофан","230,26","мг"],["Валин","1048,13","мг"]]]]},"duck_turkey":{"comp":"61% свежая тушка утки (включая сердце, желудок, печень); 25% свежая грудка индейки; 9,5% овощи и ягоды: морковь, тыква, клюква, черника; 4,5% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"145","protein":"17","fat":"8","carb":"1","fiber":"0,5","ash":"1,7","moist":"71,3","ca":"0,24","p":"0,18","caP":"1,3:1","tables":[["Минералы",[["Железо (Fe)","4,51","мг"],["Медь (Cu)","0,29","мг"],["Натрий","156,68","мг"],["Хлориды","142,57","мг"],["Магний","37,48","мг"],["Цинк (Zn)","5,03","мг"],["Марганец (Mn)","0,44","мг"],["Селен (Se)","17,23","мкг"],["Йод (I)","74,70","мкг"],["Калий","257,48","мг"],["Кальций","245,33","мг"],["Фосфор","184,79","мг"]]],["Витамины",[["Витамин А (ретинол)","636,90","МЕ"],["Витамин D3 (холекальциферол)","22,40","МЕ"],["Витамин Е (альфа-токоферол)","6,23","МЕ"],["Витамин В1 (тиамин)","0,88","мг"],["Витамин В2 (рибофлавин)","0,89","мг"],["Витамин В3 (ниацин)","6,46","мг"],["Витамин В4 (холин)","113,94","мг"],["Витамин В5 (пантотеновая кислота)","1,85","мг"],["Витамин В6 (пиридоксин)","0,47","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","102,89","мкг"],["Витамин В12 (цианокобаламин)","1,83","мкг"],["Витамин C","4,44","мг"]]],["Жирные кислоты",[["Линолевая кислота","3484,41","мг"],["Альфа-линоленовая кислота","183,53","мг"],["Арахидоновая кислота","46,98","мг"],["Эйкозапентаеновая кислота","34,08","мг"]]],["Незаменимые аминокислоты",[["Докозагексаеновая кислота","22,02","мг"],["Таурин","79,60","мг"],["Аргинин","1325,75","мг"],["Гистидин","594,65","мг"],["Изолейцин","813,79","мг"],["Лейцин","1521,06","мг"],["Лизин","1691,61","мг"],["Метионин","400,04","мг"],["Фенилаланин","767,93","мг"],["Треонин","841,14","мг"],["Триптофан","230,94","мг"],["Валин","944,56","мг"]]]]},"duck":{"comp":"87,5% свежая тушка утки (включая сердце, желудок, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 2,5% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"133","protein":"18","fat":"6","carb":"1,5","fiber":"0,5","ash":"1","moist":"73","ca":"0,24","p":"0,2","caP":"1,2:1","tables":[["Минералы",[["Железо (Fe)","4,72","мг"],["Медь (Cu)","0,28","мг"],["Цинк (Zn)","4,97","мг"],["Марганец (Mn)","0,46","мг"],["Селен (Se)","16,05","мкг"],["Йод (I)","85,51","мкг"],["Калий","279,55","мг"],["Натрий","108,93","мг"],["Хлориды","103,00","мг"],["Магний","43,14","мг"],["Кальций","241,76","мг"],["Фосфор","204,57","мг"]]],["Витамины",[["Витамин А (ретинол)","255,53","МЕ"],["Витамин D3 (холекальциферол)","22,99","МЕ"],["Витамин Е (альфа-токоферол)","5,92","МЕ"],["Витамин В1 (тиамин)","1,02","мг"],["Витамин В2 (рибофлавин)","0,97","мг"],["Витамин В3 (ниацин)","5,35","мг"],["Витамин В4 (холин)","122,12","мг"],["Витамин В5 (пантотеновая кислота)","1,78","мг"],["Витамин В6 (пиридоксин)","0,32","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","105,45","мкг"],["Витамин В12 (цианокобаламин)","1,20","мкг"]]],["Жирные кислоты",[["Витамин C","6,24","мг"],["Линолевая кислота","5183,82","мг"],["Альфа-линоленовая кислота","271,71","мг"],["Арахидоновая кислота","74,48","мг"],["Эйкозапентаеновая кислота","34,08","мг"],["Докозагексаеновая кислота","22,02","мг"]]],["Незаменимые аминокислоты",[["Таурин","99,50","мг"],["Аргинин","1089,96","мг"],["Гистидин","291,05","мг"],["Изолейцин","645,34","мг"],["Лейцин","1248,34","мг"],["Лизин","1285,15","мг"],["Метионин","360,59","мг"],["Фенилаланин","600,08","мг"],["Треонин","686,75","мг"],["Триптофан","164,55","мг"],["Валин","754,87","мг"]]]]},"rabbit_turkey":{"comp":"49% свежая тушка кролика (включая сердце, желудок, печень); 40% свежая грудка индейки; 7,5% овощи и ягоды: морковь, тыква, клюква, черника; 3,5% функциональные добавки: масло лосося — источник Омега-3, оливковое и подсолнечное масло — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"125","protein":"19","fat":"5","carb":"1","fiber":"0,5","ash":"2","moist":"72,5","ca":"0,21","p":"0,17","caP":"1,2:1","tables":[["Минералы",[["Железо (Fe)","4,64","мг"],["Медь (Cu)","0,39","мг"],["Цинк (Zn)","5,01","мг"],["Марганец (Mn)","0,47","мг"],["Селен (Se)","14,6","мкг"],["Йод (I)","83,40","мкг"],["Калий","220,29","мг"],["Натрий","100,27","мг"],["Хлориды","106,48","мг"],["Магний","34,50","мг"],["Кальций","216,46","мг"],["Фосфор","173,18","мг"]]],["Витамины",[["Витамин А (ретинол)","401,0","МЕ"],["Витамин D3 (холекальциферол)","22,0","МЕ"],["Витамин Е (альфа-токоферол)","8,0","МЕ"],["Витамин В1 (тиамин)","0,79","мг"],["Витамин В2 (рибофлавин)","0,82","мг"],["Витамин В3 (ниацин)","6,74","мг"],["Витамин В4 (холин)","112,8","мг"],["Витамин В5 (пантотеновая кислота)","1,7","мг"],["Витамин В6 (пиридоксин)","0,63","мг"],["Витамин В7 (биотин)","0,05","мг"],["Витамин В9 (фолиевая кислота)","98,1","мкг"],["Витамин В12 (цианокобаламин)","2,8","мкг"],["Витамин C","2,50","мг"]]],["Жирные кислоты",[["Линолевая кислота","1890,35","мг"],["Альфа-линоленовая кислота","222,36","мг"],["Арахидоновая кислота","25,01","мг"],["Эйкозапентаеновая кислота","34,08","мг"]]],["Незаменимые аминокислоты",[["Докозагексаеновая кислота","22,02","мг"],["Таурин","79,60","мг"],["Аргинин","1532,77","мг"],["Гистидин","796,17","мг"],["Изолейцин","936,22","мг"],["Лейцин","1790,34","мг"],["Лизин","2199,15","мг"],["Метионин","476,49","мг"],["Фенилаланин","724,59","мг"],["Треонин","963,35","мг"],["Триптофан","323,12","мг"],["Валин","1118,36","мг"]]]]},"rabbit":{"comp":"87,5% свежая тушка кролика (включая сердце, желудок, печень); 10% овощи и ягоды: морковь, тыква, клюква, черника; 2,5% функциональные добавки: масло лосося — источник Омега-3, масло оливковое и подсолнечное — источники Омега-6, ламинария, таурин, витамины и минеральные вещества, включая микроэлементы в хелатной форме.","kcal":"133","protein":"16","fat":"7","carb":"1,4","fiber":"2","ash":"3,6","moist":"70","ca":"0,28","p":"0,22","caP":"1,3:1","tables":[["Минералы",[["Железо (Fe)","4,27","мг"],["Медь (Cu)","0,378","мг"],["Цинк (Zn)","4,69","мг"],["Марганец (Mn)","0,43","мг"],["Селен (Se)","17,61","мкг"],["Йод (I)","77,15","мкг"],["Калий","257,48","мг"],["Натрий","156,68","мг"],["Хлориды","142,57","мг"],["Магний","37,48","мг"],["Кальций","280,94","мг"],["Фосфор","220,37","мг"]]],["Витамины",[["Витамин А (ретинол)","440,0","МЕ"],["Витамин D3 (холекальциферол)","20,50","МЕ"],["Витамин Е (альфа-токоферол)","5,28","МЕ"],["Витамин В1 (тиамин)","0,73","мг"],["Витамин В2 (рибофлавин)","0,66","мг"],["Витамин В3 (ниацин)","6,26","мг"],["Витамин В4 (холин)","138,96","мг"],["Витамин В5 (пантотеновая кислота)","1,06","мг"],["Витамин В6 (пиридоксин)","0,49","мг"],["Витамин В7 (биотин)","0,01","мг"],["Витамин В9 (фолиевая кислота)","86,70","мкг"],["Витамин В12 (цианокобаламин)","4,83","мкг"]]],["Жирные кислоты",[["Витамин C","1,68","мг"],["Линолевая кислота","2555,34","мг"],["Альфа-линоленовая кислота","340,88","мг"],["Арахидоновая кислота","38,39","мг"],["Эйкозапентаеновая кислота","34,08","мг"],["Докозагексаеновая кислота","22,02","мг"]]],["Незаменимые аминокислоты",[["Таурин","79,60","мг"],["Аргинин","1422,04","мг"],["Гистидин","611,38","мг"],["Изолейцин","840,62","мг"],["Лейцин","1684,85","мг"],["Лизин","2113,04","мг"],["Метионин","486,70","мг"],["Фенилаланин","515,60","мг"],["Треонин","882,73","мг"],["Триптофан","315,77","мг"],["Валин","1035,41","мг"]]]]}};
+  TAGS = { chicken: ['Монобелковый'], chicken_k: ['Монобелковый'], turkey: ['Монобелковый', 'Гипоаллергенный', 'Для чувствительного пищеварения'], turkey_k: ['Монобелковый', 'Гипоаллергенный', 'Для чувствительного пищеварения'], beef: [], beef_k: ['Монобелковый'], duck_turkey: ['Гипоаллергенный'], duck: ['Монобелковый', 'Гипоаллергенный'], rabbit_turkey: ['Гипоаллергенный', 'Для чувствительного пищеварения'], rabbit: ['Монобелковый', 'Гипоаллергенный', 'Для чувствительного пищеварения'] };
+  // Линейки. unitW/kcal/price для EASY и AIR — допущения, заменить реальными.
+  LINES = [
+    { id: 'wild', name: 'WILD', sub: 'замороженное', color: '#DDEBF8', img: 'assets/963c7cc78933.png', cons: 'замороженного', unitW: 100, kcal: 125, price: 159, unit: ['пакетик', 'пакетика', 'пакетиков'],
+      flavors: [['Курица', 'chicken'], ['Курица кусочки', 'chicken_k'], ['Индейка', 'turkey'], ['Индейка кусочки', 'turkey_k'], ['Говядина', 'beef'], ['Говядина кусочки', 'beef_k'], ['Кролик+индейка', 'rabbit_turkey'], ['Кролик', 'rabbit'], ['Утка+индейка', 'duck_turkey'], ['Утка', 'duck']],
+      consItems: [
+        ['Кусочки', 'assets/9927e9d94e33.jpg', 'Для тех, кто любит жевать. Крупные кусочки мяса — как настоящая добыча.'],
+        ['Фарш', 'assets/b118fff4b274.jpg', 'Самая нежная текстура. Подойдёт котятам, пожилым питомцам и тем, кому трудно жевать.'],
+        ['Кусочки в фарше', 'assets/b1a96c35c672.jpg', 'Золотая середина: кусочки в нежном фарше. Удобно переходить с привычного корма.']
+      ] },
+    { id: 'easy', name: 'EASY', sub: 'консервированное', color: '#E4F1D3', img: 'assets/a33fc6cea692.png', cons: 'консервированного', unitW: 100, kcal: 125, price: 149, unit: ['пакетик', 'пакетика', 'пакетиков'],
+      flavors: [['Курица паштет', 'chicken'], ['Курица в желе', 'chicken_k'], ['Индейка паштет', 'turkey'], ['Индейка в желе', 'turkey_k'], ['Говядина паштет', 'beef'], ['Говядина в желе', 'beef_k'], ['Кролик паштет', 'rabbit'], ['Утка паштет', 'duck']],
+      consItems: [
+        ['Паштет', 'assets/2125fcf09877.jpg', 'Однородная мягкая текстура. Подойдёт котятам, пожилым питомцам и привередам.'],
+        ['Кусочки в желе', 'assets/6c473223ece3.jpg', 'Сочные кусочки мяса в желе — для тех, кто привык к паучам из магазина.']
+      ] },
+    { id: 'air', name: 'AIR', sub: 'дегидрированное', color: '#FBF2CC', img: 'assets/ad906f229e41.png', cons: 'дегидрированного', unitW: 300, kcal: 400, price: 1399, unit: ['пакет', 'пакета', 'пакетов'],
+      flavors: [['Индейка', 'turkey'], ['Курица', 'chicken'], ['Микс: говядина, индейка, рыба', 'beef']],
+      note: 'Пример на данных WILD — составы AIR на проверке.',
+      consItems: [
+        ['Сухие кусочки', 'assets/212dcf1cbe81.jpg', 'Лёгкие кусочки без заморозки: удобно в поездке и как дополнение к основному рациону.']
+      ] }
+  ];
+  REVIEWS = { avg: '4,9', count: 1036, dist: [['5 звёзд', 89], ['4 звезды', 10], ['3 звезды', 0], ['2 звезды', 0], ['1 звезда', 0]],
+    items: [
+      ['Юлия', '24.10.2026', 'Кот очень доволен питанием! Любит говядину и курицу. Всегда берём ему любимые вкусы.'],
+      ['Ольга Васильева', '22.10.2026', 'У собаки Йорика нет нарушения пищеварения, не болит животик, на свои 2700 съедает 1 пакетик в день, больше всего любит утку.'],
+      ['Юлия', '16.10.2026', 'Корм хороший. Моему котейке очень нравится говядина кусочки. При весе 5 кг ест 1,5 пакетика в день (завтрак, обед и ужин). Шерсть теперь блестит, пузико упитанное, кот счастлив!'],
+      ['Ирина', '16.10.2026', 'Постоянно заказываю именно замороженное питание, мой кот в восторге, мордочку свою не воротит, всё съедает.'],
+      ['Ольга', '16.10.2026', 'Добрый день! Моему котику очень нравится натуральное питание SUPERPET, особенно индейка!'],
+      ['Мария', '17.02.2026', 'Более трёх лет с SUPERPET. Единственный корм, который кошка любит. Шерсть красивая, кошка счастливая. И спокойная.']
+    ] };
+
+  // ===== Блок 1: карточка товара =====
+  // Галерея по выбору: фото 1–2 (пакетик и состав) — свои у каждого продукта, 3–8 — общие для кошек и для собак.
+  // Исходники: Figma «Новый сайт 2025», страница «Питание».
+  PC_SLUG = { 'Говядина': 'beef', 'Курица': 'chicken', 'Индейка': 'turkey', 'Утка+индейка': 'duckturkey', 'Утка': 'duck', 'Кролик+индейка': 'rabbitturkey', 'Кролик': 'rabbit', 'Горбуша': 'gorbusha' };
+  PC_CSLUG = { 'Кусочки': 'kus', 'Кусочки в фарше': 'knf', 'Фарш': 'farsh' };
+  PC_SHARED = [
+    '95% питомцев чувствуют себя лучше на SUPERPET',
+    'Консистенции питания',
+    'Натуральное питание — всего 5 минут в день',
+    'Переход на здоровое питание за 8 дней',
+    'Сырьё только пищевого класса и его поставщики',
+    'SUPERPET — это: опыт, ветдиетологи, «Честный знак», ГОСТ, «Меркурий»'
+  ];
+  galFor(pet, taste, cons) {
+    const a = this.PC_AVAIL[pet];
+    if (!(cons && taste && a[cons] && a[cons].includes(taste))) { cons = 'Кусочки в фарше'; taste = 'Говядина'; }
+    const t = this.PC_SLUG[taste], c = this.PC_CSLUG[cons];
+    const base = t === 'gorbusha' ? 'assets/gal/x-gorbusha-farsh' : (pet === 'cat' && t === 'beef' && c === 'knf') ? null : 'assets/gal/' + pet + '-' + t + '-' + c;
+    const own = base ? [__a(base + '-1.jpg'), __a(base + '-2.jpg')] : [__a('assets/9035130dafa2.jpg'), __a('assets/e6a2b57294f5.jpg')];
+    const shared = [3, 4, 5, 6, 7, 8].map(i => __a(pet === 'cat' ? 'assets/gal-' + i + '.jpg' : 'assets/gal/dog-' + i + '.jpg'));
+    const what = taste.toLowerCase().replace('+', ' и ') + ', ' + cons.toLowerCase();
+    return [[own[0], 'Пакетик SUPERPET: ' + what], [own[1], 'Состав: ' + what]].concat(shared.map((src, i) => [src, this.PC_SHARED[i]]));
+  }
+  PC_TASTES = ['Говядина', 'Горбуша', 'Индейка', 'Кролик', 'Кролик+индейка', 'Курица', 'Утка', 'Утка+индейка'];
+  // Какие вкусы есть в выбранной консистенции (кошки). Горбуша, кролик, утка — только фарш.
+  PC_AVAIL = { cat: { 'Кусочки': ['Говядина', 'Индейка', 'Курица'], 'Кусочки в фарше': ['Говядина', 'Индейка', 'Кролик+индейка', 'Курица', 'Утка+индейка'], 'Фарш': ['Говядина', 'Горбуша', 'Индейка', 'Кролик', 'Курица', 'Утка'] },
+    dog: { 'Кусочки': [], 'Кусочки в фарше': ['Говядина', 'Индейка', 'Кролик+индейка', 'Курица', 'Утка+индейка'], 'Фарш': ['Горбуша'] } };
+  PC_CONS = [['Кусочки', 'кусочки'], ['Кусочки в фарше', 'кусочки и фарш'], ['Фарш', 'фарш']];
+  PC_PRESETS = [1, 5, 10, 20, 50];
+
+  valsCard() {
+    const st = this.state;
+    const pet = st.pcPet || 'cat', taste = st.pcTaste === undefined ? 'Говядина' : st.pcTaste, cons = st.pcCons === undefined ? 'Кусочки в фарше' : st.pcCons;
+    const GAL = this.galFor(pet, taste, cons), n = GAL.length, lb = st.pcLb === undefined ? -1 : st.pcLb;
+    const qty = st.pcQty || 1;
+    const avail = this.PC_AVAIL[pet];
+    const tasteOk = t => !cons || avail[cons].includes(t);
+    const consOk = c => avail[c].length > 0 && (!taste || avail[c].includes(taste));
+    const go = i => this.setState({ pcLb: (i + n) % n });
+    const setQty = q => this.setState({ pcQty: Math.max(1, Math.min(999, q)), pcAdded: false });
+    const consLabel = (this.PC_CONS.find(c => c[0] === cons) || [])[1];
+    const title = 'Натуральный корм для ' + (pet === 'cat' ? 'кошек' : 'собак') + (taste ? ' — ' + taste.toLowerCase().replace('+', ' и ') : '') + (consLabel ? ' (' + consLabel.replace(/ /g, ' ') + ')' : '');
+    return {
+      pcGal: GAL.map(([src, label], i) => ({ src, label: 'Открыть фото ' + (i + 1) + ': ' + label, open: () => go(i),
+        cls: 'pc-g ' + (i === 0 ? 'pc-g1' : i < 4 ? 'pc-g3' : 'pc-g2') + '' })),
+      pcDots: GAL.map(() => ({})),
+      pcLbOpen: lb >= 0, pcLbSrc: lb >= 0 ? GAL[lb][0] : '', pcLbAlt: lb >= 0 ? GAL[lb][1] : '', pcLbCount: lb >= 0 ? (lb + 1) + ' / ' + n : '',
+      pcLbClose: () => this.setState({ pcLb: -1 }), pcLbPrev: () => go(lb - 1), pcLbNext: () => go(lb + 1),
+      pcTitle: title,
+      pcPetName: pet === 'cat' ? 'Кошка' : 'Собака',
+      pcPets: [['cat', 'Кошка'], ['dog', 'Собака']].map(([id, name]) => ({ name, on: String(pet === id), pick: () => {
+        const a = this.PC_AVAIL[id]; const c = a[cons] && a[cons].length ? cons : 'Кусочки в фарше';
+        this.setState({ pcPet: id, pcCons: c, pcTaste: a[c].includes(taste) ? taste : a[c][0], pcAdded: false }); } })),
+      pcTasteName: taste || '—',
+      pcTastes: this.PC_TASTES.map(t => ({ name: t, on: String(t === taste), dis: !tasteOk(t), pick: () => this.setState({ pcTaste: t, pcAdded: false }) })),
+      pcConsName: cons || '—',
+      pcConsList: this.PC_CONS.map(([c]) => ({ name: c, on: String(c === cons), dis: !consOk(c), pick: () => this.setState({ pcCons: c, pcAdded: false }) })),
+      pcReset: () => this.setState({ pcTaste: '', pcCons: '', pcAdded: false }),
+      pcTotal: this.fmt(159 * qty) + ' ₽',
+      pcQty: String(qty),
+      pcType: e => setQty(parseInt(String(e.target.value).replace(/\D/g, ''), 10) || 1),
+      pcInc: () => setQty(qty + 1), pcDec: () => setQty(qty - 1),
+      pcPresets: this.PC_PRESETS.map(q => ({ label: q + ' шт', on: String(q === qty), pick: () => setQty(q) })),
+      pcAdd: () => this.setState({ pcAdded: true }),
+      pcBtn: st.pcAdded ? 'В корзине ✓' : 'В корзину',
+      pcBtnBg: st.pcAdded ? '#00804F' : '#E80F71'
+    };
+  }
+
+  fmt(n, d) { return (d ? n.toFixed(d) : String(Math.round(n))).replace('.', ',').replace(/\B(?=(\d{3})+(?!\d))/g, ' '); }
+  num(s) { return parseFloat(String(s).replace(',', '.')) || 0; }
+  plural(n, f) { const a = Math.abs(n) % 100, b = a % 10; if (!Number.isInteger(n)) return f[1]; if (a > 10 && a < 20) return f[2]; if (b > 1 && b < 5) return f[1]; if (b === 1) return f[0]; return f[2]; }
+  tabs(cur, pick) {
+    return this.LINES.map((l, i) => ({ name: l.name, sub: l.sub, pressed: String(cur === i), pick: () => pick(i),
+      bg: cur === i ? '#E80F71' : '#fff', bg2: cur === i ? '#E80F71' : '#fff', fg: cur === i ? '#fff' : '#1E1E1E', ring: cur === i ? '#E80F71' : '#DCDCDC' }));
+  }
+
+  vals4to13(mob) {
+    const st = this.state;
+    // ---- 4. Состав
+    const l4 = st.s4Line ?? 0, line4 = this.LINES[l4];
+    const f4 = Math.min(st.s4Flavor ?? 4, line4.flavors.length - 1);
+    const key = line4.flavors[f4][1], R = this.RECIPES[key];
+    const meat = (R.comp.match(/(\d+(?:,\d+)?)%\s+свеж[а-я]+\s+[а-я]+[^;]*/g) || []).reduce((s, x) => s + this.num(x), 0);
+    const moist = this.num(R.moist), dm = 100 - moist;
+    const protDM = this.num(R.protein) / dm * 100, carbDM = this.num(R.carb) / dm * 100;
+    const DRY_P = 35, DRY_C = 40;
+    const rowsSrc = [['Белок', R.protein, 25, true], ['Жир', R.fat, 25], ['Углеводы', R.carb, 25], ['Клетчатка', R.fiber, 25], ['Зола', R.ash, 25], ['Влага', R.moist, 100], ['Кальций', R.ca, 1], ['Фосфор', R.p, 1]];
+    const s4 = {
+      wrap: mob ? 'nowrap' : 'wrap',
+      lines: this.tabs(l4, i => this.setState({ s4Line: i, s4Flavor: Math.min(f4, this.LINES[i].flavors.length - 1) })),
+      flavors: line4.flavors.map(([name], i) => ({ name, pressed: String(i === f4), pick: () => this.setState({ s4Flavor: i }),
+        bg: i === f4 ? '#1E1E1E' : '#fff', fg: i === f4 ? '#fff' : '#1E1E1E', ring: i === f4 ? '#1E1E1E' : '#DCDCDC' })),
+      note: line4.note || '',
+      bg: line4.color, img: line4.img, imgScale: line4.id === 'air' ? 1.18 : 1, imgAlt: 'Упаковки SUPERPET ' + line4.name,
+      r: {
+        meat: this.fmt(meat, meat % 1 ? 1 : 0) + '%', comp: R.comp.replace(/^\s+/, ''), kcal: this.fmt(this.num(R.kcal), this.num(R.kcal) % 1 ? 1 : 0),
+        tags: this.TAGS[key], hasTags: this.TAGS[key].length > 0,
+        rows: rowsSrc.map(([name, v, max, hi]) => ({ name, val: v + '%', w: Math.min(100, this.num(v) / max * 100), fg: hi ? '#E80F71' : '#1E1E1E', fw: hi ? 700 : 400, bar: hi ? '#E80F71' : '#A8A8A8' }))
+          .concat([{ name: 'Кальций / фосфор', val: R.caP, w: 0, fg: '#1E1E1E', fw: 400, bar: 'transparent' }]),
+        tables: R.tables.map(([title, items]) => ({ title, items: items.map(([n, v, u]) => ({ n, v: v + ' ' + u })) }))
+      },
+      cmp: {
+        headline: 'в ' + this.fmt(protDM / DRY_P, 1).replace(',0', '') + ' раза больше белка и в ' + Math.round(DRY_C / carbDM) + ' раз меньше углеводов',
+        cols: [
+          { name: 'Сухой корм', img: 'assets/7984b48c4962.jpg', alt: 'Сухой корм в миске', titleColor: '#5F5F5F', bar: '#A8A8A8',
+            items: [{ name: 'Белок', w: DRY_P, v: '≈' + DRY_P + '%' }, { name: 'Углеводы', w: DRY_C, v: '≈' + DRY_C + '%' }] },
+          { name: 'SUPERPET', img: 'assets/0f787da3ed0a.jpg', alt: 'Корм SUPERPET в миске', titleColor: '#E80F71', bar: '#E80F71',
+            items: [{ name: 'Белок', w: Math.min(100, protDM), v: Math.round(protDM) + '%' }, { name: 'Углеводы', w: Math.max(2, carbDM), v: Math.round(carbDM) + '%' }] }
+        ]
+      },
+      moreOpen: !!st.s4More, moreExpanded: String(!!st.s4More), moreSign: st.s4More ? '−' : '+', moreRing: st.s4More ? '#E80F71' : '#DCDCDC',
+      toggleMore: () => this.setState({ s4More: !st.s4More })
+    };
+
+    // ---- 5. Консистенции
+    const l5 = st.s5Line ?? 0, line5 = this.LINES[l5];
+    const s5 = {
+      title: 'Консистенции ' + line5.cons + ' питания',
+      lines: this.tabs(l5, i => this.setState({ s5Line: i })),
+      items: line5.consItems.map(([name, img, text]) => ({ name, img, noImg: !img, text }))
+    };
+
+    // ---- 6. Калькулятор (RER = 70 × вес^0,75 × активность × возраст)
+    const l6 = st.s6Line ?? 0, line6 = this.LINES[l6];
+    const pet = st.pet ?? 0, age = st.age ?? 2, act = st.act ?? 0, w = st.weight ?? 4;
+    const ACT = [1, 1.2, 1.4], AGE = [2.5, 2, 1], maxW = pet === 0 ? 10 : 15;
+    const kcal = Math.round(70 * Math.pow(w, 0.75) * ACT[act] * AGE[age]);
+    const grams = kcal / line6.kcal * 100, units = grams / line6.unitW;
+    const week = Math.max(1, Math.ceil(units * 7)), dayRub = units * line6.price;
+    const opt = (labels, cur, k) => labels.map((label, i) => ({ label, pressed: String(i === cur), pick: () => this.setState({ [k]: i, added: false }),
+      bg: i === cur ? '#fff' : 'transparent', fg: '#1E1E1E', ring: i === cur ? '#E80F71' : '#C8C8C8' }));
+    const setW = v => this.setState({ weight: Math.max(0.5, Math.min(maxW, Math.round(v * 2) / 2)), added: false });
+    const isAir = line6.id === 'air';
+    const s6 = {
+      lines: this.tabs(l6, i => this.setState({ s6Line: i, added: false })),
+      groups: [
+        { title: 'Питомец', opts: opt(['Кошка', 'Собака'], pet, 'pet') },
+        { title: 'Возраст', opts: opt(['до 4 мес.', '4–12 мес.', 'старше 1 года'], age, 'age') },
+        { title: 'Активность', opts: opt(['Низкая', 'Средняя', 'Высокая'], act, 'act') }
+      ],
+      weight: w, weightTxt: this.fmt(w, 1), maxW,
+      dec: () => setW(w - 0.5), inc: () => setW(w + 0.5), onRange: e => setW(parseFloat(e.target.value)),
+      ageNote: age === 2 ? 'Котята и щенки от 4 до 12 месяцев едят в 2 раза больше малыми порциями, младше 4 месяцев — ещё +25%.' : 'Растущему питомцу нужно больше энергии — расчёт уже это учитывает. Кормите малыми порциями несколько раз в день.',
+      mainVal: isAir ? Math.round(grams) : this.fmt(units, 1),
+      mainUnit: isAir ? 'г в день' : this.plural(Math.round(units * 10) / 10, line6.unit) + ' в день',
+      stats: [
+        isAir ? { v: this.fmt(Math.ceil(grams * 30 / line6.unitW)), l: this.plural(Math.ceil(grams * 30 / line6.unitW), line6.unit) + ' по ' + line6.unitW + ' г в месяц' } : { v: this.fmt(Math.round(units * 30)), l: this.plural(Math.round(units * 30), line6.unit) + ' в месяц' },
+        { v: this.fmt(dayRub) + ' ₽', l: 'в день' },
+        { v: this.fmt(dayRub * 30) + ' ₽', l: 'в месяц' }
+      ],
+      kcal, lineLabel: line6.name + ' (' + line6.sub + ')', panelBg: line6.color,
+      btnBg: st.added ? '#00A171' : '#E80F71',
+      btnTitle: st.added ? 'Рацион на неделю в корзине' : 'Добавить рацион на неделю',
+      btnSub: week + ' ' + this.plural(week, line6.unit) + ' · ' + this.fmt(week * line6.price) + ' ₽',
+      addWeek: () => this.setState({ added: !st.added })
+    };
+
+    // ---- 6. Калькулятор — интерактивный (фраза)
+    const l7 = st.c7Line ?? 0, line7 = this.LINES[l7];
+    const pet7 = st.c7Pet ?? 0, age7 = st.c7Age ?? 2, act7 = st.c7Act ?? 0;
+    const maxW7 = pet7 === 0 ? 10 : 15, w7 = Math.min(maxW7, st.c7W ?? 4);
+    const kcal7 = Math.round(70 * Math.pow(w7, 0.75) * [1, 1.2, 1.4][act7] * [2.5, 2, 1][age7]);
+    const g7 = kcal7 / line7.kcal * 100, u7 = g7 / line7.unitW, isAir7 = line7.id === 'air';
+    const setW7 = v => this.setState({ c7W: Math.max(0.5, Math.min(maxW7, Math.round(v * 2) / 2)), c7Add: null });
+    const chip = (key, labels, cur, stateKey) => ({
+      value: labels[cur], open: st.c7Open === key, exp: String(st.c7Open === key), rot: st.c7Open === key ? 180 : 0, ring: st.c7Open === key ? '#E80F71' : 'rgba(232,15,113,.25)',
+      toggle: () => this.setState({ c7Open: st.c7Open === key ? null : key }),
+      opts: labels.map((label, i) => ({ label, bg: i === cur ? '#FCE8F1' : 'transparent', pick: () => this.setState({ [stateKey]: i, c7Open: null, c7Add: null, ...(stateKey === 'c7Pet' ? { c7W: i === 0 ? 4 : 5 } : {}) }) }))
+    });
+    const wkN = Math.max(1, Math.ceil(u7 * 7 - 1e-9)), moN = Math.max(1, Math.ceil(u7 * 30 - 1e-9));
+    const slots = isAir7 ? 0 : Math.min(6, Math.ceil(u7 - 1e-9));
+    const add = st.c7Add;
+    const c7 = {
+      panel: line7.color, petImg: pet7 === 0 ? 'assets/f44f9bcb8972.svg' : 'assets/c8affe1d3f54.svg', petAlt: pet7 === 0 ? 'Кошка' : 'Собака', petFlip: pet7 === 0 ? -1 : 1,
+      lines: this.tabs(l7, i => this.setState({ c7Line: i, c7Add: null })),
+      pet: chip('pet', ['кошка', 'собака'], pet7, 'c7Pet'),
+      age: chip('age', ['меньше 4 месяцев', 'от 4 до 12 месяцев', 'больше года'], age7, 'c7Age'),
+      act: chip('act', ['спокойная', 'активная', 'очень активная'], act7, 'c7Act'),
+      weightTxt: this.fmt(w7, w7 % 1 ? 1 : 0), dec: () => setW7(w7 - 0.5), inc: () => setW7(w7 + 0.5),
+      dayVal: isAir7 ? Math.round(g7) : this.fmt(u7, 1).replace(/,0$/, ''),
+      dayUnit: isAir7 ? 'г в день' : this.plural(Math.round(u7 * 10) / 10, line7.unit) + ' в день',
+      daySub: isAir7 ? ' —\u00a0пакета ' + line7.unitW + '\u00a0г хватит примерно на ' + Math.max(1, Math.floor(line7.unitW / g7)) + '\u00a0дн.' : ' —\u00a0это ' + Math.round(g7) + '\u00a0г корма',
+      dayPacks: (isAir7 ? [Math.min(1, g7 / line7.unitW)] : Array.from({ length: Math.min(6, Math.ceil(u7 - 1e-9)) }, (_, i) => Math.min(1, Math.max(0, u7 - i)))).map((f, i) => ({
+        plus: i > 0, fill: Math.round(f * 100), g: Math.round(f * line7.unitW),
+        label: isAir7 ? 'в день из пакета' : f > 0.95 ? 'целый' : f > 0.8 ? 'почти целый' : f > 0.65 ? 'три четверти' : f > 0.4 ? 'половина' : f > 0.2 ? 'четверть' : 'немного' })),
+      mealsTitle: ['Как кормить: 4 раза в день', 'Как кормить: 3 раза в день', 'Как кормить: 2 раза в день'][age7],
+      meals: [['Утро', 'День', 'Вечер', 'Ночь'], ['Утро', 'День', 'Вечер'], ['Утро', 'Вечер']][age7].map((name, i, a) => ({ name, g: Math.round(g7 / a.length) })),
+      kcal: kcal7,
+      weekTitle: add === 'w' ? '✓ Неделя в корзине' : 'Рацион на неделю', weekCount: wkN + ' ' + this.plural(wkN, line7.unit),
+      weekPrice: this.fmt(wkN * line7.price) + ' ₽', weekBg: add === 'w' ? '#00A171' : '#E80F71',
+      addWeek: () => this.setState({ c7Add: add === 'w' ? null : 'w' }),
+      monthTitle: add === 'm' ? '✓ Месяц в корзине' : 'Рацион на месяц', monthCount: moN + ' ' + this.plural(moN, line7.unit),
+      monthPrice: this.fmt(moN * line7.price) + ' ₽',
+      monthBg: add === 'm' ? '#00A171' : '#fff', monthFg: add === 'm' ? '#fff' : '#1E1E1E', monthRing: add === 'm' ? '#00A171' : '#DCDCDC',
+      addMonth: () => this.setState({ c7Add: add === 'm' ? null : 'm' })
+    };
+
+    // ---- 12. Отзывы
+    const shown = st.rvShown ?? 4, RV = this.REVIEWS;
+    const rv = {
+      avg: RV.avg, countTxt: this.fmt(RV.count), five: [0, 1, 2, 3, 4], shown,
+      dist: RV.dist.map(([l, p]) => ({ l, p })),
+      items: RV.items.slice(0, shown).map(([name, date, text]) => ({ name, date, text, ini: name[0] })),
+      canMore: shown < RV.items.length, restTxt: this.fmt(RV.count - shown),
+      more: () => this.setState({ rvShown: RV.items.length })
+    };
+
+    // ---- 13.
+    const FAQ = [
+      ['Как перейти на SUPERPET?', 'Постепенно, за 4 дня: каждый день увеличивайте долю нового корма — 25%, 50%, 75%, 100%. Подробный план — в инструкции SUPERPET.'],
+      ['Что делать, если питомец не будет есть?', 'Напишите в Службу заботы — заменим вкус или вернём деньги. Так работает наша гарантия.'],
+      ['Как хранить и размораживать WILD?', 'Храните в морозильной камере. Перед кормлением переложите пакетик в холодильник, чтобы корм разморозился постепенно. Размороженный корм не замораживайте повторно.'],
+      ['Можно ли сочетать WILD, EASY и AIR?', 'Да. Все линейки сбалансированы и сделаны из одного сырья — их можно чередовать и комбинировать в рационе.'],
+      ['Подходит ли корм котятам и стерилизованным кошкам?', 'Да. SUPERPET подходит для всех половозрастных групп. Для котят калькулятор учитывает повышенную потребность в энергии.'],
+      ['Куда вы доставляете?', 'Собственной курьерской службой по Москве, Санкт‑Петербургу и областям — с сохранением терморежима. Условия для других регионов — на странице доставки.']
+    ];
+    const fq = st.faqOpen ?? -1;
+    return {
+      s4, s5, s6, c7, rv,
+      crossW: mob ? '64%' : '200px',
+      benefits: [
+        ['img:assets/ic-litter.svg', 'Никакого запаха из лотка:', 'корм отлично переваривается.'],
+        ['stomach-ok', 'Нормализуется пищеварение.', 'Даже у проблемных.'],
+        ['coat', 'Шерсть блестит,', 'как после груминга, а линьки меньше.'],
+        ['healthy-weight', 'Здоровый вес без усилий:', 'в составе нет лишних углеводов.'],
+        ['clean-energy', 'Больше энергии,', 'подвижности и радости.'],
+        ['img:assets/ic-eyes.svg', 'Глазки чистые —', 'без слёз и раздражения.'],
+        ['img:assets/ic-kidneys.svg', 'Много влаги —', 'профилактика МКБ.'],
+        ['immunity', 'Баланс нутриентов —', 'сильный иммунитет.']
+      ].map(([icon, b, t]) => ({ icon, b, t, img: icon.startsWith('img:') ? icon.slice(4) : '', ds: !icon.startsWith('img:') })),
+      guarantees: [
+        { icon: 'stomach-ok', big: '9 из 10', small: 'питомцев успешно переходят на новое питание', href: '#faq' },
+        { icon: 'money-back', big: 'Вернём деньги', small: 'если питомец не будет есть', href: '#faq' },
+        { icon: 'comments', big: this.fmt(RV.count), small: 'отзывов от реальных покупателей', href: '#reviews' }
+      ],
+      faq: FAQ.map(([q, a], i) => ({ q, a, exp: String(fq === i), sign: fq === i ? '−' : '+', rows: fq === i ? '1fr' : '0fr', ring: fq === i ? '#E80F71' : '#DCDCDC',
+        toggle: () => this.setState({ faqOpen: fq === i ? -1 : i }) })),
+      delivery: [
+        { icon: 'delivery', t: 'Стандартная — завтра', d: 'Успейте заказать до 16:00' },
+        { icon: 'courier-tracking', t: 'Экспресс — сегодня за 2 часа', d: 'Успейте заказать до 17:00. Курьера видно на карте' },
+        { icon: 'freezing', t: 'С сохранением терморежима', d: 'Собственная курьерская служба в Москве, Санкт‑Петербурге и областях' }
+      ],
+      cross: [['Съедобная игрушка', '4,92', 149], ['Супер-удочка с 3 наживками', '4,93', 599], ['Наполнитель 20 литров', '4,94', 1889], ['Креветка сушёная', '4,92', 199]]
+        .map(([name, rate, p], i) => { const on = (st.crossAdded || {})[i]; return { name, rate, img: ['assets/7521d9b4b1df.jpg', 'assets/46690a7e9018.jpg', 'assets/34863f754a18.jpg', 'assets/e1044e49d4db.jpg'][i], price: this.fmt(p) + ' ₽', btn: on ? 'В корзине' : 'В корзину', bg: on ? '#00A171' : '#E80F71',
+          add: () => this.setState({ crossAdded: { ...(st.crossAdded || {}), [i]: !on } }) }; })
+    };
+  }
+
+  componentDidMount() {
+    this.apply3 = () => { const sec = this.d3Ref.current; if (!sec) return; const r = sec.getBoundingClientRect(), total = r.height - window.innerHeight; const p = total > 0 ? Math.min(1, Math.max(0, -r.top / total)) : 0; const N = 8, s = p * (N - 1); const ease = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+      this.d3Els.forEach((el, i) => { if (!el) return; const e = i === 0 ? 1 : Math.min(1, Math.max(0, s - (i - 1))); const d = Math.max(0, s - i); const dd = Math.min(d, 3); const k = ease(e);
+        el.style.transform = `translateX(${(1 - k) * 115}%) translateX(${dd * -22}px) rotate(${(1 - k) * 8}deg) scale(${1 - dd * 0.05})`; el.style.opacity = String(e <= 0 ? 0 : Math.max(0, Math.min(1, e * 3)) * (d > 3 ? Math.max(0, 1 - (d - 3)) : 1)); });
+      const cur = Math.min(N, Math.round(s) + 1); if (this.d3Count.current) this.d3Count.current.textContent = '0' + cur + ' / 08'; if (this.d3Bar.current) this.d3Bar.current.style.transform = `scaleX(${(s + 1) / N})`; };
+    this.on3 = () => { if (this.rafD3) return; this.rafD3 = requestAnimationFrame(() => { this.rafD3 = 0; this.apply3(); }); };
+    window.addEventListener('scroll', this.on3, { passive: true }); window.addEventListener('resize', this.on3); this.apply3();
+    this.upd95 = () => { if (this.raf95d) return; this.raf95d = requestAnimationFrame(() => { this.raf95d = 0; const t = this.d95Ref.current; if (!t) return; const cards = t.children, N = cards.length || 8; if (!N) return; const step = cards.length > 1 ? cards[1].offsetLeft - cards[0].offsetLeft : t.clientWidth; const max = t.scrollWidth - t.clientWidth; const cur = max - t.scrollLeft < 4 ? N : Math.min(N, Math.round(t.scrollLeft / step) + 1); if (this.d95Count.current) this.d95Count.current.textContent = (cur < 10 ? '0' : '') + cur + ' / ' + (N < 10 ? '0' : '') + N; if (this.d95Bar.current) this.d95Bar.current.style.transform = `scaleX(${max > 0 ? Math.max(1 / N, (t.scrollLeft + t.clientWidth) / t.scrollWidth) : 1})`; }); };
+    this.go95 = dir => { const t = this.d95Ref.current; if (!t || t.children.length < 2) return; const step = t.children[1].offsetLeft - t.children[0].offsetLeft; const max = t.scrollWidth - t.clientWidth; const base = this.t95i != null && Math.abs(this.t95i * step - t.scrollLeft) < step ? this.t95i : Math.round(t.scrollLeft / step); const n = Math.max(0, Math.min(t.children.length - 1, base + dir)); this.t95i = n; t.scrollTo({ left: Math.min(max, n * step), behavior: 'smooth' }); };
+    this.prev95 = () => this.go95(-1); this.next95 = () => this.go95(1);
+    window.addEventListener('resize', this.upd95); this.upd95();
+    if (window.ResizeObserver) { this.settle95 = () => { const el = this.t95Ref.current, sv = this.s95Ref.current; if (!el || !sv) return; for (let i = 0; i < 6; i++) { const fs = parseFloat(getComputedStyle(el.firstElementChild).fontSize) || 40; const top = Math.round(fs * 0.325); const wrapped = el.getBoundingClientRect().top > sv.getBoundingClientRect().bottom - 4; const hh = wrapped ? 46 : Math.max(60, el.offsetHeight - top); const cur = parseFloat(sv.style.height) || 0; sv.style.marginTop = (wrapped ? 0 : top) + 'px'; if (Math.abs(cur - hh) < 2) break; sv.style.height = hh + 'px'; sv.style.width = Math.round(hh * 155 / 72) + 'px'; } }; this.ro95 = new ResizeObserver(() => { if (this.raf95) return; this.raf95 = requestAnimationFrame(() => { this.raf95 = 0; this.settle95(); }); }); this.t95Ref.current && this.t95Ref.current.parentElement && this.ro95.observe(this.t95Ref.current.parentElement); document.fonts && document.fonts.ready.then(() => this.settle95()); this.roVet = new ResizeObserver(() => { const el = this.vetRef.current; if (el && Math.abs((this.state.vetH || 0) - el.offsetHeight) > 2) this.setState({ vetH: el.offsetHeight }); }); this.vetRef.current && this.roVet.observe(this.vetRef.current); }
+    this.mq = window.matchMedia('(max-width: 640px)');
+    this.onMq = () => this.setState({ mob: this.mq.matches });
+    this.mq.addEventListener ? this.mq.addEventListener('change', this.onMq) : this.mq.addListener(this.onMq);
+    this.onMq();
+    const anim = this.props.animateOnScroll ?? true;
+    this.cur = anim ? 0 : 1; this.target = this.cur; this.apply1(this.cur);
+    if (anim) {
+      this.onScroll = () => { this.target = this.calcTarget(); if (!this.loop) { this.loop = true; this.raf3 = requestAnimationFrame(this.tick); } };
+      window.addEventListener('scroll', this.onScroll, { passive: true });
+      window.addEventListener('resize', this.onScroll);
+      this.onScroll();
+    }
+    if (!anim) { this.setState({ shown2: 5, shown1: 5 }); this.fillBowls(true); return; }
+    this.applyMasks(0);
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (!e.isIntersecting) return;
+      io.unobserve(e.target);
+            if (e.target === this.b0Ref.current) this.runBlock0();
+      if (e.target === this.b2Ref.current) this.stagger('shown2', 5, 220);
+      if (e.target === this.b6Ref.current) this.fillBowls(false);
+    }), { threshold: 0, rootMargin: '0px 0px -25% 0px' });
+    [this.b0Ref, this.b2Ref, this.b6Ref].forEach(r => r.current && io.observe(r.current));
+    this.io = io;
+  }
+  componentWillUnmount() { this.on3 && (window.removeEventListener("scroll", this.on3), window.removeEventListener("resize", this.on3)); this.upd95 && window.removeEventListener("resize", this.upd95); this.wheel95 && (window.removeEventListener('wheel', this.wheel95), window.removeEventListener('touchstart', this.ts95), window.removeEventListener('touchmove', this.tmv95)); this.on95 && (window.removeEventListener('scroll', this.on95), window.removeEventListener('resize', this.on95)); this.ro95 && this.ro95.disconnect(); this.roVet && this.roVet.disconnect();
+    if (this.mq) this.mq.removeEventListener ? this.mq.removeEventListener('change', this.onMq) : this.mq.removeListener(this.onMq); this.io && this.io.disconnect(); this.timers.forEach(clearTimeout); cancelAnimationFrame(this.raf); cancelAnimationFrame(this.raf3); cancelAnimationFrame(this.raf2); if (this.onScroll) { window.removeEventListener('scroll', this.onScroll); window.removeEventListener('resize', this.onScroll); } }
+
+  stagger(key, n, gap) { for (let i = 1; i <= n; i++) this.timers.push(setTimeout(() => this.setState({ [key]: i }), i * gap)); }
+
+  runBlock0() {
+    this.stagger('shown1', 5, 180);
+    if (!(this.props.sliderHint ?? true)) return;
+    const keys = [[0, 50], [700, 30], [1500, 70], [2200, 50]];
+    const t0 = performance.now();
+    const ease = t => t < .5 ? 2 * t * t : 1 - Math.pow(-2 * t + 2, 2) / 2;
+    const step = now => {
+      if (this.dragging) return;
+      const t = now - t0 - 400;
+      if (t < 0) { this.raf2 = requestAnimationFrame(step); return; }
+      let i = keys.findIndex((k, j) => j > 0 && t < k[0]);
+      if (i === -1) { this.setState({ pos: 50 }); return; }
+      const [ta, pa] = keys[i - 1], [tb, pb] = keys[i];
+      this.setState({ pos: pa + (pb - pa) * ease((t - ta) / (tb - ta)) });
+      this.raf2 = requestAnimationFrame(step);
+    };
+    this.raf2 = requestAnimationFrame(step);
+  }
+  setFromEvent(e) {
+    const r = this.stageRef.current.getBoundingClientRect();
+    this.setState({ pos: Math.max(4, Math.min(96, ((e.clientX - r.left) / r.width) * 100)) });
+  }
+  tick = () => {
+    this.target = this.calcTarget();
+    const d = this.target - this.cur;
+    this.cur = Math.abs(d) < 0.0003 ? this.target : this.cur + d * 0.22;
+    this.apply1(this.cur);
+    if (this.cur !== this.target) this.raf3 = requestAnimationFrame(this.tick); else this.loop = false;
+  };
+  calcTarget() {
+    const el = this.b1Ref.current; if (!el) return 0;
+    const st = this.stickyRef.current, sh = st ? st.offsetHeight : window.innerHeight;
+    const off = st ? (parseFloat(getComputedStyle(st).top) || 0) : 0;
+    const r = el.getBoundingClientRect(), total = r.height - sh;
+    return total > 0 ? Math.min(1, Math.max(0, (off - r.top) / total)) : 1;
+  }
+  apply1(p) {
+    // Сцена «В составе нет → 90% мяса → шоковая заморозка», привязана к прокрутке.
+    // Без отскоков: только плавное замедление; движение = прозрачность + размытие + короткий сдвиг.
+    if (this.rm1 === undefined) this.rm1 = !!(window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches);
+    const R = this.rm1 ? 0 : 1;
+    const seg = (a, b) => Math.min(1, Math.max(0, (p - a) / (b - a)));
+    const out = t => 1 - Math.pow(1 - t, 3);
+    const io = t => t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+    const fx = (el, o, y, blur, sc) => { if (!el) return; el.style.opacity = o; el.style.transform = `translate(-50%,-50%) translateY(${y * R}px) scale(${1 - (1 - sc) * R})`; el.style.filter = blur * R > .05 ? `blur(${(blur * R).toFixed(2)}px)` : ''; };
+
+    // Кадры «извержения» корма из миски: мягкая шторка снизу вверх с широким растушёванным краем
+    const mask = (el, w) => { if (!el) return; const x = w * 160 - 40; const m = `linear-gradient(to top, #000 ${x}%, transparent ${x + 40}%)`; el.style.webkitMaskImage = m; el.style.maskImage = m; };
+    const w2 = io(seg(.34, .47)), w3 = io(seg(.45, .6));
+    mask(this.img2.current, w2); mask(this.img3.current, w3);
+
+    // Заморозка: цвета чуть остывают, падают снежинки
+    const fz = io(seg(.74, .9));
+    if (this.stackRef.current) {
+      this.stackRef.current.style.transform = `translateX(-50%) scale(${1 + .03 * w3 * R})`;
+      this.stackRef.current.style.filter = fz > 0 ? `saturate(${1 - .2 * fz}) brightness(${1 + .03 * fz})` : '';
+    }
+
+    // Глава 1. «В составе нет»: плашки появляются, их перечёркивает розовая линия, затем они растворяются
+    this.noEls.forEach((el, i) => {
+      if (!el) return;
+      const a = out(seg(.02 + i * .02, .1 + i * .02));
+      const st = out(seg(.12 + i * .018, .19 + i * .018));
+      const f = out(seg(.25 + i * .008, .31 + i * .008));
+      fx(el, a * (1 - f), (1 - a) * 14 - f * 10, (1 - a) * 8 + f * 6, .96 + .04 * a - .04 * f);
+      if (!el._strike) el._strike = el.querySelector('[data-strike]');
+      if (el._strike) el._strike.style.transform = `scaleX(${st})`;
+      el.style.color = st > .5 ? '#A8A8A8' : '#5F5F5F';
+    });
+
+    // Глава 2. «90% мяса»: счётчик и ингредиенты поднимаются вместе с кусочками
+    const cnt = out(seg(.34, .5));
+    if (this.numRef.current) this.numRef.current.textContent = Math.round(90 * (this.rm1 ? (cnt > 0 ? 1 : 0) : cnt)) + '%';
+    this.yesEls.forEach((el, i) => {
+      if (!el) return;
+      const k = out(seg(.46 + i * .022, .55 + i * .022)), o = out(seg(.68, .72));
+      fx(el, k * (1 - o), (1 - k) * 18 - o * 10 - w3 * 6, (1 - k) * 8 + o * 6, .97 + .03 * k);
+    });
+
+    // Глава 3. Снежинки и температура от +4 до −35 °C
+    const back = t => { const c = 0.9; return t === 0 ? 0 : 1 + (c + 1) * Math.pow(t - 1, 3) + c * Math.pow(t - 1, 2); };
+    this.snowEls.forEach((el, i) => {
+      if (!el) return;
+      const k = seg(.74 + i * .012, .84 + i * .012), b = back(k);
+      const drift = seg(.74, 1);
+      el.style.opacity = Math.min(1, k * 1.4);
+      el.style.transform = this.rm1 ? 'translate(-50%,-50%)' : `translate(-50%,-50%) translateY(${(1 - k) * -60 + drift * this.SNOW[i][3]}px) rotate(${(1 - k) * -120 + drift * this.SNOW[i][4]}deg) scale(${.3 + .7 * b})`;
+    });
+    if (this.tempRef.current) {
+      const t = Math.round(4 - 39 * (this.rm1 ? 1 : fz));
+      this.tempRef.current.textContent = (t > 0 ? '+' : t < 0 ? '−' : '') + Math.abs(t) + ' °C';
+    }
+
+    // Смена текстов: растворение с лёгким размытием
+    const set = (r, o, y) => { const el = r.current; if (!el) return; el.style.opacity = o; el.style.transform = `translateY(${y * R}px)`; el.style.filter = (1 - o) * R > .02 && o > 0 ? `blur(${((1 - o) * 6 * R).toFixed(2)}px)` : ''; el.style.pointerEvents = o > .5 ? 'auto' : 'none'; };
+    const oB = 1 - out(seg(.29, .34)), oA = out(seg(.34, .39)) * (1 - out(seg(.69, .73))), oC = out(seg(.73, .78));
+    set(this.pB, oB, (1 - oB) * -10); set(this.pA, oA, (1 - oA) * (p < .5 ? 12 : -10)); set(this.pC, oC, (1 - oC) * 12); set(this.h2Ref, 1 - oC, oC * -10);
+    [seg(0, .32), seg(.34, .7), seg(.73, .92)].forEach((v, i) => { const el = this.barEls[i]; if (el) el.style.transform = `scaleX(${io(v)})`; });
+    if (this.hintRef.current) this.hintRef.current.style.opacity = 1 - seg(0, .04);
+  }
+
+  maskFor(p) {
+    if ((this.props.fillStyle ?? 'по кругу') === 'снизу') return `linear-gradient(to top, #000 ${p}%, transparent ${p}%)`;
+    return `conic-gradient(#000 0 ${p}%, transparent ${p}% 100%)`;
+  }
+  applyMasks(f) {
+    const targets = [25, 50, 75, 100];
+    this.dayRefs.forEach((r, i) => { const el = r.current; if (!el) return; const m = this.maskFor(targets[i] * f); el.style.webkitMaskImage = m; el.style.maskImage = m; });
+  }
+  fillBowls(instant) {
+    if (instant) { this.applyMasks(1); return; }
+    const t0 = performance.now(), D = 1600;
+    const step = now => {
+      const t = Math.min(1, (now - t0) / D);
+      this.applyMasks(1 - Math.pow(1 - t, 3));
+      if (t < 1) this.raf = requestAnimationFrame(step);
+    };
+    this.raf = requestAnimationFrame(step);
+  }
+  componentDidUpdate(pp) { if (pp.fillStyle !== this.props.fillStyle) this.applyMasks(1); }
+
+  renderVals() {
+    const DECK95 = [['Никакого запаха из лотка','Корм отлично переваривается.'],['Нормализуется пищеварение','Даже у питомцев с чувствительным животом.'],['Шерсть блестит','Как после груминга, а линьки меньше.'],['Здоровый вес без усилий','В составе нет лишних углеводов.'],['Больше энергии','Подвижности и радости каждый день.'],['Глазки чистые','Без слёз и раздражения.'],['Много влаги','Профилактика МКБ.'],['Баланс нутриентов','Сильный иммунитет.']];
+    const { shown2, shown1, pos, open } = this.state;
+    const ING = [
+      ['Свежее мясо', 'Основа рецепта. Вместе с субпродуктами это до 90% корма.'],
+      ['Субпродукты', 'Сердце, печень и другие мясные и костные субпродукты — естественная часть добычи хищника.'],
+      ['Овощи', 'Вместе с суперфудами — оставшиеся 10% рецепта.'],
+      ['Масло лосося', 'Натуральный источник омега-3 жирных кислот.'],
+      ['Суперфуды', 'Дополняют рецепт без искусственных добавок.']
+    ];
+    const MEATS = [
+      ['Говядина', 'от', '«Мираторг»'],
+      ['Индейка', 'от', '«Краснобор»'],
+      ['Курица', 'от', '«Дантон»'],
+      ['Кролик', 'от фермерского хозяйства', '«Ушастики»'],
+      ['Утка', 'из Ставропольского края от', 'ООО «Меркурий»']
+    ];
+    const mob = !!this.state.mob;
+    const idxFrom = el => {
+      const kids = Array.from(el.children).filter(c => c.offsetWidth);
+      if (kids.length < 2) return 0;
+      const step = kids[1].offsetLeft - kids[0].offsetLeft;
+      if (el.scrollLeft + el.clientWidth >= el.scrollWidth - 4) return kids.length - 1;
+      return Math.round(el.scrollLeft / step);
+    };
+    const dots = (n, a) => Array.from({ length: n }, (_, i) => ({ w: i === a ? 24 : 8, c: i === a ? '#E80F71' : '#DCDCDC' }));
+    return {
+      ...this.valsCard(), ...this.vals4to13(mob), gaugeRef: this.gaugeRef, t95Ref: this.t95Ref, d3Ref: this.d3Ref, d3Count: this.d3Count, d3Bar: this.d3Bar, d3H: (mob ? 'calc(100svh + 7 * 55svh)' : 'calc(100vh + 7 * 55vh)'), deck3: DECK95.map(([t, d], i) => ({ t, d, n: '0' + (i + 1), img: __a('assets/b95-' + (i + 1) + '.jpg'), z: i + 1, ref: el => { this.d3Els[i] = el; if (el) this.apply3 && this.apply3(); } })), d95Ref: this.d95Ref, upd95: () => this.upd95 && this.upd95(), prev95: () => this.prev95 && this.prev95(), next95: () => this.next95 && this.next95(), d95Count: this.d95Count, d95Bar: this.d95Bar, d95H: (this.state.mob ? 'calc(100svh + 7 * 60svh)' : 'calc(100vh + 7 * 60vh)'), deck95: DECK95.map(([t, d], i) => ({ t, d, n: '0' + (i + 1), img: __a('assets/b95-' + (i + 1) + '.jpg'), z: i + 1, })), s95Ref: this.s95Ref, vetRef: this.vetRef, vetImgH: mob ? 'auto' : (this.state.vetH || 300) + 'px', vetImgW: mob ? '100%' : 'auto', h95: this.state.h95 || 120, m95: this.state.m95 || 0, w95: Math.round((this.state.h95 || 120) * 193 / 72),
+      mob,
+      sl: mob
+        ? { wrap: 'nowrap', justify: 'flex-start', ox: 'auto', snap: 'x mandatory', mx: '-16px', px: '16px', item1: '0 0 64%', maxw1: 'none', display2: 'flex', gap2: '12px', item2: '0 0 78%' }
+        : { wrap: 'wrap', justify: 'center', ox: 'visible', snap: 'none', mx: '0', px: '0', item1: '1 1 170px', maxw1: '220px', display2: 'grid', gap2: '24px', item2: 'initial' },
+      dots1: dots(5, this.state.i1 || 0),
+      dots2: dots(4, this.state.i2 || 0),
+      onScroll1: e => { const i = idxFrom(e.currentTarget); if (i !== this.state.i1) this.setState({ i1: i }); },
+      onScroll2: e => { const i = idxFrom(e.currentTarget); if (i !== this.state.i2) this.setState({ i2: i }); },
+      b0Ref: this.b0Ref, stageRef: this.stageRef,
+      pos, clipRight: 100 - pos,
+      onDown: e => { this.dragging = true; cancelAnimationFrame(this.raf2); e.currentTarget.setPointerCapture && e.currentTarget.setPointerCapture(e.pointerId); this.setFromEvent(e); },
+      onMove: e => { if (this.dragging) this.setFromEvent(e); },
+      onUp: () => { this.dragging = false; },
+      ingredients: ING.map(([name, text], i) => ({
+        name, text,
+        op: i < shown1 ? 1 : 0, tx: i < shown1 ? 0 : 24,
+        ring: open === i ? '#E80F71' : '#DCDCDC',
+        sign: open === i ? '−' : '+',
+        rows: open === i ? '1fr' : '0fr',
+        toggle: () => this.setState({ open: open === i ? -1 : i })
+      })),
+      b1Ref: this.b1Ref, b2Ref: this.b2Ref, b6Ref: this.b6Ref,
+      numRef: this.numRef, tempRef: this.tempRef,
+      pA: this.pA, pB: this.pB, pC: this.pC, img2: this.img2, img3: this.img3, stackRef: this.stackRef, hintRef: this.hintRef, h2Ref: this.h2Ref, stickyRef: this.stickyRef,
+      b1Height: (this.props.animateOnScroll ?? true) ? (mob ? '280svh' : 'calc(min(100vh, 860px) + 240vh)') : '100svh',
+      L: mob
+        ? { pad: '32px 16px 0', dir: 'column', align: 'stretch', gap: '24px', textFlex: '0 0 auto', textGap: '12px', panelH: '132px', bigFs: '64px', midFs: '30px', pDisplay: 'none', freezeDisplay: 'none', pillPad: '8px 14px', pillFs: '14px', hintDisplay: 'none', cGap: '10px', items: 'center', tAlign: 'center', maxW: 'none', innerH: '100%', textPt: '0', stickyH: 'calc(100svh - var(--sp-top))', stageFlex: '1 1 0', stageH: 'auto', stageAlign: 'stretch', aGap: '8px', iconSize: 35, cTitleFs: '28px', cPFs: '15px' }
+        : { pad: '24px clamp(16px,4vw,40px) 48px', dir: 'row', align: 'center', gap: 'clamp(16px,2vw,32px)', textFlex: '0 1 360px', textGap: '20px', panelH: '264px', bigFs: 'clamp(80px,9vw,128px)', midFs: 'clamp(30px,3.2vw,44px)', pDisplay: 'block', freezeDisplay: 'flex', pillPad: '12px 20px', pillFs: '17px', hintDisplay: 'flex', cGap: '14px', items: 'flex-start', tAlign: 'left', maxW: '980px', innerH: '100%', textPt: '0', stickyH: 'calc(100vh - var(--sp-top))', stageFlex: '0 0 min(480px,42vw)', stageH: 'min(calc(100vh - var(--sp-top) - 72px),720px)', stageAlign: 'center', aGap: '10px', iconSize: 45, cTitleFs: 'clamp(30px,4.4vw,56px)', cPFs: '16px' },
+      bars: [0, 1, 2].map(i => ({ ref: el => { this.barEls[i] = el; } })),
+      noPills: this.NO.map(([t, x, y], i) => ({ t, x: mob ? 50 + (x - 50) * .72 : x, y, ref: el => { this.noEls[i] = el; if (el && this.cur != null) this.apply1(this.cur); } })),
+      snow: this.SNOW.map(([x, y, s], i) => ({ x: mob ? 50 + (x - 50) * .8 : x, y, s: mob ? Math.round(s * .75) : s, ref: el => { this.snowEls[i] = el; if (el && this.cur != null) this.apply1(this.cur); } })),
+      yesPills: this.YES.map(([t, x, y], i) => ({ t, x: mob ? [29, 70, 28, 67, 30][i] : x, y: mob ? [10, 22, 34, 46, 58][i] : y, ref: el => { this.yesEls[i] = el; if (el && this.cur != null) this.apply1(this.cur); } })),
+      meats: MEATS.map(([name, pre, brand], i) => ({
+        name, pre, brand, imgRef: el => { if (el) { const u = (window.__resources && window.__resources['meat' + (i + 1)]) || __a(`assets/meat-${i + 1}.png`); if (el.getAttribute('src') !== u) el.setAttribute('src', u); } }, here: false,
+        op: i < shown2 ? 1 : 0, ty: i < shown2 ? 0 : 30, sc: i < shown2 ? 1 : .9,
+        top: (i < shown2 - 1 || shown2 === 5) ? 1 : 0,
+        tty: (i < shown2 - 1 || shown2 === 5) ? 0 : 10
+      })),
+      quality: [
+        { icon: 'verified', text: 'Тщательно выбираем поставщиков и сырьё, пригодное в пищу людям' },
+        { icon: 'immunity', text: 'Производим в России\nв соответствии\nс высокими стандартами' },
+        { icon: 'freezing', text: 'Используем передовые технологии для сохранения всей пользы свежего мяса' },
+        { icon: 'delivery', text: 'Доставляем собственной курьерской службой\nс сохранением терморежима' }
+      ],
+      videoOpacity: this.state.videoOk ? 1 : 0,
+      onVideoPlaying: () => this.setState({ videoOk: true }),
+      days: [
+        ['День 1', '25%', '25% SUPERPET', '75% привычный корм'],
+        ['День 2', '50%', '50% SUPERPET', '50% привычный корм'],
+        ['День 3', '75%', '75% SUPERPET', '25% привычный корм'],
+        ['День 4', '100%', '100% SUPERPET', '']
+      ].map(([title, pct, a, b], i) => ({ title, pct, a, b, ref: this.dayRefs[i] }))
+    };
+  }
+}
+</script>
+</body>
+</html>

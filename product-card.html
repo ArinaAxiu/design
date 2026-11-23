@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Карточка товара для интернет‑магазина</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;family=JetBrains+Mono:wght@500&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+.cs-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,3fr);gap:32px;align-items:start}
+.cs-row figcaption{position:sticky;top:80px}
+.cs-cats{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,7fr);gap:40px;align-items:center}
+.cs-vbtn .cs-vplay{position:absolute;top:10px;right:10px;width:30px;height:30px;border-radius:50%;background:rgba(255,255,255,.9);display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.85);transition:opacity .2s,transform .2s}
+.cs-vbtn:hover .cs-vplay,.cs-vbtn:focus-visible .cs-vplay{opacity:1;transform:scale(1)}
+.cs-vbtn video{transition:transform .35s ease}.cs-vbtn:hover video{transform:scale(1.04)}
+.cs-vbtn:focus-visible{outline:3px solid #FF8A00;outline-offset:3px}
+.cs-lbb{position:absolute;width:44px;height:44px;border-radius:50%;border:0;background:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center}
+@media (max-width: 700px){.cs-lbp,.cs-lbn{top:auto!important;bottom:28px;transform:none!important}.cs-lbp{left:calc(50% - 56px)!important}.cs-lbn{right:calc(50% - 56px)!important}}
+@media (hover: none){.cs-vbtn .cs-vplay{opacity:1;transform:none}}
+@media (prefers-reduced-motion: reduce){.cs-vbtn video{transition:none}}
+.cs-vids{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 14px}
+.cs-mob{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.cs-live:hover{background:#C40B5E!important}
+.cs-live .lv-s{display:none}
+@media (max-width: 520px){.cs-live .lv-l{display:none}.cs-live .lv-s{display:inline}}
+@media (max-width: 900px){.cs-cats{grid-template-columns:minmax(0,1fr)}.cs-vids{grid-template-columns:repeat(2,minmax(0,1fr))}.cs-row{grid-template-columns:minmax(0,1fr);gap:16px}.cs-row figcaption{position:static}.cs-mob{grid-template-columns:repeat(2,minmax(0,1fr))}}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box; display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+<a class="cs-live" href="product-live.html" style="display: inline-flex; align-items: center; gap: 10px; background: #E80F71; color: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 18px; border-radius: 12px; min-height: 44px; box-sizing: border-box; white-space: nowrap"><span class="lv-l">Открыть живую карточку</span><span class="lv-s">Живая карточка</span> <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+</div></nav>
+<main style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 56px">
+<header style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+<span style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"><img src="assets/0b6f5bc0c99a.svg" alt="SUPERPET" width="106" height="14" style="display: block; height: 14px; width: auto"></span>
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(26px, 7.5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Карточка товара для&nbsp;интернет‑магазина</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5">Новая карточка замороженного корма WILD для&nbsp;superpet.ru. Галерея и&nbsp;выбор вкуса, состав, калькулятор нормы, переход на&nbsp;новый корм, отзывы и&nbsp;вопросы&nbsp;— всё&nbsp;на&nbsp;одной странице, на&nbsp;десктопе и&nbsp;в&nbsp;мобильной версии.</p>
+</header>
+<img src="assets/ff446f3c1661.jpg" alt="Первый экран карточки товара" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+<section class="cs-cats" style="background: #FFE2EF; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box">
+<div style="display: flex; flex-direction: column; gap: 16px">
+<span style="font-weight: 700; font-size: 16px; color: #E80F71">В&nbsp;главных ролях</span>
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.08; letter-spacing: -0.02em">Снимала сама. Актёры&nbsp;— мои кошки</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.5">Для&nbsp;большинства карточек товаров я&nbsp;снимала видео дома: распаковка, первая реакция, как&nbsp;этим пользоваться. Без&nbsp;студии и&nbsp;кастинга&nbsp;— Какуля, Жулик и&nbsp;Тьма работают за&nbsp;корм.</p>
+<div style="display: flex; flex-direction: column; gap: 6px; background: #fff; border-radius: 18px; padding: 20px 22px; margin-top: 8px">
+<b style="font-weight: 900; font-size: 20px; line-height: 1.2; color: #E80F71">Кликабельность выше ↑</b>
+<span style="font-size: 15px; line-height: 1.45; color: #3D4656">Аналитики SUPERPET зафиксировали: карточки с&nbsp;таким видео кликают чаще, чем&nbsp;карточки только с&nbsp;фото.</span>
+</div>
+</div>
+<div class="cs-vids"><sc-for list="{{ vids }}" as="vd" hint-placeholder-count="8">
+<figure style="margin: 0; display: flex; flex-direction: column; gap: 10px">
+<button type="button" class="cs-vbtn" onClick="{{ vd.open }}" aria-label="{{ vd.label }}" style="position: relative; padding: 0; border: 0; border-radius: 16px; overflow: hidden; aspect-ratio: 1 / 1; background: #2A1A22; cursor: zoom-in; display: block; width: 100%">
+<video src="{{ vd.src }}" poster="{{ vd.poster }}" autoplay="" muted="" loop="" playsinline="" preload="metadata" style="width: 100%; height: 100%; object-fit: cover; display: block; pointer-events: none"></video>
+<span class="cs-vplay" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M15 3h6v6M9 21H3v-6M21 3l-7 7M3 21l7-7" fill="none" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></span>
+</button>
+<figcaption style="display: flex; gap: 8px; align-items: baseline; font-size: 14px; line-height: 1.3; font-weight: 600; color: #0F1A2B"><span style="font-family: 'JetBrains Mono', monospace; font-size: 12px; font-weight: 500; color: #E80F71">{{ vd.n&nbsp;}}</span>{{ vd.t&nbsp;}}</figcaption>
+</figure>
+</sc-for></div>
+</section>
+<section style="display: flex; flex-direction: column; gap: 56px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.02em">Блоки страницы</h2>
+<figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">01</span><b style="font-size: 22px; line-height: 1.2">Из&nbsp;чего сделан корм</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Слайдер «в&nbsp;миске / из&nbsp;чего сделан» и&nbsp;ингредиенты, которые раскрываются по&nbsp;клику.</span></figcaption>
+<img src="assets/cbfb66dbd7a5.jpg" alt="Из чего сделан корм" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">02</span><b style="font-size: 22px; line-height: 1.2">Состав и&nbsp;анализ</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Переключение линеек и&nbsp;вкусов, пищевая ценность, сравнение с&nbsp;сухим кормом.</span></figcaption>
+<img src="assets/4e218e8a0974.jpg" alt="Состав и анализ" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">03</span><b style="font-size: 22px; line-height: 1.2">Консистенции</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Кусочки, фарш и&nbsp;кусочки в&nbsp;фарше для&nbsp;каждой линейки.</span></figcaption>
+<img src="assets/ab07fe137b44.jpg" alt="Консистенции" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">04</span><b style="font-size: 22px; line-height: 1.2">Калькулятор нормы</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Вес, возраст и&nbsp;активность питомца&nbsp;— сразу пакетики в&nbsp;день, месяц и&nbsp;цена.</span></figcaption>
+<img src="assets/ddb63b097d46.jpg" alt="Калькулятор нормы" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">05</span><b style="font-size: 22px; line-height: 1.2">Скролл-история</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Ингредиенты падают в&nbsp;миску, пока листаешь: состав, 90% мяса, шоковая заморозка.</span></figcaption>
+<img src="assets/9c4ab837abeb.jpg" alt="Скролл-история" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">06</span><b style="font-size: 22px; line-height: 1.2">95% питомцев чувствуют себя лучше</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Карусель с&nbsp;фотографиями и&nbsp;счётчиком.</span></figcaption>
+<img src="assets/7a91d712fde1.jpg" alt="95% питомцев чувствуют себя лучше" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">07</span><b style="font-size: 22px; line-height: 1.2">Переход за&nbsp;4&nbsp;дня</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Схема перехода с&nbsp;привычного корма и&nbsp;ссылка на&nbsp;инструкцию.</span></figcaption>
+<img src="assets/593964e05e7d.jpg" alt="Переход за 4 дня" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">08</span><b style="font-size: 22px; line-height: 1.2">Отзывы</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Рейтинг, распределение оценок и&nbsp;лента отзывов.</span></figcaption>
+<img src="assets/89269db8bf14.jpg" alt="Отзывы" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure><figure class="cs-row" style="margin: 0">
+<figcaption style="display: flex; flex-direction: column; gap: 8px"><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #E80F71">09</span><b style="font-size: 22px; line-height: 1.2">Вопросы, доставка и&nbsp;допродажи</b><span style="font-size: 16px; line-height: 1.5; color: #3D4656">Аккордеон с&nbsp;ответами, блок доставки и&nbsp;«Попробуйте также».</span></figcaption>
+<img src="assets/bc5d0c3e5823.jpg" alt="Вопросы, доставка и допродажи" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 14px; background: #fff; box-shadow: 0 14px 32px -18px rgba(15,26,43,.35)">
+</figure>
+</section>
+<section style="display: flex; flex-direction: column; gap: 24px">
+<h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); letter-spacing: -0.02em">Мобильная версия</h2>
+<div class="cs-mob"><img src="assets/67b1ba3f43a8.jpg" alt="Мобильная версия, экран 1" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 22px; border: 6px solid #0F1A2B; background: #fff"><img src="assets/cabe3337ad19.jpg" alt="Мобильная версия, экран 2" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 22px; border: 6px solid #0F1A2B; background: #fff"><img src="assets/8a15b8030eee.jpg" alt="Мобильная версия, экран 3" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 22px; border: 6px solid #0F1A2B; background: #fff"><img src="assets/9d23db31a8ef.jpg" alt="Мобильная версия, экран 4" loading="lazy" style="width: 100%; height: auto; display: block; border-radius: 22px; border: 6px solid #0F1A2B; background: #fff"></div>
+</section>
+</main>
+<sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-modal="true" aria-label="{{ lbT }}" onClick="{{ lbClose }}" style="position: fixed; inset: 0; z-index: 100; background: rgba(15,10,14,.86); display: flex; align-items: center; justify-content: center; padding: 24px; box-sizing: border-box">
+<figure onClick="{{ lbStop }}" style="margin: 0; display: flex; flex-direction: column; gap: 14px; width: min(88vw, 76vh, 640px)">
+<video src="{{ lbSrc }}" poster="{{ lbPoster }}" controls="" autoplay="" playsinline="" style="width: 100%; aspect-ratio: 1 / 1; display: block; border-radius: 18px; background: #000"></video>
+<figcaption style="display: flex; justify-content: space-between; align-items: center; gap: 12px; color: #fff; font-size: 16px; font-weight: 600"><span>{{ lbT }}</span><span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; opacity: .7">{{ lbCount }}</span></figcaption>
+</figure>
+<button type="button" aria-label="Закрыть" onClick="{{ lbClose }}" class="cs-lbb" style="top: 16px; right: 16px"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round"></path></svg></button>
+<button type="button" aria-label="Предыдущее видео" onClick="{{ lbPrev }}" class="cs-lbb cs-lbp" style="left: 16px; top: 50%; transform: translateY(-50%)"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7" fill="none" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+<button type="button" aria-label="Следующее видео" onClick="{{ lbNext }}" class="cs-lbb cs-lbn" style="right: 16px; top: 50%; transform: translateY(-50%)"><svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7" fill="none" stroke="#0F1A2B" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"></path></svg></button>
+</div>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2000}}'>
+const V = [{"src": "assets/4bf5e792906b.mp4", "poster": "assets/58f23e95e1b3.jpg", "t": "Наполнитель"}, {"src": "assets/be45028880c1.mp4", "poster": "assets/89fd9e0531f3.jpg", "t": "Интерактивная игрушка"}, {"src": "assets/3443f56e64ed.mp4", "poster": "assets/56ec05339f3b.jpg", "t": "Игрушка с мятой"}, {"src": "assets/7e7617676bda.mp4", "poster": "assets/2d90b9b691af.jpg", "t": "Зажим для пауча"}, {"src": "assets/22f3f942957d.mp4", "poster": "assets/a7e17c03769e.jpg", "t": "Как кормить"}, {"src": "assets/0190bc89ba6f.mp4", "poster": "assets/2f33a9949cc1.jpg", "t": "Распаковка EASY"}, {"src": "assets/9726c8c8c324.mp4", "poster": "assets/ff74c78c36cc.jpg", "t": "Когтеточка"}, {"src": "assets/abdd6056ca27.mp4", "poster": "assets/fe63fb5f2d6f.jpg", "t": "Распаковка AIR"}];
+class Component extends DCLogic {
+constructor(p) { super(p); this.state = { lb: -1 }; }
+componentDidMount() { this.onKey = (e) => { const lb = this.state.lb; if (lb < 0) return; if (e.key === 'Escape') this.setState({ lb: -1 }); if (e.key === 'ArrowRight') this.setState({ lb: (lb + 1) % V.length }); if (e.key === 'ArrowLeft') this.setState({ lb: (lb + V.length - 1) % V.length }); }; window.addEventListener('keydown', this.onKey); }
+componentWillUnmount() { window.removeEventListener('keydown', this.onKey); }
+renderVals() {
+const n = V.length, lb = this.state.lb, go = (i) => this.setState({ lb: (i + n) % n });
+return {
+vids: V.map((v, i) => ({ ...v, n: String(i + 1).padStart(2, '0'), label: 'Открыть видео: ' + v.t, open: () => go(i) })),
+lbOpen: lb >= 0, lbSrc: lb >= 0 ? V[lb].src : '', lbPoster: lb >= 0 ? V[lb].poster : '', lbT: lb >= 0 ? V[lb].t : '', lbCount: lb >= 0 ? (lb + 1) + ' / ' + n : '',
+lbClose: () => this.setState({ lb: -1 }), lbStop: (e) => e.stopPropagation(), lbPrev: () => go(lb - 1), lbNext: () => go(lb + 1)
+};
+}
+}
+</script>
+</body>
+</html>

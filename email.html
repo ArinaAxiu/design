@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Рассылки SUPERPET</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+@font-face{font-family:"TT Chocolates";src:url("./_ds/superpet-design-system-96891f0f-9a69-447d-ae4a-dd8e9b183a89/fonts/TT_Chocolates_Trial_Bold.otf") format("opentype");font-weight:700;font-display:swap}
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+.mg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:stretch}
+.ml{display:flex;flex-direction:column;width:100%;padding:20px 18px 20px;box-sizing:border-box;border:0;border-radius:20px;background:#F5F5F5;font:inherit;color:inherit;text-align:center;cursor:default}
+.lg{height:26px;display:flex;align-items:center;justify-content:center;margin-bottom:18px}
+.lg img{height:16px;width:auto;display:block}
+.lg b{font-weight:900;font-size:21px;letter-spacing:.02em;color:#141414;line-height:1}
+.hd{position:relative;border-radius:16px 16px 0 0;overflow:hidden;background:#E2E4E8}
+.hd img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.bd{flex:1;display:flex;flex-direction:column;background:#fff;padding:18px 20px 20px}
+.bd .sq{margin-bottom:auto}
+.bd h3{margin:0 0 12px;font-family:"TT Chocolates","Golos Text",sans-serif;font-weight:700;font-size:21px;line-height:1.2;color:#2B2B2B;text-wrap:balance}
+.sq{display:block;width:100%;height:84px}
+.sq path,.sq2 path{fill:none;stroke:#D8DCE3;stroke-width:5;stroke-linecap:round}
+.sq2{display:block;width:100%;height:36px}
+.cta{display:block;width:150px;height:34px;margin:18px auto 0;border-radius:10px;background:#E80F71;opacity:.9}
+@media (max-width: 1000px){.mg{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width: 600px){
+.mg{grid-template-columns:minmax(0,1fr);gap:16px}
+.ml{padding:14px 12px 14px}
+.lg{height:18px;margin-bottom:12px}
+.lg img{height:13px!important}
+.bd{padding:14px 16px 16px}
+.bd h3{font-size:18px;margin:0 0 10px}
+.sq{display:none}
+.sq2{display:block}
+.cta{display:none}
+.mwrap{padding:14px!important;border-radius:20px!important}
+}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 16px">
+<span style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"><img src="assets/89f64917f158.svg" alt="SUPERPET / LAIKY" width="165" height="19" style="display: block; height: 19px; width: auto"></span>
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Email-рассылки</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 700px">Рассылки собирает CRM-специалист по&nbsp;шаблону, который я&nbsp;для&nbsp;него сделала. С&nbsp;меня&nbsp;— шапка письма: GIF по&nbsp;теме рассылки. Лимит&nbsp;— до&nbsp;трёх кадров, чтобы гифка весила мало и&nbsp;письмо не&nbsp;тормозило.</p>
+<p style="margin: 0; font-size: 16px; line-height: 1.5; color: #4A5568">Наведите курсор на&nbsp;письмо, чтобы гифка ожила.</p>
+</header>
+
+<section class="mwrap" style="background: #fff; border-radius: 28px; padding: clamp(20px, 3vw, 40px); box-sizing: border-box">
+<div class="mg">
+<sc-for list="{{mails}}" as="m" hint-placeholder-count="9">
+<div class="ml" onMouseEnter="{{m.enter}}" onMouseLeave="{{m.leave}}" onClick="{{m.enter}}">
+<div class="lg"><sc-if value="{{m.sp}}" hint-placeholder-val="{{true}}"><img src="assets/4e9a5ce1b7ab.svg" alt="SUPERPET"></sc-if><sc-if value="{{m.l}}" hint-placeholder-val="{{false}}"><img src="assets/884cf8896bf1.svg" alt="LAIKY" style="height: 17px"></sc-if></div>
+<div class="hd" style="aspect-ratio: {{m.r}}"><img src="{{m.src}}" alt="{{m.t}}" loading="lazy"></div>
+<div class="bd"><h3>{{m.t}}</h3><svg class="sq2" aria-hidden="true" viewBox="0 0 400 48" preserveAspectRatio="none"><path d="M8 12 q12 -8 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0"></path><path d="M8 38 q12 -8 24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0 t24 0"></path></svg></div>
+</div>
+</sc-for>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":8500}}'>
+const MAILS = [{"g": "assets/629831a947dd.gif", "p": "assets/1f15f72b3761.jpg", "t": "Автозаказ: корм приедет сам", "l": false, "r": 1.7143}, {"g": "assets/2602850b124b.gif", "p": "assets/2f6b810aac8e.jpg", "t": "Как работает доставка", "l": false, "r": 1.7143}, {"g": "assets/1eee5f8b591b.gif", "p": "assets/19f98535f25b.jpg", "t": "Программа лояльности", "l": false, "r": 1.7143}, {"g": "assets/ce5ea25ed012.gif", "p": "assets/2db4b99e3459.jpg", "t": "Индивидуальный расчёт рациона: сколько нужно на месяц", "l": false, "r": 1.5385}, {"g": "assets/6746cbb40d3c.gif", "p": "assets/40a8f64b7de7.jpg", "t": "Как прошёл ваш первый опыт с SUPERPET?", "l": false, "r": 1.5385}, {"g": "assets/5ad15f3bd658.gif", "p": "assets/d9f14fe09698.jpg", "t": "Дайджест: 11 сентября", "l": false, "r": 1.5385}, {"g": "assets/d79d37568013.gif", "p": "assets/2372fef1a8fc.jpg", "t": "Дайджест: 13 августа", "l": false, "r": 1.5385}, {"g": "assets/cc7787e2b334.gif", "p": "assets/e5cc57108a12.jpg", "t": "Коробка у вас — пора распаковывать", "l": true, "r": 1.5385}, {"g": "assets/e41c77ba8eee.gif", "p": "assets/a10cf4931a9b.jpg", "t": "Гайд по поведению", "l": true, "r": 1.5385}, {"g": "assets/d088a67487a2.gif", "p": "assets/1271bc518e21.jpg", "t": "Вы кое-что забыли в корзине", "l": false, "r": 1.7143}, {"g": "assets/24874aab7aa7.gif", "p": "assets/e26a0fae29f5.jpg", "t": "Посылка у вас: распаковка и первый ритуал подачи", "l": false, "r": 1.5385}, {"g": "assets/fb781433f232.gif", "p": "assets/1d7e8c231d9f.jpg", "t": "Скидка на SUPERPET", "l": false, "r": 1.5385}, {"g": "assets/cdab10084d62.gif", "p": "assets/3147fa0a8bb1.jpg", "t": "Кажется, миска снова пустеет", "l": false, "r": 1.7143}, {"g": "assets/7a601331b720.gif", "p": "assets/4bcb09f28bbd.jpg", "t": "Стартовый набор на исходе: сохраняем стабильность", "l": false, "r": 1.5385}, {"g": "assets/0290afcabdc6.gif", "p": "assets/0ed012c66a67.jpg", "t": "Лакомства для кошек", "l": false, "r": 1.5385}, {"g": "assets/898fdab4b1e4.gif", "p": "assets/0d759f39685c.jpg", "t": "Помогаем приютам вместе", "l": false, "r": 1.7143}, {"g": "assets/43ebdcf10e77.gif", "p": "assets/922127390354.jpg", "t": "Физиология адаптации: вода, стул и энергия", "l": false, "r": 1.5385}, {"g": "assets/49102d6a20b3.gif", "p": "assets/75e9e4870952.jpg", "t": "Спасибо за заказ!", "l": false, "r": 1.7143}, {"g": "assets/fc85839a0351.gif", "p": "assets/be73cebc0aef.jpg", "t": "Давно не заказывали? Дарим −30%", "l": false, "r": 1.5385}, {"g": "assets/1fa055596f4a.gif", "p": "assets/11681dd85dd1.jpg", "t": "Первое кормление: как подать новый рацион", "l": true, "r": 1.5385}, {"g": "assets/31a54a263d1d.gif", "p": "assets/a34e5f659230.jpg", "t": "Чем кормить: сравниваем рационы", "l": false, "r": 1.7143}, {"g": "assets/f737baf77bea.gif", "p": "assets/323aa31d4662.jpg", "t": "Как поживает ваш питомец?", "l": false, "r": 1.5385}, {"g": "assets/319695a61f2d.gif", "p": "assets/0f54e9b21a47.jpg", "t": "Соберите пробный набор", "l": false, "r": 1.7143}, {"g": "assets/41e814303646.gif", "p": "assets/2c5a236ab0f3.jpg", "t": "Дайджест: 7 августа", "l": false, "r": 1.5385}, {"g": "assets/23f01aa84cf2.gif", "p": "assets/c5383fb845ba.jpg", "t": "Промокод скоро сгорит", "l": false, "r": 1.5385}, {"g": "assets/c12ea8d12990.gif", "p": "assets/4f8660c175cc.jpg", "t": "Что говорят о нас клиенты", "l": false, "r": 1.7143}, {"g": "assets/928e1bfb851c.gif", "p": "assets/3ec78f870ee5.jpg", "t": "Аксессуары для кошек", "l": false, "r": 1.7143}, {"g": "assets/1652645a57d4.gif", "p": "assets/e572b21314cb.jpg", "t": "Ест осторожно или только принюхивается?", "l": false, "r": 1.5385}, {"g": "assets/e913b3cd1f9e.gif", "p": "assets/3e75d590b5c8.jpg", "t": "Из чего состоит рацион", "l": true, "r": 1.5385}, {"g": "assets/902aee1a1edd.gif", "p": "assets/676fa8eab228.jpg", "t": "Мы вас не теряем и надеемся, что вернётесь", "l": false, "r": 1.5385}, {"g": "assets/e4774d3fac54.gif", "p": "assets/da98af770224.jpg", "t": "Фотосессия с питомцем", "l": false, "r": 1.5385}, {"g": "assets/cd842f47c905.gif", "p": "assets/a02211f09f06.jpg", "t": "Коробку можно вернуть", "l": false, "r": 1.7143}, {"g": "assets/ba4e908b7d6d.gif", "p": "assets/dc4a67995a31.jpg", "t": "Что с ним не так?", "l": false, "r": 1.5385}, {"g": "assets/574f2a37b401.gif", "p": "assets/3b7953f06566.jpg", "t": "Формирование привычки: когда забота не отнимает время", "l": false, "r": 1.5385}, {"g": "assets/40d010da950f.gif", "p": "assets/2fa6710644a1.jpg", "t": "Лакомства для собак", "l": false, "r": 1.5385}, {"g": "assets/048bfb392e8a.gif", "p": "assets/069aa7ac6f24.jpg", "t": "Дайджест №31", "l": false, "r": 1.5385}, {"g": "assets/6fc5acfc35ca.gif", "p": "assets/fbd3e7509788.jpg", "t": "Итоги первой недели: результат, которым можно гордиться", "l": false, "r": 1.5385}, {"g": "assets/c3698ef8cd96.gif", "p": "assets/369c42b163eb.jpg", "t": "Аксессуары для собак", "l": false, "r": 1.7143}, {"g": "assets/c7140a14e98c.gif", "p": "assets/4d194248358f.jpg", "t": "Нам вас не хватает", "l": false, "r": 1.5385}, {"g": "assets/b174d4a25ae4.gif", "p": "assets/ca302fbaa522.jpg", "t": "Помогите нам стать лучше", "l": false, "r": 1.7143}, {"g": "assets/c4eb0a5d05f9.gif", "p": "assets/c2fcd195aafb.jpg", "t": "Лакомства", "l": false, "r": 1.7143}, {"g": "assets/e682c9c8fa57.gif", "p": "assets/57e3f03d2bbb.jpg", "t": "Оцените заказ", "l": false, "r": 1.7143}, {"g": "assets/8f18fed9b6c0.gif", "p": "assets/276e6c8c467f.jpg", "t": "Зачем в рационе овощи", "l": false, "r": 1.7143}, {"g": "assets/9e5e8151ff7f.gif", "p": "assets/cd8fb41f4d27.jpg", "t": "Как правильно кормить питомца", "l": false, "r": 1.5385}, {"g": "assets/61b0931f4ceb.gif", "p": "assets/1d255808ea0d.jpg", "t": "Приятная рутина с LAIKY", "l": true, "r": 1.5385}, {"g": "assets/886d3ed487ba.gif", "p": "assets/5fd936c3c268.jpg", "t": "Внутри — только мясо и овощи", "l": true, "r": 1.5385}, {"g": "assets/ec781fe93243.gif", "p": "assets/3ce11fad9ba2.jpg", "t": "Пора пополнить запасы", "l": true, "r": 1.5385}, {"g": "assets/11000e4699b1.gif", "p": "assets/db4832bce529.jpg", "t": "Энергии стало больше?", "l": true, "r": 1.5385}, {"g": "assets/9a07783c162a.gif", "p": "assets/784779c666ce.jpg", "t": "Миска всегда полная", "l": true, "r": 1.5385}, {"g": "assets/d9558a018423.gif", "p": "assets/4d9430fac1c7.jpg", "t": "Что приходит в коробке", "l": true, "r": 1.5385}, {"g": "assets/dfa01a6910d8.gif", "p": "assets/d85baa48c9c8.jpg", "t": "Скидка на LAIKY", "l": true, "r": 1.5385}, {"g": "assets/35eaafdda17e.gif", "p": "assets/9fff3756a560.jpg", "t": "Гайд по питанию", "l": true, "r": 1.5385}];
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { on: -1 }; }
+  renderVals() {
+    const on = this.state.on;
+    return { mails: MAILS.map((m, i) => ({
+      t: m.t, r: m.r, l: m.l, sp: !m.l, src: on === i ? m.g : m.p,
+      enter: () => this.setState({ on: i }),
+      leave: () => this.setState((s) => s.on === i ? { on: -1 } : null)
+    })) };
+  }
+}
+</script>
+</body>
+</html>

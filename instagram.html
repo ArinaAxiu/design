@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Инстаграм SUPERPET</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+button{font:inherit;color:inherit;cursor:pointer}
+.ig{background:#fff;border-radius:28px;color:#111;padding:44px 0 56px;box-shadow:0 18px 40px -16px rgba(15,26,43,.18)}
+.ig-in{max-width:936px;margin:0 auto;padding:0 24px;box-sizing:border-box}
+.sw{display:flex;flex-wrap:wrap;gap:8px}
+.sb{font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;padding:12px 20px;min-height:48px;border-radius:999px;border:1.5px solid #D8DCE6;background:#fff;color:#4A4A55;transition:background .2s,border-color .2s,color .2s}
+.sb:hover{border-color:#E80F71}
+.sb.on{border-color:#E80F71;background:#FFE2EF;color:#C40B5E}
+.pr{display:flex;align-items:center;gap:28px;padding:0}
+.av{flex:none;width:150px;height:150px;border-radius:50%;padding:4px;background:conic-gradient(from 210deg,#FFC23D,#E80F71,#B12BD9,#E80F71,#FFC23D);box-sizing:border-box}
+.av span{display:block;width:100%;height:100%;border-radius:50%;background:#fff;padding:4px;box-sizing:border-box}
+.av img{width:100%;height:100%;display:block;border-radius:50%}
+.pi{display:flex;flex-direction:column;gap:16px;min-width:0}
+.pn{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.pn b{font-size:22px;font-weight:500}
+.vf{display:inline-flex;width:18px;height:18px;border-radius:50%;background:#0095F6;align-items:center;justify-content:center}
+.fb{background:#EFEFEF;border-radius:10px;padding:8px 16px;font-weight:700;font-size:14px}
+.fb.on{background:#0095F6;color:#fff}
+.bio{font-size:15px;line-height:1.45}
+.bio b{display:block;font-weight:700}
+.hl{display:flex;justify-content:space-between;gap:16px;padding:44px 0 0;overflow-x:auto;scrollbar-width:none}
+.hl::-webkit-scrollbar{display:none}
+.hb{flex:none;display:flex;flex-direction:column;align-items:center;gap:8px;background:none;border:0;padding:0;width:88px;font-size:13px;font-weight:500}
+.hb .ring{width:86px;height:86px;border-radius:50%;padding:3px;box-sizing:border-box;background:#DBDBDB;transition:background .2s}
+.hb .dot{display:block;width:100%;height:100%;border-radius:50%;overflow:hidden;background:#fff;border:3px solid #fff;box-sizing:border-box}
+.hb .dot img{display:block;width:100%;height:100%;object-fit:cover}
+.hb:hover .ring,.hb.on .ring{background:#E80F71}
+.st{display:flex;justify-content:center;align-items:center;gap:20px;margin:28px 0 0;padding:28px 16px;background:#111;border-radius:20px}
+.sf{position:relative;width:min(380px,100%);aspect-ratio:9/16;border-radius:14px;overflow:hidden;background:#222;flex:none}
+.sf img{display:block;width:100%;height:100%;object-fit:cover}
+.seg{position:absolute;top:10px;left:10px;right:10px;display:flex;gap:4px;z-index:2}
+.seg i{flex:1;height:3px;border-radius:2px;background:rgba(255,255,255,.4)}
+.seg i.f{background:#fff}
+.sh{position:absolute;top:22px;left:12px;right:12px;display:flex;align-items:center;gap:8px;z-index:2;color:#fff;font-size:13px;font-weight:700;text-shadow:0 1px 4px rgba(0,0,0,.35)}
+.sh .mini{width:28px;height:28px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center}
+.sh .mini img{width:100%;height:100%;display:block;border-radius:50%}
+.sh .cl{margin-left:auto;background:none;border:0;color:#fff;padding:6px;display:flex}
+.tap{position:absolute;top:0;bottom:0;width:40%;background:none;border:0;z-index:1}
+.tap.l{left:0}.tap.r{right:0;width:60%}
+.nv{flex:none;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.nv:hover{background:rgba(255,255,255,.26)}
+.nv[disabled]{opacity:.25;cursor:default}
+.tb{margin:44px 0 4px;border-top:1px solid #DBDBDB}
+.tb span{display:inline-flex;align-items:center;gap:6px;padding:16px 0;margin-top:-1px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#8E8E8E}
+.tb span.on{color:#111;border-top:1px solid #111}
+.gr{display:grid;grid-template-columns:repeat(3,1fr);gap:4px}
+.tl{position:relative;display:block;padding:0;border:0;background:#EEE;aspect-ratio:4/5;overflow:hidden}
+.im{display:block;width:100%;height:100%;background-repeat:no-repeat;background-color:#EEE}
+.tl .im{transition:filter .2s}
+.tl:hover .im{filter:brightness(.86)}
+.tl .ic{position:absolute;top:10px;right:10px;display:flex;filter:drop-shadow(0 1px 3px rgba(0,0,0,.45))}
+.tl.cur{outline:4px solid #E80F71;outline-offset:-4px}
+.vw{position:relative;grid-column:1/-1;display:flex;gap:32px;align-items:center;justify-content:center;background:#111;border-radius:20px;margin:12px 0;padding:28px 20px;color:#fff}
+.vf2{position:relative;width:min(480px,100%);aspect-ratio:4/5;border-radius:10px;overflow:hidden;flex:none;background:#222}
+.vf2 img{display:block;width:100%;height:100%;object-fit:cover}
+.vf2 .tap{width:50%}.vf2 .tap.r{width:50%}
+.vs{display:flex;flex-direction:column;gap:16px;width:220px}
+.vs b{font-size:20px;line-height:1.25;font-weight:700}
+.vs .ct{font-size:14px;color:rgba(255,255,255,.6)}
+.dots{display:flex;flex-wrap:wrap;gap:6px}
+.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.3)}
+.dots i.f{background:#fff}
+.vrow{display:flex;gap:10px}
+.vx{position:absolute;top:14px;right:14px;z-index:3;width:44px;height:44px;border:0;border-radius:50%;background:rgba(255,255,255,.14);color:#fff;display:flex;align-items:center;justify-content:center;transition:background .2s}
+.vx:hover{background:rgba(255,255,255,.26)}
+@media (max-width: 760px){
+.ig{padding:24px 0 32px;border-radius:22px}
+.ig-in{padding:0}
+.pr{gap:22px;padding:0 16px;align-items:flex-start}
+.av{width:86px;height:86px;padding:3px}
+.pn b{font-size:18px}
+.bio{font-size:14px}
+.hl{gap:16px;padding:24px 16px 0}
+.hb{width:66px;font-size:12px}
+.hb .ring{width:64px;height:64px}
+.hb svg{width:24px;height:24px}
+.st{margin:18px 0 0;border-radius:0;padding:14px 10px;gap:8px}
+.st .nv{display:none}
+.tb{margin:24px 0 2px}
+.gr{gap:2px}
+.tl .ic svg{width:16px;height:16px}
+.vw{flex-direction:column;gap:14px;border-radius:0;margin:6px 0;padding:64px 10px 18px}
+.vx{top:10px;right:10px}
+.vw .nv{display:none}
+.vs{width:100%;padding:0 6px;box-sizing:border-box}
+}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 16px">
+<span style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"><img src="assets/89f64917f158.svg" alt="SUPERPET / LAIKY" width="165" height="19" style="display: block; height: 19px; width: auto"></span>
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Инстаграм SUPERPET и&nbsp;LAIKY</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 700px">Посты, карусели, сторис и&nbsp;обложки для&nbsp;хайлайтов двух брендов. Аккаунт переключается сверху. Нажмите на&nbsp;пост&nbsp;— карусель откроется и&nbsp;пролистается.</p>
+</header>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-weight: 700; font-size: 17px">Аккаунты</span>
+<div class="sw" role="group" aria-label="Аккаунт"><button type="button" class="{{swSp}}" onClick="{{toSp}}" aria-pressed="{{pSp}}">SUPERPET</button><button type="button" class="{{swLk}}" onClick="{{toLk}}" aria-pressed="{{pLk}}">LAIKY</button></div>
+</div>
+
+<section class="ig" aria-label="Профили SUPERPET и LAIKY в стиле Инстаграма">
+<div class="ig-in">
+<div class="pr">
+<div class="av"><span><img src="{{logo}}" alt="{{brandName}}"></span></div>
+<div class="pi">
+<div class="pn"><b>{{handle}}</b><span class="vf" aria-hidden="true"><svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span><span class="fb on" aria-hidden="true">Подписаться</span><span class="fb" aria-hidden="true">Сообщение</span></div>
+<div class="bio"><b>{{brandName}}</b>{{bio}}</div>
+</div>
+</div>
+
+<sc-if value="{{isSp}}" hint-placeholder-val="{{true}}">
+<div class="hl" role="list" aria-label="Хайлайты">
+<sc-for list="{{hls}}" as="h" hint-placeholder-count="6">
+<button type="button" role="listitem" class="{{h.cls}}" onClick="{{h.open}}" aria-label="{{h.label}}" aria-pressed="{{h.on}}"><span class="ring"><span class="dot"><img src="{{h.img}}" alt=""></span></span>{{h.t}}</button>
+</sc-for>
+</div>
+
+<sc-if value="{{story}}" hint-placeholder-val="{{false}}">
+<div class="st" role="region" aria-label="{{sTitle}}">
+<button type="button" class="nv" onClick="{{sPrev}}" disabled="{{sFirst}}" aria-label="Предыдущая сторис"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<div class="sf">
+<div class="seg" aria-hidden="true"><sc-for list="{{sSeg}}" as="g" hint-placeholder-count="7"><i class="{{g.c}}"></i></sc-for></div>
+<div class="sh"><span class="mini"><img src="assets/fa32d4bca1e6.png" alt=""></span>{{sTitle}}<button type="button" class="cl" onClick="{{close}}" aria-label="Закрыть сторис"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></button></div>
+<span class="im" role="img" aria-label="{{sAlt}}" style="background-image: url('{{sU}}'); background-size: {{sSz}}% 100%; background-position: {{sPx}}% 0"></span>
+<button type="button" class="tap l" onClick="{{sPrev}}" aria-label="Предыдущая сторис"></button>
+<button type="button" class="tap r" onClick="{{sNext}}" aria-label="Следующая сторис"></button>
+</div>
+<button type="button" class="nv" onClick="{{sNext}}" disabled="{{sLast}}" aria-label="Следующая сторис"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button>
+</div>
+</sc-if>
+</sc-if>
+
+<div class="tb" aria-hidden="true"></div>
+
+<div class="gr">
+<sc-for list="{{cells}}" as="c" hint-placeholder-count="12">
+<sc-if value="{{c.tile}}" hint-placeholder-val="{{true}}">
+<button type="button" class="{{c.cls}}" onClick="{{c.open}}" aria-label="{{c.label}}"><span class="im" style="background-image: url('{{c.u}}'); background-size: {{c.sz}}% 100%; background-position: 0% 0"></span><sc-if value="{{c.pin}}" hint-placeholder-val="{{false}}"><span class="ic"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M15.2 2.8l6 6-2.1.7-3.6 3.6.4 4.5-1.6 1.6-3.8-3.8L5 21 3 19l5.6-5.5-3.8-3.8 1.6-1.6 4.5.4L14.5 4.9z"></path></svg></span></sc-if><sc-if value="{{c.car}}" hint-placeholder-val="{{true}}"><span class="ic"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="#fff"><path d="M8 3h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-1V7a2 2 0 0 0-2-2H6V5a2 2 0 0 1 2-2z"></path><rect x="3" y="7" width="13" height="14" rx="2"></rect></svg></span></sc-if></button>
+</sc-if>
+<sc-if value="{{c.view}}" hint-placeholder-val="{{false}}">
+<div class="vw" role="region" aria-label="{{c.t}}">
+<button type="button" class="vx" onClick="{{close}}" aria-label="Закрыть"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"></path></svg></button>
+<button type="button" class="nv" onClick="{{prev}}" disabled="{{vFirst}}" aria-label="Предыдущий слайд"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"></path></svg></button>
+<div class="vf2"><span class="im" role="img" aria-label="{{vAlt}}" style="background-image: url('{{vU}}'); background-size: {{vSz}}% 100%; background-position: {{vPx}}% 0"></span><button type="button" class="tap l" onClick="{{prev}}" aria-label="Предыдущий слайд"></button><button type="button" class="tap r" onClick="{{next}}" aria-label="Следующий слайд"></button></div>
+<div class="vs"><b>{{c.t}}</b><span class="ct">{{vCount}}</span><div class="dots" aria-hidden="true"><sc-for list="{{vDots}}" as="g" hint-placeholder-count="6"><i class="{{g.c}}"></i></sc-for></div></div>
+<button type="button" class="nv" onClick="{{next}}" disabled="{{vLast}}" aria-label="Следующий слайд"><svg aria-hidden="true" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5l7 7-7 7"></path></svg></button>
+</div>
+</sc-if>
+</sc-for>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6400}}'>
+const ALL = { sp: [{"t": "Как появился SUPERPET", "u": "assets/b1ff84b8e596.webp", "n": 10, "pin": true}, {"t": "С чего начать переход на натуральное питание", "u": "assets/cf4a3b603347.webp", "n": 12, "pin": true}, {"t": "Как выбрать тип питания", "u": "assets/7b166290b81a.webp", "n": 16, "pin": true}, {"t": "Что внутри пакета SUPERPET", "u": "assets/b0646c2fd562.webp", "n": 6, "pin": false}, {"t": "Почему запрещают ввоз сухих кормов в Россию", "u": "assets/83184673e373.webp", "n": 1, "pin": false}, {"t": "Они ждут свой дом", "u": "assets/1fee9297338e.webp", "n": 7, "pin": false}, {"t": "Отпуск без стресса", "u": "assets/bba6e926541e.webp", "n": 6, "pin": false}, {"t": "Популярные окрасы чихуахуа", "u": "assets/0683f2bc0d70.webp", "n": 1, "pin": false}, {"t": "Стоит ли заводить второго кота", "u": "assets/fa05c6a6d165.webp", "n": 1, "pin": false}, {"t": "15 созвучных пар кличек", "u": "assets/46c69c97a4f8.webp", "n": 1, "pin": false}, {"t": "История рыжего кота Шамса", "u": "assets/d83dbf4298e2.webp", "n": 12, "pin": false}, {"t": "Перебои в работе сайта", "u": "assets/7591782b8be7.webp", "n": 1, "pin": false}, {"t": "Гигиена кошки", "u": "assets/0e804b7f6174.webp", "n": 1, "pin": false}, {"t": "Хэллоуин: мистические факты", "u": "assets/d0c15801de22.webp", "n": 6, "pin": false}, {"t": "Как приучить котёнка к лотку", "u": "assets/000db8257a99.webp", "n": 5, "pin": false}, {"t": "Они ждут свой дом", "u": "assets/8d60fc1d32ae.webp", "n": 6, "pin": false}, {"t": "Самые ласковые породы кошек", "u": "assets/90b426deb371.webp", "n": 1, "pin": false}, {"t": "Как подготовить кота к осени", "u": "assets/e8da968d35cc.webp", "n": 7, "pin": false}, {"t": "Дисплазия у собак", "u": "assets/dd99047cd825.webp", "n": 13, "pin": false}, {"t": "Что значит взгляд кошки", "u": "assets/cf1be593e4b5.webp", "n": 1, "pin": false}, {"t": "История мальтипу Локи", "u": "assets/ee4fb39d38ff.webp", "n": 10, "pin": false}, {"t": "Мы в MAX", "u": "assets/a53125822b89.webp", "n": 1, "pin": false}, {"t": "Они ждут свой дом", "u": "assets/17dde5e27686.webp", "n": 8, "pin": false}, {"t": "SUPERPET доступен в Беларуси", "u": "assets/10fe83281bfa.webp", "n": 1, "pin": false}, {"t": "Ваш питомец не капризничает", "u": "assets/67cbec883e5c.webp", "n": 6, "pin": false}, {"t": "Кошка в чрезвычайной ситуации", "u": "assets/f68645058719.webp", "n": 8, "pin": false}, {"t": "Как отучить кошку кусаться", "u": "assets/0420b14141d6.webp", "n": 1, "pin": false}, {"t": "Кого из семьи кот любит больше", "u": "assets/467358f8e179.webp", "n": 1, "pin": false}, {"t": "Что кошки чувствуют раньше нас", "u": "assets/afffb5794b4d.webp", "n": 1, "pin": false}, {"t": "Типы котомам", "u": "assets/807265b109b3.webp", "n": 8, "pin": false}, {"t": "Готовы ли вы взять котёнка", "u": "assets/5c30adf24b2a.webp", "n": 1, "pin": false}, {"t": "Хэллоуин: самые узнаваемые животные", "u": "assets/33d4adebcb1e.webp", "n": 8, "pin": false}, {"t": "Вы нашли котёнка на улице", "u": "assets/ad1928a56f93.webp", "n": 9, "pin": false}, {"t": "Кошка и блюдце молока", "u": "assets/10f1c5612603.webp", "n": 7, "pin": false}, {"t": "Чип, адресник или GPS-трекер", "u": "assets/f2ffec4a4ee6.webp", "n": 5, "pin": false}, {"t": "Система кормления на натуральном питании", "u": "assets/681d63b1de8c.webp", "n": 3, "pin": false}], lk: [{"t": "7 осенних продуктов с огорода", "u": "assets/9763ee916efd.webp", "n": 1, "pin": false}, {"t": "6 фруктов и ягод, которые можно заморозить для собаки", "u": "assets/be961c9b0f13.webp", "n": 1, "pin": false}, {"t": "Немецких овчарок пытались напугать привидениями", "u": "assets/051c75f78f89.webp", "n": 3, "pin": false}, {"t": "Сколько должна спать собака", "u": "assets/4cffce079b17.webp", "n": 1, "pin": false}, {"t": "8 тревожных симптомов у собаки, которые нельзя игнорировать", "u": "assets/a0e0ebef8759.webp", "n": 9, "pin": false}, {"t": "Карта пород собак", "u": "assets/96007d3023eb.webp", "n": 8, "pin": false}, {"t": "Как собаки ощущают температуру", "u": "assets/efb15cb35456.webp", "n": 7, "pin": false}, {"t": "Какое мясо подходит собакам", "u": "assets/39fdd72c597e.webp", "n": 1, "pin": false}, {"t": "Почему маленькие собаки мёрзнут быстрее крупных", "u": "assets/c7fb734e7acb.webp", "n": 1, "pin": false}, {"t": "Виды пуделей по размеру", "u": "assets/108f9e383a65.webp", "n": 1, "pin": false}, {"t": "Натуральное сырое питание по системе BARF", "u": "assets/d9830415cf16.webp", "n": 3, "pin": false}, {"t": "8 полезных границ для воспитанной собаки", "u": "assets/66361396188b.webp", "n": 1, "pin": false}, {"t": "10 самых частых причин, по которым владельцы отдают собак", "u": "assets/acd0d4886f3e.webp", "n": 1, "pin": false}, {"t": "Какие собаки чаще всего уживаются друг с другом", "u": "assets/152c98921a25.webp", "n": 1, "pin": false}, {"t": "Как хрящи помогают защитить суставы", "u": "assets/a1b08464717f.webp", "n": 6, "pin": false}, {"t": "Что купить собаке осенью", "u": "assets/1ac5ea528166.webp", "n": 8, "pin": false}, {"t": "После прогулки на лапах остаётся больше, чем кажется", "u": "assets/c7a50f24eb13.webp", "n": 1, "pin": false}, {"t": "Чистка ушей у собак: можно и нельзя", "u": "assets/64268ec7a70a.webp", "n": 1, "pin": false}, {"t": "3 привычки собаки, которые легко скорректировать", "u": "assets/0b9fdcc61f52.webp", "n": 4, "pin": false}, {"t": "Нужно ли менять рацион собаки с наступлением холодов", "u": "assets/87f156a29396.webp", "n": 6, "pin": false}, {"t": "Мы обновили упаковку LAIKY", "u": "assets/68a416a8e89a.webp", "n": 3, "pin": false}, {"t": "5 признаков, что собака перевозбудилась", "u": "assets/09ab1cdb3544.webp", "n": 1, "pin": false}, {"t": "Не все собаки хотят дружить со всеми", "u": "assets/3f6dde99d052.webp", "n": 1, "pin": false}, {"t": "Как прокачать здоровье своей собаки", "u": "assets/a8ddf1315503.webp", "n": 1, "pin": false}, {"t": "Собаки, которые идеально защитят ваш дом", "u": "assets/aa005244d05a.webp", "n": 2, "pin": false}, {"t": "Овощи, безопасные для собак", "u": "assets/3ab5129e706b.webp", "n": 1, "pin": false}, {"t": "Добавляет годы жизни", "u": "assets/3b346c1c67b0.webp", "n": 1, "pin": false}, {"t": "Самые мемные породы собак", "u": "assets/07abd2e5e20d.webp", "n": 7, "pin": false}, {"t": "Как подготовить своего псына к холодам", "u": "assets/b6a168931720.webp", "n": 8, "pin": false}, {"t": "Перебои в работе сайта", "u": "assets/8bb57934709d.webp", "n": 1, "pin": false}, {"t": "Что означает лай собаки", "u": "assets/f87a90e10cd9.webp", "n": 1, "pin": false}] };
+const STORIES = [{"t": "Где купить", "u": "assets/8318ea4fe981.webp", "n": 9, "icon": 0, "img": "assets/b529d31554b9.webp"}, {"t": "Аллергия", "u": "assets/6a9a4d187330.webp", "n": 7, "icon": 1, "img": "assets/795e461961e0.webp"}, {"t": "Шерсть", "u": "assets/5e5795c613e2.webp", "n": 7, "icon": 2, "img": "assets/2b456e39dc9b.webp"}, {"t": "Пищеварение", "u": "assets/270bbd4651ec.webp", "n": 10, "icon": 3, "img": "assets/49dedd8d582a.webp"}, {"t": "МКБ", "u": "assets/761c56176a2b.webp", "n": 7, "icon": 4, "img": "assets/350248181e4a.webp"}, {"t": "Долголетие", "u": "assets/61c0651bda42.webp", "n": 7, "icon": 5, "img": "assets/6bad044bd1c4.webp"}];
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { brand: 'sp', post: -1, slide: 0, hl: -1, frame: 0 }; this.onKey = this.onKey.bind(this); }
+  componentDidMount() { window.addEventListener('keydown', this.onKey); }
+  componentWillUnmount() { window.removeEventListener('keydown', this.onKey); }
+  onKey(e) {
+    if (e.key === 'Escape') this.close();
+    else if (e.key === 'ArrowRight') this.step(1);
+    else if (e.key === 'ArrowLeft') this.step(-1);
+  }
+  close() { this.setState({ post: -1, hl: -1 }); }
+  reveal(sel) { requestAnimationFrame(() => { const el = document.querySelector(sel); if (!el) return; const rm = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches; el.scrollIntoView({ block: 'nearest', behavior: rm ? 'auto' : 'smooth' }); }); }
+  step(d) {
+    const s = this.state, POSTS = ALL[s.brand];
+    if (s.post >= 0) { const n = POSTS[s.post].n; this.setState({ slide: Math.max(0, Math.min(n - 1, s.slide + d)) }); }
+    else if (s.hl >= 0) {
+      const n = STORIES[s.hl].n, f = s.frame + d;
+      if (f >= n) { if (s.hl < STORIES.length - 1) this.setState({ hl: s.hl + 1, frame: 0 }); else this.setState({ hl: -1 }); }
+      else this.setState({ frame: Math.max(0, f) });
+    }
+  }
+  renderVals() {
+    const { post, slide, hl, frame, brand } = this.state;
+    const POSTS = ALL[brand], sp = brand === 'sp';
+    const go = (b) => this.setState({ brand: b, post: -1, hl: -1, slide: 0, frame: 0 });
+    const cols = 3;
+    const cells = [];
+    POSTS.forEach((p, i) => {
+      const n = p.n;
+      cells.push({ tile: true, view: false, u: p.u, sz: n * 100, pin: p.pin, car: !p.pin && n > 1, t: p.t,
+        cls: 'tl' + (post === i ? ' cur' : ''),
+        label: (p.pin ? 'Закреплённый пост' : 'Пост') + ': ' + p.t + (n > 1 ? ', карусель из ' + n + ' слайдов' : ''),
+        open: () => this.setState((s) => s.post === i ? { post: -1 } : { post: i, slide: 0, hl: -1 }, () => this.reveal('.vw')) });
+      const endOfRow = (i % cols === cols - 1) || i === POSTS.length - 1;
+      if (endOfRow && post >= 0 && Math.floor(post / cols) === Math.floor(i / cols))
+        cells.push({ tile: false, view: true, t: POSTS[post].t });
+    });
+    const P0 = post >= 0 ? POSTS[post] : null;
+    const S0 = hl >= 0 ? STORIES[hl] : null;
+    return {
+      isSp: sp, swSp: 'sb' + (sp ? ' on' : ''), swLk: 'sb' + (sp ? '' : ' on'), pSp: sp ? 'true' : 'false', pLk: sp ? 'false' : 'true',
+      toSp: () => go('sp'), toLk: () => go('lk'),
+      logo: sp ? 'assets/fa32d4bca1e6.png' : 'assets/c94adfb5218c.png', brandName: sp ? 'SUPERPET' : 'LAIKY', handle: sp ? 'superpet' : 'laiky.ru',
+      bio: sp ? 'Натуральное питание для кошек и собак' : 'Натуральное питание для собак',
+      cells,
+      hls: STORIES.map((s, i) => ({ t: s.t, img: s.img, i0: s.icon === 0, i1: s.icon === 1, i2: s.icon === 2, i3: s.icon === 3, i4: s.icon === 4, i5: s.icon === 5,
+        cls: 'hb' + (hl === i ? ' on' : ''), on: hl === i ? 'true' : 'false', label: 'Хайлайт «' + s.t + '», ' + s.n + ' сторис',
+        open: () => this.setState((st) => st.hl === i ? { hl: -1 } : { hl: i, frame: 0, post: -1 }, () => this.reveal('.st')) })),
+      story: !!S0, sTitle: S0 ? S0.t : '', sU: S0 ? S0.u : '', sSz: S0 ? S0.n * 100 : 100, sPx: S0 && S0.n > 1 ? frame / (S0.n - 1) * 100 : 0, sAlt: S0 ? 'Сторис «' + S0.t + '», ' + (frame + 1) + ' из ' + S0.n : '',
+      sSeg: S0 ? Array.from({ length: S0.n }, (_, k) => ({ c: k <= frame ? 'f' : '' })) : [],
+      sFirst: frame === 0, sLast: !S0 || (frame === S0.n - 1 && hl === STORIES.length - 1),
+      sPrev: () => this.step(-1), sNext: () => this.step(1),
+      vU: P0 ? P0.u : '', vSz: P0 ? P0.n * 100 : 100, vPx: P0 && P0.n > 1 ? slide / (P0.n - 1) * 100 : 0, vAlt: P0 ? P0.t + ', слайд ' + (slide + 1) + ' из ' + P0.n : '',
+      vCount: P0 ? (P0.n > 1 ? 'Слайд ' + (slide + 1) + ' из ' + P0.n : 'Одиночный пост') : '',
+      vDots: P0 && P0.n > 1 ? Array.from({ length: P0.n }, (_, k) => ({ c: k === slide ? 'f' : '' })) : [],
+      vFirst: slide === 0, vLast: !P0 || slide === P0.n - 1,
+      prev: () => this.step(-1), next: () => this.step(1), close: () => this.close()
+    };
+  }
+}
+</script>
+</body>
+</html>

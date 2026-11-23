@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Баннеры и сторис Clarins</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+button{font:inherit;color:inherit;cursor:pointer}
+.gw{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.gi{position:relative;padding:0;border:0;border-radius:0;overflow:hidden;aspect-ratio:240/400;background-color:#F3F4F7;background-repeat:no-repeat;transition:transform .25s ease}
+.gi:hover{transform:translateY(-3px)}
+.gi .bg,.gi img{position:absolute;inset:0;width:100%;height:100%;display:block;background-repeat:no-repeat}
+.sw{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.si{position:relative;padding:0;border:0;border-radius:14px;overflow:hidden;aspect-ratio:9/16;background:#F3F4F7;transition:transform .25s ease}
+.si:hover{transform:translateY(-3px)}
+.si .bg,.si img{position:absolute;inset:0;width:100%;height:100%;display:block;background-repeat:no-repeat;object-fit:cover}
+/*x*/.sv{position:relative;display:block;width:100%;padding:0;border:0;border-radius:16px;overflow:hidden;background:#fff;aspect-ratio:720/406}
+.sv img{display:block;width:100%;height:100%;object-fit:cover}
+.pl{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:#D31245;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(211,18,69,.6);transition:transform .2s}
+.sv:hover .pl{transform:scale(1.06)}
+@media (max-width: 1000px){.gw{grid-template-columns:repeat(4,1fr)}.sw{grid-template-columns:repeat(4,1fr)}}
+@media (max-width: 640px){.gw{grid-template-columns:repeat(3,1fr);gap:10px}.sw{grid-template-columns:repeat(2,1fr);gap:10px}}
+@media (prefers-reduced-motion: reduce){.gi{transition:none}.gi:hover{transform:none}.si{transition:none}.si:hover{transform:none}}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 18px">
+<img src="assets/5757ea083c8c.svg" alt="Clarins" width="146" height="32" style="display: block; width: 146px; height: auto; border-radius: 4px">
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Реклама Clarins в&nbsp;Google и&nbsp;Яндексе</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 720px">Если с&nbsp;2016&nbsp;по&nbsp;2022&nbsp;год вам попадалась реклама Clarins в&nbsp;Google и&nbsp;Яндексе&nbsp;— это&nbsp;были мои креативы. Баннеры под&nbsp;каждую акцию: скидки, подарки, пробники, игры, клуб Clarins и&nbsp;сезонные распродажи.</p>
+</header>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #D31245">Видео</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Сторис</h2><p style="margin: 4px 0 0; font-size: 18px; line-height: 1.5; max-width: 640px">Анимированные сторис под&nbsp;акции. Наведите или&nbsp;нажмите&nbsp;— ролик запустится.</p></div>
+<div class="sw">
+<sc-for list="{{stories}}" as="g" hint-placeholder-count="12">
+<button type="button" class="si" onClick="{{g.toggle}}" onMouseEnter="{{g.enter}}" onMouseLeave="{{g.leave}}" aria-label="{{g.a}}" aria-pressed="{{g.on}}"><span class="bg" style="background-image: url('assets/5245ccd0f761.webp'); background-size: 1200% 100%; background-position: {{g.px}}% 0"></span><sc-if value="{{g.play}}" hint-placeholder-val="{{false}}"><img src="{{g.g}}" alt=""></sc-if></button>
+</sc-for>
+</div>
+</section>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #D31245">240 × 400 · GIF</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Медийные баннеры</h2><p style="margin: 4px 0 0; font-size: 18px; line-height: 1.5; max-width: 640px">Наведите на&nbsp;баннер или&nbsp;нажмите на&nbsp;него&nbsp;— анимация запустится.</p></div>
+<div class="gw">
+<sc-for list="{{gifs}}" as="g" hint-placeholder-count="28">
+<button type="button" class="gi" onClick="{{g.toggle}}" onMouseEnter="{{g.enter}}" onMouseLeave="{{g.leave}}" aria-label="{{g.a}}" aria-pressed="{{g.on}}"><span class="bg" style="background-image: url('assets/d1c571665548.webp'); background-size: 2800% 100%; background-position: {{g.px}}% 0"></span><sc-if value="{{g.play}}" hint-placeholder-val="{{false}}"><img src="{{g.g}}" alt=""></sc-if></button>
+</sc-for>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2700}}'>
+const GIFS = [{"g": "assets/669844cc697d.gif", "px": 40.7407, "a": "Баннер Clarins 240×400: −40% на средства для лица"}, {"g": "assets/c297f62f010c.gif", "px": 0.0, "a": "Баннер Clarins 240×400: Подарок при заказе от 4 500 ₽"}, {"g": "assets/0a098ca04bfd.gif", "px": 48.1481, "a": "Баннер Clarins 240×400: Подарок за заказ от 1 000 ₽"}, {"g": "assets/fcadb2d7914d.gif", "px": 3.7037, "a": "Баннер Clarins 240×400: −50% на подборку"}, {"g": "assets/611762a66c7f.gif", "px": 85.1852, "a": "Баннер Clarins 240×400: Успейте за подарками: −40% на три средства"}, {"g": "assets/af80fc919637.gif", "px": 7.4074, "a": "Баннер Clarins 240×400: 24/7: антивозрастной уход"}, {"g": "assets/5ba4199d9ec0.gif", "px": 92.5926, "a": "Баннер Clarins 240×400: Киберпятница: −40% на всё"}, {"g": "assets/971d4def9f03.gif", "px": 11.1111, "a": "Баннер Clarins 240×400: Закрытое предложение для Клуба Clarins"}, {"g": "assets/4e7132a46ae9.gif", "px": 96.2963, "a": "Баннер Clarins 240×400: Только сегодня: −40% на весь ассортимент"}, {"g": "assets/6fe51ddd4b73.gif", "px": 14.8148, "a": "Баннер Clarins 240×400: −45% на бестселлеры для тела и защиты от солнца"}, {"g": "assets/3ea6af1bf9db.gif", "px": 18.5185, "a": "Баннер Clarins 240×400: Подарок за покупку средств от солнца"}, {"g": "assets/55057a9db8c5.gif", "px": 22.2222, "a": "Баннер Clarins 240×400: Бесплатная доставка от 1 500 ₽"}, {"g": "assets/f94dfda57851.gif", "px": 25.9259, "a": "Баннер Clarins 240×400: −50% на солнцезащитные средства"}, {"g": "assets/adb57f7d8aa3.gif", "px": 29.6296, "a": "Баннер Clarins 240×400: −45% на три средства"}, {"g": "assets/ffddb39457b5.gif", "px": 33.3333, "a": "Баннер Clarins 240×400: Игра: выиграйте полноразмерное средство"}, {"g": "assets/c783ac5dbcf7.gif", "px": 37.037, "a": "Баннер Clarins 240×400: 5 пробников в подарок"}, {"g": "assets/4838b526c6ff.gif", "px": 44.4444, "a": "Баннер Clarins 240×400: Подарок за подписку на рассылку"}, {"g": "assets/b1e452933ff3.gif", "px": 51.8519, "a": "Баннер Clarins 240×400: День красоты: −40% на все средства"}, {"g": "assets/f90e97ff88bc.gif", "px": 55.5556, "a": "Баннер Clarins 240×400: −40% и подарки для участников клуба"}, {"g": "assets/1edd89b4d2a3.gif", "px": 59.2593, "a": "Баннер Clarins 240×400: Игра: полноразмерное средство в подарок"}, {"g": "assets/55f9633d6033.gif", "px": 62.963, "a": "Баннер Clarins 240×400: WOW-скидка −40%"}, {"g": "assets/1d51b56e2e60.gif", "px": 66.6667, "a": "Баннер Clarins 240×400: Halloweek: −40% на три средства"}, {"g": "assets/58f36943de8c.gif", "px": 70.3704, "a": "Баннер Clarins 240×400: Бесплатная доставка и подарки"}, {"g": "assets/d74f93fe4198.gif", "px": 74.0741, "a": "Баннер Clarins 240×400: Бесплатная доставка с промокодом"}, {"g": "assets/3a5031d94706.gif", "px": 77.7778, "a": "Баннер Clarins 240×400: Подарки от Clarins"}, {"g": "assets/52746e9681e2.gif", "px": 81.4815, "a": "Баннер Clarins 240×400: WOW-скидка −40% на Clarins.ru"}, {"g": "assets/b9f2f9384f2d.gif", "px": 88.8889, "a": "Баннер Clarins 240×400: −35% на три средства в My Clarins"}, {"g": "assets/4e1347157bb6.gif", "px": 100.0, "a": "Баннер Clarins 240×400: Вступайте в Clarins Club"}];
+const STS = [{"g": "assets/232b8638a068.webp", "px": 0.0, "a": "Сторис Clarins: −40% на всё"}, {"g": "assets/8aabc38842b4.webp", "px": 9.0909, "a": "Сторис Clarins: Только 2 дня: −40% на Clarins.ru"}, {"g": "assets/9f48ff688688.webp", "px": 18.1818, "a": "Сторис Clarins: Только 2 дня: −40%, часы из средств"}, {"g": "assets/31815feb880b.webp", "px": 72.7273, "a": "Сторис Clarins: −50% на подборку"}, {"g": "assets/87a94ba3b7d6.webp", "px": 36.3636, "a": "Сторис Clarins: Линия ClarinsMen"}, {"g": "assets/79e27ada2a82.webp", "px": 45.4545, "a": "Сторис Clarins: С 6 до 12 часов −45%"}, {"g": "assets/4015bb2fcd6a.webp", "px": 54.5455, "a": "Сторис Clarins: Бесплатная доставка"}, {"g": "assets/b22748c96682.webp", "px": 63.6364, "a": "Сторис Clarins: Прямой эфир «Курс на лифтинг»"}, {"g": "assets/f2e9ce346899.webp", "px": 27.2727, "a": "Сторис Clarins: −40% на средства для лица"}, {"g": "assets/e8449af702af.webp", "px": 81.8182, "a": "Сторис Clarins: Подпишитесь на рассылку"}, {"g": "assets/9423300f2ea5.webp", "px": 90.9091, "a": "Сторис Clarins: Подарки любимым"}, {"g": "assets/4eeeb1e87f25.webp", "px": 100.0, "a": "Сторис Clarins: Участвуйте в игре на Clarins.ru"}];
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { on: -1, so: -1 }; }
+  renderVals() {
+    const on = this.state.on;
+    const so = this.state.so;
+    return {
+      stories: STS.map((g, i) => ({ ...g, play: so === i, on: so === i ? 'true' : 'false',
+        toggle: () => this.setState({ so: i }),
+        enter: () => this.setState({ so: i }),
+        leave: () => this.setState((s) => s.so === i ? { so: -1 } : null) })),
+      gifs: GIFS.map((g, i) => ({ ...g, play: on === i, on: on === i ? 'true' : 'false',
+        toggle: () => this.setState({ on: i }),
+        enter: () => this.setState({ on: i }),
+        leave: () => this.setState((s) => s.on === i ? { on: -1 } : null) }))
+    };
+  }
+}
+</script>
+</body>
+</html>

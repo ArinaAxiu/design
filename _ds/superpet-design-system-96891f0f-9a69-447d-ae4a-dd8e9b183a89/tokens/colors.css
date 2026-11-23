@@ -1,0 +1,46 @@
+/* SUPERPET colour system. Figma Variables live in fig-tokens.css (spet = default, laiky = :root[data-mode="laiky"]).
+   This file adds the "01. Colour" palette swatches, observed text greys, and semantic aliases. */
+:root{
+  /* 01. Colour palette (exact hexes from the Figma Colour page) */
+  --palette-pink:#E80F71;
+  --palette-lilac-grey:#F0ECF0;
+  --palette-cool-grey:#D9DDE1;
+  --palette-grey:#A8A8A8;
+  --palette-ink:#222222;
+  --palette-black:#000000;
+  --palette-pink-tint:#FFE2EF;
+
+  /* Text greys used across the file */
+  --grey-212:rgb(33,33,33);
+  --grey-95:rgb(95,95,95);
+  --grey-129:rgb(129,129,129);
+  --grey-51:rgb(51,51,51);
+
+  /* Semantic aliases */
+  --brand:var(--controls-brand-base);
+  --brand-soft:var(--controls-light-brand-base);
+  --success:var(--green-100);
+
+  --text-primary:var(--symbols-primary);
+  --text-strong:var(--grey-212);
+  --text-secondary:var(--grey-95);
+  --text-muted:var(--grey-129);
+  --text-disabled:var(--symbols-quaternary);
+  --text-brand:var(--controls-brand-base);
+  --text-on-brand:var(--white-100);
+  --text-on-dark:var(--white-100);
+
+  --surface-page:var(--white-100);
+  --surface-panel:var(--palette-lilac-grey);
+  --surface-panel-cool:var(--palette-cool-grey);
+  --surface-neutral:var(--neutral-30);
+  --surface-brand-soft:var(--controls-light-brand-base);
+  --surface-inverse:var(--black);
+
+  --border-default:var(--borders-hard);
+  --border-strong:var(--borders-x-hard);
+  --border-brand:var(--controls-brand-base);
+  --border-on-dark:var(--white-100);
+}
+a{color:var(--controls-brand-base)}
+a:hover{color:var(--symbols-primary)}

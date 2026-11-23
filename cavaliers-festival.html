@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Фестиваль кавалеров</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+figure{margin:0;display:flex;flex-direction:column;gap:10px;min-width:0}
+figcaption{font-size:15px;color:#4A5568;display:flex;gap:8px;flex-wrap:wrap;align-items:baseline}
+figcaption b{color:#0F1A2B;font-size:16px}
+.ph{display:block;width:100%;height:auto;border-radius:16px;background:#F3F4F7}
+.ph.wide{border-radius:18px}
+.ph.bd{border:1.5px solid #D8DCE6;box-sizing:border-box}
+.pn{background:#fff;border-radius:28px;padding:40px;display:flex;flex-direction:column;gap:28px}
+.hd{display:flex;gap:24px;align-items:flex-start}
+.num{flex:none;font-weight:900;font-size:15px;color:#E80F71;background:#FFE2EF;border-radius:999px;padding:6px 12px;margin-top:6px}
+.ht{display:flex;flex-direction:column;gap:12px}
+.ht h2{margin:0;font-weight:900;font-size:clamp(26px,3vw,38px);line-height:1.1;letter-spacing:-0.01em}
+.ht p{margin:0;font-size:18px;line-height:1.55;color:#2D3748;max-width:760px}
+.vs,.g2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.g-wall{grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);align-items:start}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.g4{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.vs figure:first-child figcaption span{color:#B8860B}
+.vs figure:last-child figcaption span{color:#C8102E}
+.did{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.did li{background:#fff;border-radius:999px;padding:9px 16px;font-weight:500;font-size:16px}
+@media (max-width: 860px){
+.pn{padding:22px;border-radius:22px;gap:22px}
+.hd{flex-direction:column;gap:12px}
+.ht p{font-size:16px}
+.vs,.g2,.g-wall{grid-template-columns:minmax(0,1fr);gap:16px}
+.g3{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.g3 figure:last-child{grid-column:1 / -1}
+.g4{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 32px">
+
+<header style="display: flex; flex-direction: column; gap: 18px">
+<img src="assets/0b6f5bc0c99a.svg" alt="SUPERPET" height="14" style="display: block; height: 14px; width: auto; align-self: flex-start">
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Стенд на&nbsp;фестивале кавалер-кинг-чарльз-спаниелей</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 760px">27&nbsp;июня, парк Сокольники. Оформила стенд SUPERPET под&nbsp;ключ: придумала всё, что&nbsp;видели гости, а&nbsp;вывеску и&nbsp;подвески ещё и&nbsp;напечатала сама на&nbsp;3D-принтере.</p>
+<ul class="did" aria-label="Что сделала"><li>Вывеска-гирлянда</li><li>Подвески на&nbsp;шатёр</li><li>Фотозона с&nbsp;шарами</li><li>Раскраска для&nbsp;детей</li><li>Футболка</li><li>Худи для&nbsp;сотрудников</li><li>Анкета участника</li><li>Скатерть</li></ul>
+</header>
+
+<section class="pn" aria-labelledby="h1">
+<div class="hd"><span class="num">01</span><div class="ht"><h2 id="h1">Макет и&nbsp;реальность</h2><p>Стенд я&nbsp;собрала под&nbsp;жёлтый шатёр, который обещали организаторы. На&nbsp;месте выдали красный. Перекрашивать было уже некогда, так&nbsp;что&nbsp;розовый просто повесили на&nbsp;красное. И, честно говоря, вышло даже нарядно.</p></div></div>
+<div class="vs">
+<figure><img class="ph" src="assets/a21abc36f550.jpg" alt="Макет стенда SUPERPET под жёлтым шатром: гирлянда, подвески, шары, флаг и стол со скатертью" loading="lazy" style="aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 50%"><figcaption><b>Как&nbsp;планировали</b><span>жёлтый шатёр</span></figcaption></figure>
+<figure><img class="ph" src="assets/91d931b043c4.jpg" alt="Стенд SUPERPET на фестивале под красным шатром, с розовой гирляндой и подвесками" loading="lazy" style="aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 30%"><figcaption><b>Как&nbsp;получилось</b><span>красный шатёр</span></figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h2">
+<div class="hd"><span class="num">02</span><div class="ht"><h2 id="h2">Вывеска-гирлянда</h2><p>Вместо вывески на&nbsp;жёстком каркасе сделала гирлянду из&nbsp;отдельных букв на&nbsp;джутовой верёвке. Так&nbsp;дешевле, буквы легко везти, и&nbsp;гирлянда повесится на&nbsp;шатёр любого цвета. В&nbsp;букве U&nbsp;прячется кошачья лапа из&nbsp;логотипа. Все&nbsp;буквы я&nbsp;напечатала на&nbsp;3D-принтере сама.</p></div></div>
+<figure><img class="ph" src="assets/3018f7916cf3.jpg" alt="Макет: гирлянда из букв SUPERPET на жёлтом шатре" loading="lazy" style="aspect-ratio: 16 / 9; object-fit: cover; object-position: 50% 45%"><figcaption>Макет на&nbsp;шатре</figcaption></figure>
+<div class="g2 g-wall">
+<figure><img class="ph" src="assets/58720abd94d7.jpg" alt="Напечатанная гирлянда SUPERPET из розовых букв на верёвке" loading="lazy" style="aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 50%"><figcaption>Первая примерка на&nbsp;стене</figcaption></figure>
+<figure><img class="ph" src="assets/36d39c1d296f.jpg" alt="Чёрная кошка лапой трогает розовые буквы SUP" loading="lazy" style="aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 70%"><figcaption>Приёмка качества</figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h3">
+<div class="hd"><span class="num">03</span><div class="ht"><h2 id="h3">Подвески на&nbsp;шатёр</h2><p>Придумала набор подвесок в&nbsp;стиле бренда: буква U&nbsp;с&nbsp;лапой, цветок, сердце, лапка и&nbsp;три силуэта кавалеров. Подвески висели по&nbsp;краю шатра вместе с&nbsp;гирляндой. Их&nbsp;я&nbsp;тоже напечатала сама.</p></div></div>
+<img class="ph wide" src="assets/946e34793cf8.jpg" alt="Семь дизайнов подвесок: буква U, цветок, сердце, лапа и три спаниеля" loading="lazy">
+<div class="g4">
+<figure><img class="ph" src="assets/b2b076e46e06.jpg" alt="Подвески печатаются на 3D-принтере" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"><figcaption>Печать</figcaption></figure>
+<figure><img class="ph" src="assets/6ceb56286fa5.jpg" alt="Готовые розовые буквы U с лапой" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"><figcaption>Партия U</figcaption></figure>
+<figure><img class="ph" src="assets/cab5b8651e31.jpg" alt="Голубая подвеска-спаниель с буквой U в руке" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"><figcaption>Пробные образцы</figcaption></figure>
+<figure><img class="ph" src="assets/38fcb68d1c17.jpg" alt="Подвески-цветок и розовая U в руке" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"><figcaption>Подбор цветов</figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h4">
+<div class="hd"><span class="num">04</span><div class="ht"><h2 id="h4">Фотозона и&nbsp;раскраска</h2><p>Корзина воздушного шара с&nbsp;розовыми шарами стала фотозоной: в&nbsp;неё сажали собак и&nbsp;фотографировались. А&nbsp;чтобы детям было чем&nbsp;заняться, пока взрослые разговаривают, нарисовала раскраску про&nbsp;фестиваль в&nbsp;Сокольниках.</p></div></div>
+<div class="g3">
+<figure><img class="ph" src="assets/b8a88485d144.jpg" alt="Кавалер-кинг-чарльз-спаниель сидит в плетёной корзине с флажками SUPERPET" loading="lazy" style="aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 50%"><figcaption>Главная модель дня</figcaption></figure>
+<figure><img class="ph" src="assets/22ba50a942a9.jpg" alt="Фотозона с розовыми шарами и корзиной, рядом гости с собаками" loading="lazy" style="aspect-ratio: 3 / 4; object-fit: cover; object-position: 50% 50%"><figcaption>Фотозона</figcaption></figure>
+<figure><img class="ph" src="assets/763ad3fc9761.jpg" alt="Чёрно-белая раскраска SUPERPET: спаниели, парк Сокольники, 27 июня" loading="lazy" style="aspect-ratio: 3 / 4; object-fit: contain; object-position: 50% 50%"><figcaption>Раскраска</figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h5">
+<div class="hd"><span class="num">05</span><div class="ht"><h2 id="h5">Мерч</h2><p>Футболку сделала в&nbsp;духе переписки: на&nbsp;спине вопросы владельцев и&nbsp;ответы SUPERPET. На&nbsp;худи сотрудников&nbsp;— принт SUPERFOOD, SUPERLIFE, SUPERPET, в&nbsp;розовом и&nbsp;чёрном цвете.</p></div></div>
+<img class="ph wide" src="assets/f5b5bac6cc95.jpg" alt="Чёрная футболка SUPERPET «Я кормлю питомца SUPERPET», спереди и сзади" loading="lazy">
+<figure><img class="ph" src="assets/728d8f0c8226.png" alt="Принт на спине футболки: вопросы владельцев и ответы SUPERPET в виде переписки" loading="lazy" style="aspect-ratio: 16 / 10; object-fit: cover; object-position: 50% 50%"><figcaption>Принт на&nbsp;спине</figcaption></figure>
+<div class="g2">
+<figure><img class="ph" src="assets/e6a88f1061b3.jpg" alt="Розовое худи SUPERPET с принтом SUPERFOOD, SUPERLIFE, SUPERPET, спереди и сзади" loading="lazy" style="aspect-ratio: 1300 / 980; object-fit: cover; object-position: 50% 50%"><figcaption>Розовое худи</figcaption></figure>
+<figure><img class="ph" src="assets/ebcfbfc90071.jpg" alt="Чёрное худи SUPERPET с розовым принтом SUPERFOOD, SUPERLIFE, SUPERPET, спереди и сзади" loading="lazy" style="aspect-ratio: 1300 / 980; object-fit: cover; object-position: 50% 50%"><figcaption>Чёрное худи</figcaption></figure>
+<figure><img class="ph" src="assets/4448c028d071.png" alt="Нанесение на розовом худи: белая надпись SUPERFOOD, SUPERLIFE, SUPERPET" loading="lazy" style="aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 50%"><figcaption>Нанесение на&nbsp;розовом</figcaption></figure>
+<figure><img class="ph" src="assets/5ba0cb791b2e.png" alt="Нанесение на чёрном худи: розовая надпись SUPERFOOD, SUPERLIFE, SUPERPET" loading="lazy" style="aspect-ratio: 3 / 2; object-fit: cover; object-position: 50% 50%"><figcaption>Нанесение на&nbsp;чёрном</figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h6">
+<div class="hd"><span class="num">06</span><div class="ht"><h2 id="h6">Анкета участника</h2><p>Гость заполняет анкету про&nbsp;питомца и&nbsp;получает подарок, а&nbsp;бренд&nbsp;— контакты и&nbsp;понимание, чем&nbsp;кормят собак и&nbsp;кошек. Вопросы короткие, ответы в&nbsp;основном галочками.</p></div></div>
+<img class="ph wide bd" src="assets/0774f531a60a.jpg" alt="Анкета участника SUPERPET: имя, телефон, вид, возраст и вес питомца, чем кормите" loading="lazy">
+</section><section class="pn" aria-labelledby="h7">
+<div class="hd"><span class="num">07</span><div class="ht"><h2 id="h7">Скатерть</h2><p>Скатерть 135&nbsp;×&nbsp;135&nbsp;см&nbsp;на&nbsp;стол 80&nbsp;×&nbsp;80&nbsp;см: белые силуэты на&nbsp;фирменном розовом. Фестиваль собачий, но&nbsp;в&nbsp;узор решили добавить и&nbsp;котиков, чтобы скатерть можно было использовать и&nbsp;на&nbsp;других фестивалях.</p></div></div>
+<div class="g2">
+<figure><img class="ph" src="assets/149e23e272b1.jpg" alt="Узор скатерти: белые силуэты кошек и собак на розовом" loading="lazy" style="aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 50%"><figcaption>Узор</figcaption></figure>
+<figure><img class="ph" src="assets/3666ace553f7.jpg" alt="Розовая скатерть с узором на квадратном столе" loading="lazy" style="aspect-ratio: 1 / 1; object-fit: cover; object-position: 50% 50%"><figcaption>На&nbsp;столе</figcaption></figure>
+</div>
+</section><section class="pn" aria-labelledby="h8">
+<div class="hd"><span class="num">08</span><div class="ht"><h2 id="h8">Гости</h2><p>Кавалеры всё&nbsp;обнюхали и&nbsp;одобрили.</p></div></div>
+<div class="g2">
+<figure><img class="ph" src="assets/8d71777ad95a.jpg" alt="Чёрно-белый кавалер-кинг-чарльз-спаниель на траве" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"></figure>
+<figure><img class="ph" src="assets/aa20d9351d21.jpg" alt="Рыжий кавалер-кинг-чарльз-спаниель тянется к руке" loading="lazy" style="aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%"></figure>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":2000}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

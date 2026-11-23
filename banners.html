@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Баннеры SUPERPET</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+figure{margin:0}
+img.sh{display:block;width:100%;height:auto;border-radius:14px;box-shadow:0 14px 32px -18px rgba(15,26,43,.35);transition:transform .35s ease}
+.vf:hover img,.wf:hover img,.qf:hover img{transform:translateY(-4px)}
+.cap{margin-top:12px;font-size:15px;line-height:1.45;font-weight:500;color:#3D4656}
+.vg{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.wg{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.g3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.mf img{display:block;width:100%;height:auto;border-radius:14px}
+.mf figcaption{margin-top:14px;font-weight:700;font-size:16px;color:#fff;display:flex;gap:10px;align-items:center}
+.mf figcaption::before{content:"";width:18px;height:2px;background:#E80F71;flex:none}
+.stamp{position:absolute;z-index:3;right:-18px;top:-56px;width:132px;height:132px;border-radius:50%;background:#E80F71;color:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;rotate:12deg;text-align:center;line-height:1}
+.stamp b{font-weight:900;font-size:40px}.stamp span{font-weight:700;font-size:12px;letter-spacing:.1em;text-transform:uppercase;margin-top:6px}
+.ap{position:relative;display:block;width:100%;padding:0;border:0;background:#fff;border-radius:14px;overflow:hidden;aspect-ratio:1/1;cursor:pointer;box-shadow:0 14px 32px -18px rgba(15,26,43,.35)}
+.ap img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:opacity .45s ease}
+.ap .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(15,26,43,.22);transition:background .2s}
+.ap:hover .play{background:rgba(15,26,43,.34)}
+.ap .pb{flex:none;box-sizing:border-box;width:56px;height:56px;border-radius:50%;background:#E80F71;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 30px -8px rgba(232,15,113,.7);transition:transform .2s}
+.ap:hover .pb{transform:scale(1.08)}
+.ap .pl{background:#fff;color:#0F1A2B;font-weight:700;font-size:15px;padding:8px 14px;border-radius:999px}
+.ap .badge{position:absolute;left:12px;top:12px;background:rgba(255,255,255,.92);color:#0F1A2B;font-weight:700;font-size:13px;padding:6px 10px;border-radius:999px}
+.fbar{display:flex;gap:6px;margin-top:12px}
+.fbar span{flex:1;height:4px;border-radius:2px;transition:background .3s}
+.gj{display:flex;flex-direction:column;gap:16px}
+.gr{display:flex;gap:16px;align-items:flex-start}
+.gi{position:relative;padding:0;border:0;background:#F0F2F6;border-radius:12px;overflow:hidden;cursor:default;box-shadow:0 10px 24px -16px rgba(15,26,43,.35)}
+.gi img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.gtag{position:absolute;left:8px;top:8px;background:#0F1A2B;color:#fff;font-weight:900;font-size:11px;letter-spacing:.08em;padding:4px 7px;border-radius:6px}
+.gpb{position:absolute;left:50%;top:50%;width:44px;height:44px;margin:-22px 0 0 -22px;border-radius:50%;background:#E80F71;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(232,15,113,.7);transition:transform .2s}
+.gi:hover .gpb{transform:scale(1.08)}
+@media (max-width: 1000px){.vg{grid-template-columns:repeat(3,minmax(0,1fr))}.wg{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width: 680px){.gj,.gr{display:contents}.gj{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));grid-auto-flow:dense;gap:12px}.gi{flex:none!important;width:100%}.gi.wide{grid-column:1 / -1}.vg,.wg{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px 12px}.g3{grid-template-columns:minmax(0,1fr);gap:28px}.stamp{width:100px;height:100px;top:-44px;right:-4px}.stamp b{font-size:30px}}
+@media (prefers-reduced-motion: reduce){img.sh,.ap img{transition:none}}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 16px">
+<span style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"><img src="assets/0b6f5bc0c99a.svg" alt="SUPERPET" width="106" height="14" style="display: block; height: 14px; width: auto"></span>
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Рекламные баннеры</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 660px">Креативы для&nbsp;рекламы SUPERPET: вертикали для&nbsp;таргета, сторис с&nbsp;анонсами вебинаров и&nbsp;квадраты для&nbsp;соцсетей. Часть квадратов анимированные&nbsp;— кадры в&nbsp;них сменяются.</p>
+</header>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">720 × 1200</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Анонсы вебинаров</h2><p style="margin: 4px 0 0; font-size: 18px; line-height: 1.5; max-width: 640px">Одна тема&nbsp;— «Как&nbsp;продлить жизнь питомцу с&nbsp;помощью правильного питания»&nbsp;— и&nbsp;каждый раз&nbsp;новая история вокруг неё.</p></div>
+<div class="wg"><figure class="wf"><img class="sh" src="assets/2ed68a4ee08d.jpg" alt="Анонс вебинара: женщина недоверчиво читает состав корма" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/7c17303d594d.jpg" alt="Анонс вебинара: кошка у миски со свечами 19" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/10f0c8f63bf1.jpg" alt="Анонс вебинара: лапа и рука тянутся к миске, как на фреске" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/c24a6cbf2b33.jpg" alt="Анонс вебинара: руки и лапы на коробке SUPERPET" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/768e84ef7e0d.jpg" alt="Анонс вебинара «Что на самом деле ест ваша кошка?»: возмущённый кот" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/3db1016dd108.jpg" alt="Анонс вебинара «35% белка в корме кошки. А откуда?»" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/fed44f32c542.jpg" alt="Анонс вебинара «Без зерна ≠ много мяса»: сердце из гранул" loading="lazy"></figure><figure class="wf"><img class="sh" src="assets/396b16e90775.jpg" alt="Анонс вебинара «Поговорим про стул питомца»: кот смотрит на стул" loading="lazy"></figure></div>
+</section>
+
+<section style="background: #FFE2EF; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">1080 × 1080 · смена кадров</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Один баннер&nbsp;— три кадра</h2><p style="margin: 4px 0 0; font-size: 18px; line-height: 1.5; max-width: 640px">Квадраты для&nbsp;ленты собраны как&nbsp;короткая анимация из&nbsp;трёх кадров. Нажмите на&nbsp;баннер, чтобы её&nbsp;посмотреть.</p></div>
+<div class="g3">
+<sc-for list="{{anims}}" as="a" hint-placeholder-count="3">
+<figure>
+<button type="button" class="ap" onClick="{{a.play}}" aria-label="{{a.label}}">
+<img src="{{a.f1}}" alt="" style="opacity: 1">
+<img src="{{a.f2}}" alt="" style="opacity: {{a.o2}}">
+<img src="{{a.f3}}" alt="" style="opacity: {{a.o3}}">
+<sc-if value="{{a.idle}}" hint-placeholder-val="{{true}}"><span class="play"><span class="pb"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" style="display: block"><path d="M9 6.2 L18.6 12 L9 17.8 Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg></span></span></sc-if>
+</button>
+<div class="fbar" aria-hidden="true"><span style="background: {{a.b1}}"></span><span style="background: {{a.b2}}"></span><span style="background: {{a.b3}}"></span></div>
+<figcaption style="margin-top: 10px; font-weight: 700; font-size: 17px">{{a.t}}</figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+
+<section style="background: #120C10; color: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 48px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">Отдельная серия</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(30px, 4.2vw, 56px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Наша аудитория на&nbsp;85%&nbsp;— женщины.<br><span style="color: #E80F71">Привлекаем как&nbsp;можем</span></h2></div>
+<div class="g3" style="position: relative"><figure class="mf"><img class="sh" src="assets/3bf398cafb98.jpg" alt="Мужчина с белым персидским котом и коробкой SUPERPET" loading="lazy"></figure><figure class="mf"><img class="sh" src="assets/eace5079b017.jpg" alt="Бородатый мужчина в косухе с котом и пачкой корма" loading="lazy"></figure><figure class="mf"><img class="sh" src="assets/6710a9ed21fd.jpg" alt="Бородатый мужчина в худи обнимает кота" loading="lazy"></figure></div>
+</section>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">768 × 1024</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Вертикали для&nbsp;таргета</h2></div>
+<div class="vg"><figure class="vf"><img class="sh" src="assets/5a7afc5995a2.jpg" alt="Природный формат питания: кошка у миски" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/d29ac4a8cd47.jpg" alt="Естественный рацион: кошка и собака с тенями льва и волка" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/cb3156afc577.jpg" alt="Остался один шаг: кот катит тележку с паучами" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/999fe8bd9dfe.jpg" alt="Природный формат питания: котёнок на зелёном фоне" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/6abdfe1a5e6f.jpg" alt="Стартовый набор за 1 410 ₽" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/f581705d203e.jpg" alt="Новый взгляд на привычный формат: чихуахуа у стола" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/dc3851581b24.jpg" alt="Выбор в пользу качества: мопс ест из миски" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/a5e845dd4ab5.jpg" alt="Натуральный рацион на каждый день: кошка и шпиц" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/ea53b06c852e.jpg" alt="Рацион на каждый день: белая кошка и паучи" loading="lazy"></figure><figure class="vf"><img class="sh" src="assets/cc5603d2e64b.jpg" alt="Натуральное питание для здоровья питомца: пара с котом и собакой" loading="lazy"></figure></div>
+</section>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">1080 × 1080</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">И&nbsp;ещё квадраты</h2></div>
+<div class="g3"><figure class="qf"><img class="sh" src="assets/5fef715a6993.jpg" alt="День 1460. Снова гранулы: чёрный кот у миски на фоне зарубок" loading="lazy"></figure><figure class="qf"><img class="sh" src="assets/07d9947a2b94.jpg" alt="Одна полка для всех: белый кот тянется к холодильнику" loading="lazy"></figure><figure class="qf"><img class="sh" src="assets/8410ce22ea79.jpg" alt="Хищник. Не вегетарианец: кот в косухе с шипами" loading="lazy"></figure></div>
+</section>
+
+<section style="background: #fff; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box; display: flex; flex-direction: column; gap: 28px">
+<div style="display: flex; flex-direction: column; gap: 8px"><span style="font-weight: 700; font-size: 16px; color: #E80F71">Архив · GIF</span><h2 style="margin: 0; font-weight: 900; font-size: clamp(28px, 3.4vw, 40px); line-height: 1.08; letter-spacing: -0.02em">Когда-то мы&nbsp;делали даже гифки</h2><p style="margin: 4px 0 0; font-size: 18px; line-height: 1.5; max-width: 640px">Ранние баннеры SUPERPET для&nbsp;медийной рекламы и&nbsp;рассылок&nbsp;— ещё в&nbsp;формате GIF. Наведите курсор или&nbsp;нажмите на&nbsp;баннер, чтобы он&nbsp;ожил.</p></div>
+<div class="gj">
+<div class="gr">
+<sc-for list="{{row0}}" as="g" hint-placeholder-count="3">
+<button type="button" class="gi{{g.cls}}" style="flex: {{g.r}} 1 0px; aspect-ratio: {{g.r}}" onClick="{{g.toggle}}" onMouseEnter="{{g.enter}}" onMouseLeave="{{g.leave}}" aria-label="{{g.label}}">
+<img src="{{g.src}}" alt="{{g.a}}" loading="lazy">
+<span class="gtag">GIF</span>
+</button>
+</sc-for>
+</div>
+<div class="gr">
+<sc-for list="{{row1}}" as="g" hint-placeholder-count="3">
+<button type="button" class="gi{{g.cls}}" style="flex: {{g.r}} 1 0px; aspect-ratio: {{g.r}}" onClick="{{g.toggle}}" onMouseEnter="{{g.enter}}" onMouseLeave="{{g.leave}}" aria-label="{{g.label}}">
+<img src="{{g.src}}" alt="{{g.a}}" loading="lazy">
+<span class="gtag">GIF</span>
+</button>
+</sc-for>
+</div>
+<div class="gr">
+<sc-for list="{{row2}}" as="g" hint-placeholder-count="3">
+<button type="button" class="gi{{g.cls}}" style="flex: {{g.r}} 1 0px; aspect-ratio: {{g.r}}" onClick="{{g.toggle}}" onMouseEnter="{{g.enter}}" onMouseLeave="{{g.leave}}" aria-label="{{g.label}}">
+<img src="{{g.src}}" alt="{{g.a}}" loading="lazy">
+<span class="gtag">GIF</span>
+</button>
+</sc-for>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":5800}}'>
+const ANIMS = [{"t": "Сплит-сравнение", "f": ["assets/efc5470ccb98.jpg", "assets/bb1a5f078ddc.jpg", "assets/e1ebfcf70812.jpg"], "n": ["Корми умнее", "Себе — так. Ему — так?", "Мясо — это ещё не рацион"]}, {"t": "Линейка вкусов", "f": ["assets/084c63aa36ab.jpg", "assets/c0757e3f37ee.jpg", "assets/9e07dede3910.jpg"], "n": ["5 вкусов", "Зачем угадывать", "Десять пакетиков"]}, {"t": "До и после", "f": ["assets/4e7f5abc2b6a.jpg", "assets/5af8c3b18630.jpg", "assets/604a7764551e.jpg"], "n": ["Ваш вечер до и после", "Нет места в морозилке?", "Выбросите баночки"]}];
+const GIFS = [{"g": "assets/9990b0358fa2.gif", "p": "assets/95865c17e77d.jpg", "r": 0.6, "a": "Корм для домашнего хищника: бенгальская кошка", "row": 0, "wide": false}, {"g": "assets/6078911be657.gif", "p": "assets/dcae05791c09.jpg", "r": 0.6, "a": "Пожалуй, лучший корм 2022 года: спаниель", "row": 0, "wide": false}, {"g": "assets/e794de047f84.gif", "p": "assets/a70e63e7518d.jpg", "r": 0.6, "a": "Выбирайте ЗОЖ для питомца: миска с мясом", "row": 0, "wide": false}, {"g": "assets/6f35e93c46df.gif", "p": "assets/7e4a2c06fc0b.jpg", "r": 2.0, "a": "Письмо к Хэллоуину: собака в костюме привидения", "row": 0, "wide": true}, {"g": "assets/9d620da41980.gif", "p": "assets/6eb92f09ffbe.jpg", "r": 0.6, "a": "Баланс вкуса и пользы: собака на канате", "row": 1, "wide": false}, {"g": "assets/32f8b8f02b04.gif", "p": "assets/44e7a14fa2f4.jpg", "r": 0.6, "a": "Стартовый набор за 1 410 ₽: кот у коробки", "row": 1, "wide": false}, {"g": "assets/d6d3bd201891.gif", "p": "assets/69db469d1e23.jpg", "r": 1.3333, "a": "С чего начать? Девушка с кошкой", "row": 1, "wide": true}, {"g": "assets/5fa379463349.gif", "p": "assets/1770b09180d2.jpg", "r": 0.6, "a": "Питание для домашнего хищника: бурманская кошка", "row": 1, "wide": false}, {"g": "assets/9d56996a1ed9.gif", "p": "assets/d11f639a9175.jpg", "r": 0.6, "a": "Заботьтесь о питомцах зимой", "row": 1, "wide": false}, {"g": "assets/dd217544cfe1.gif", "p": "assets/6b425c4061d0.jpg", "r": 2.0, "a": "Письмо к Хэллоуину: кошка и ведьма", "row": 2, "wide": true}, {"g": "assets/7adb61eab8b6.gif", "p": "assets/aaf781325aee.jpg", "r": 1.6486, "a": "Вам нужно это знать: сухой корм и мясо", "row": 2, "wide": true}, {"g": "assets/aa27073e1ab6.gif", "p": "assets/009cdef186e3.jpg", "r": 1.6486, "a": "Не рискуйте здоровьем питомца", "row": 2, "wide": true}];
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { fr: [0, 0, 0], run: [false, false, false], seen: [false, false, false], gif: -1 }; this.timers = []; }
+  componentWillUnmount() { this.timers.forEach(clearTimeout); }
+  play(i) {
+    if (this.state.run[i]) return;
+    const set = (patch) => this.setState((s) => { const fr = s.fr.slice(), run = s.run.slice(), seen = s.seen.slice(); patch(fr, run, seen); return { fr, run, seen }; });
+    set((fr, run) => { fr[i] = 0; run[i] = true; });
+    [1, 2].forEach((f, k) => this.timers.push(setTimeout(() => set((fr) => { fr[i] = f; }), 1800 * (k + 1))));
+    this.timers.push(setTimeout(() => set((fr, run, seen) => { fr[i] = 0; run[i] = false; seen[i] = true; }), 1800 * 3 + 600));
+  }
+  renderVals() {
+    const on = '#E80F71', off = 'rgba(232,15,113,.22)';
+    const { fr, run, seen } = this.state;
+    const gif = this.state.gif;
+    const items = GIFS.map((g, i) => ({
+      a: g.a, r: g.r, row: g.row, cls: g.wide ? ' wide' : '',
+      src: gif === i ? g.g : g.p, off: gif !== i,
+      label: 'Запустить гифку: ' + g.a,
+      toggle: () => this.setState({ gif: i }),
+      enter: () => this.setState({ gif: i }),
+      leave: () => this.setState((s) => s.gif === i ? { gif: -1 } : null)
+    }));
+    const rowOf = (n) => items.filter((x) => x.row === n);
+    return { row0: rowOf(0), row1: rowOf(1), row2: rowOf(2), anims: ANIMS.map((a, i) => ({
+      t: a.t, f1: a.f[0], f2: a.f[1], f3: a.f[2],
+      o2: fr[i] >= 1 ? 1 : 0, o3: fr[i] >= 2 ? 1 : 0,
+      b1: run[i] && fr[i] >= 0 ? on : off, b2: run[i] && fr[i] >= 1 ? on : off, b3: run[i] && fr[i] >= 2 ? on : off,
+      idle: !run[i], busy: run[i], cta: seen[i] ? 'Ещё раз' : 'Запустить анимацию',
+      counter: 'Кадр ' + (fr[i] + 1) + ' из 3: ' + a.n[fr[i]],
+      label: 'Запустить анимацию баннера «' + a.t + '»: ' + a.n.join(', '),
+      play: () => this.play(i)
+    })) };
+  }
+}
+</script>
+</body>
+</html>

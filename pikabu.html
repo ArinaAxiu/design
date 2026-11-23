@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Упс, не получилось</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+.pk{background:#EEF1F4;border-radius:28px;overflow:hidden;color:#2F3238;box-shadow:0 18px 40px -16px rgba(15,26,43,.25)}
+.pk-top{height:52px;background:#fff;border-bottom:1px solid #E2E6EA;display:flex;align-items:center;gap:14px;padding:0 24px}
+.pk-top .dot{width:28px;height:28px;border-radius:8px;background:#6BA539}
+.pk-top .srch{flex:0 1 360px;height:32px;border-radius:8px;background:#EEF1F4}
+.pk-top .sp{flex:1}
+.pk-top .bt{height:32px;width:88px;border-radius:8px;background:#EEF1F4}
+.pk-in{max-width:1080px;margin:0 auto;padding:20px 20px 32px;box-sizing:border-box}
+.cm-h{background:#fff;border-radius:12px;overflow:hidden}
+.cm-h .bn{display:block;width:100%;aspect-ratio:5/1;object-fit:cover}
+.bnw{position:relative}
+.cm-av{position:absolute;left:4.0714%;top:53.57%;width:17.857%;aspect-ratio:1;border-radius:50%;object-fit:cover;box-shadow:0 0 0 4px #fff;z-index:1}
+.cm-row{display:flex;align-items:center;gap:20px;padding:12px 24px 14px 0}
+.avsp{flex:none;width:21.93%;aspect-ratio:2.56}
+.cm-nm{flex:1 1 auto;min-width:0}
+.cm-nm b{display:block;font-weight:900;font-size:26px;letter-spacing:-0.01em}
+.cm-nm span{font-size:15px;color:#8A8E96}
+.sub{background:#6BA539;color:#fff;font-weight:700;font-size:15px;border-radius:8px;padding:10px 20px}
+.tabs{display:flex;gap:24px;padding:0 24px;border-top:1px solid #EEF1F4;font-weight:700;font-size:15px;color:#8A8E96}
+.tabs span{padding:14px 0}
+.tabs .on{color:#2F3238;box-shadow:inset 0 -3px 0 #6BA539}
+.lay{display:flex;gap:20px;align-items:flex-start;margin-top:20px}
+.feed{flex:1 1 0;min-width:0;display:flex;flex-direction:column;gap:16px}
+.side{flex:0 0 300px;display:flex;flex-direction:column;gap:16px;position:sticky;top:76px}
+.pk-post{background:#fff;border-radius:12px;display:flex;gap:0}
+.rt{flex:0 0 56px;display:flex;flex-direction:column;align-items:center;gap:6px;padding-top:18px;color:#A6ABB3}
+.rt b{font-size:15px;color:#2F3238}
+.pb{flex:1;min-width:0;padding:16px 20px 14px 0}
+.au{display:flex;align-items:center;gap:8px;font-size:14px;color:#8A8E96}
+.au img{width:24px;height:24px;border-radius:50%;object-fit:cover}
+.au b{color:#2F3238;font-weight:700}
+.pb h3{margin:10px 0 10px;font-weight:700;font-size:22px;line-height:1.25;letter-spacing:-0.01em;color:#2F3238}
+.tgs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tg{font-size:13px;font-weight:500;color:#5B6068;background:#EEF1F4;border-radius:6px;padding:4px 8px}
+.cv{display:block;width:100%;height:auto;border-radius:8px}
+.ln{display:flex;flex-direction:column;gap:9px;margin:16px 0 4px}
+.ln i{display:block;height:9px;border-radius:5px;background:#E6E9ED}
+.ac{display:flex;gap:22px;margin-top:14px;padding-top:12px;border-top:1px solid #EEF1F4;font-size:14px;font-weight:500;color:#8A8E96;flex-wrap:wrap}
+.ac span{display:inline-flex;align-items:center;gap:6px}
+.card{background:#fff;border-radius:12px;padding:18px}
+.card h4{margin:0 0 12px;font-weight:700;font-size:16px}
+.card .ln{margin:0}
+.mini{display:flex;gap:10px;align-items:center;margin-bottom:14px}
+.mini img{width:44px;height:44px;border-radius:50%;object-fit:cover}
+.mini b{font-weight:900;font-size:16px}
+@media (max-width: 900px){.side{display:none}}
+@media (max-width: 600px){
+.pk-top{padding:0 14px}.pk-top .srch{display:none}
+.pk-in{padding:12px 10px 20px}
+.cm-row{padding:8px 10px 10px 0;gap:8px}
+.cm-av{box-shadow:0 0 0 3px #fff}
+.cm-nm b{font-size:16px}
+.cm-nm span{font-size:13px}
+.sub{font-size:13px;padding:8px 12px}
+.tabs{padding:0 14px;gap:18px}
+.pk-post{flex-direction:column}
+.rt{order:2;flex-direction:row;padding:0 14px 12px;gap:10px}
+.pb{padding:14px 14px 4px}
+.pb h3{font-size:18px}
+.ac{gap:14px}
+}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 16px">
+<span style="display: flex; align-items: center; gap: 20px; flex-wrap: wrap"><img src="assets/0b6f5bc0c99a.svg" alt="SUPERPET" width="106" height="14" style="display: block; height: 14px; width: auto"></span>
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Упс, не&nbsp;получилось</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 700px">Пытались выйти на&nbsp;Пикабу со&nbsp;скрытой рекламой: завели сообщество SUPERHEROPET и&nbsp;писали статьи про&nbsp;питомцев. С&nbsp;меня&nbsp;— оформление сообщества и&nbsp;обложки к&nbsp;статьям. Идея дерзкая, обложки наглые. Переборщили с&nbsp;рекламой и&nbsp;ушли в&nbsp;бан.</p>
+</header>
+
+<section class="pk" aria-label="Сообщество SUPERHEROPET в стиле Пикабу">
+<div class="pk-top" aria-hidden="true"><span class="dot"></span><span class="srch"></span><span class="sp"></span><span class="bt"></span></div>
+<div class="pk-in">
+<div class="cm-h">
+<div class="bnw"><img class="bn" src="assets/5d33a233cb44.jpg" alt="Шапка сообщества SUPERHEROPET: коллаж из кошек, собак и продуктов SUPERPET и LAIKY"><img class="cm-av" src="assets/5549e6696d83.jpg" alt="Аватар сообщества SUPERHEROPET"></div>
+<div class="cm-row">
+<span class="avsp" aria-hidden="true"></span>
+<div class="cm-nm"><b>SUPERHEROPET</b><span>Сообщество</span></div>
+<span class="sub">Подписаться</span>
+</div>
+<div class="tabs" aria-hidden="true"><span>Горячее</span><span>Лучшее</span><span class="on">Свежее</span></div>
+</div>
+<div class="lay">
+<div class="feed">
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· 2&nbsp;часа назад</span></div>
+<h3>Как&nbsp;понять, что&nbsp;ваш лоток&nbsp;— дерьмо?</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Лоток</span><span class="tg">Выбор</span></div>
+<img class="cv" src="assets/74972d4d8e8c.jpg" alt="Обложка: Как&nbsp;понять, что&nbsp;ваш лоток&nbsp;— дерьмо?" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· 5&nbsp;часов назад</span></div>
+<h3>Зловонный лоток кота держал в&nbsp;страхе всех соседей</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Лоток</span><span class="tg">Соседи</span></div>
+<img class="cv" src="assets/6bb139e43698.jpg" alt="Обложка: Зловонный лоток кота держал в&nbsp;страхе всех соседей" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· вчера</span></div>
+<h3>Почему он&nbsp;дерёт мебель</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Мебель</span><span class="tg">Когтеточка</span></div>
+<img class="cv" src="assets/dff17663942e.jpg" alt="Обложка: Почему он&nbsp;дерёт мебель" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· вчера</span></div>
+<h3>Что&nbsp;значит, когда она смотрит вам в&nbsp;глаза?</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Взгляд</span><span class="tg">Поведение</span></div>
+<img class="cv" src="assets/dc2d6f45713c.jpg" alt="Обложка: Что&nbsp;значит, когда она смотрит вам в&nbsp;глаза?" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· 2&nbsp;дня назад</span></div>
+<h3>Вы&nbsp;моральный урод и&nbsp;обидели свою кошку</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Обида</span><span class="tg">Психология</span></div>
+<img class="cv" src="assets/62d50ab4366a.jpg" alt="Обложка: Вы&nbsp;моральный урод и&nbsp;обидели свою кошку" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· 3&nbsp;дня назад</span></div>
+<h3>Почему он&nbsp;игнорирует лоток?</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Лоток</span><span class="tg">Поведение</span></div>
+<img class="cv" src="assets/5f93c20e26ef.jpg" alt="Обложка: Почему он&nbsp;игнорирует лоток?" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· 4&nbsp;дня назад</span></div>
+<h3>Просто поставьте миску там, где&nbsp;она нагадила</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Миска</span><span class="tg">Лайфхак</span></div>
+<img class="cv" src="assets/fb4266d7c6aa.jpg" alt="Обложка: Просто поставьте миску там, где&nbsp;она нагадила" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+<article class="pk-post">
+<div class="rt" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"></path></svg></span><b>—</b><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg></span></div>
+<div class="pb">
+<div class="au"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b><span>· неделю назад</span></div>
+<h3>Почему ему не&nbsp;нравятся бананы?</h3>
+<div class="tgs"><span class="tg">Кот</span><span class="tg">Бананы</span><span class="tg">Странности</span></div>
+<img class="cv" src="assets/2a25f04bead7.jpg" alt="Обложка: Почему ему не&nbsp;нравятся бананы?" loading="lazy">
+<div class="ln" aria-hidden="true"><i style="width: 96%"></i><i style="width: 88%"></i><i style="width: 62%"></i></div>
+<div class="ac" aria-hidden="true"><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"></path></svg> Комментарии</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"></path></svg> Сохранить</span><span><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12v7a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-7"></path><path d="M12 3v13"></path><path d="M7 8l5-5 5 5"></path></svg> Поделиться</span></div>
+</div>
+</article>
+</div>
+<aside class="side" aria-hidden="true">
+<div class="card"><div class="mini"><img src="assets/5549e6696d83.jpg" alt=""><b>SUPERHEROPET</b></div><div class="ln"><i style="width: 100%"></i><i style="width: 92%"></i><i style="width: 70%"></i></div></div>
+<div class="card"><h4>Правила сообщества</h4><div class="ln"><i style="width: 90%"></i><i style="width: 76%"></i><i style="width: 84%"></i><i style="width: 58%"></i></div></div>
+</aside>
+</div>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":6000}}'>
+class Component extends DCLogic {
+renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

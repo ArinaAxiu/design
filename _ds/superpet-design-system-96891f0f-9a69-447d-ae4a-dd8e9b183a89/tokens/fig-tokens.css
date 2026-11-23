@@ -1,0 +1,37 @@
+/* Generated from Figma Variables. First mode = :root default.
+   FLOAT tokens are unitless — multiply by 1px in calc() where a length is needed. */
+
+:root {
+  --black-2: rgb(34,34,34); /* @kind color */
+  --black: rgb(34,34,34); /* @kind color */
+  --borders-hard: var(--neutral-60); /* @kind color */
+  --borders-x-hard: var(--neutral-70); /* @kind color */
+  --brand-laiky-100: rgb(252,107,23); /* @kind color */
+  --brand-laiky-30: rgb(252,236,227); /* @kind color */
+  --brand-spet-100: rgb(232,15,113); /* @kind color */
+  --brand-spet-30: rgb(252,232,241); /* @kind color */
+  --controls-brand-base: var(--brand-spet-100); /* @kind color */
+  --controls-light-brand-base: var(--brand-spet-30); /* @kind color */
+  --corner-radius-m: 8;
+  --green-100: rgb(0,161,113); /* @kind color */
+  --neutral-120: rgb(30,30,30); /* @kind color */
+  --neutral-30: rgb(240,240,240); /* @kind color */
+  --neutral-60: rgb(220,220,220); /* @kind color */
+  --neutral-70: rgb(200,200,200); /* @kind color */
+  --neutral-90: rgb(158,158,158); /* @kind color */
+  --symbols-primary: var(--neutral-120); /* @kind color */
+  --symbols-quaternary: var(--neutral-90); /* @kind color */
+  --white-100: rgb(255,255,255); /* @kind color */
+  --white-60: rgba(255,255,255,0.6); /* @kind color */
+  --white-80: rgba(255,255,255,0.8); /* @kind color */
+  --white: rgb(255,255,255); /* @kind color */
+}
+
+:root[data-mode="laiky"] {
+  --borders-hard: var(--neutral-60); /* @kind color */
+  --borders-x-hard: var(--neutral-70); /* @kind color */
+  --controls-brand-base: var(--brand-laiky-100); /* @kind color */
+  --controls-light-brand-base: var(--brand-laiky-30); /* @kind color */
+  --symbols-primary: var(--neutral-120); /* @kind color */
+  --symbols-quaternary: var(--neutral-90); /* @kind color */
+}

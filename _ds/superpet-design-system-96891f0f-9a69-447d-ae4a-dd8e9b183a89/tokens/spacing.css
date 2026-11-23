@@ -1,0 +1,18 @@
+/* 04. Indentations — "Все отступы кратны 2, 4, 8". Scale from the Figma file: 8 16 24 32 40 48 56 64 80 120.
+   2 and 4 appear inside components (icon gaps, label padding). */
+:root{
+  --space-2:2px;--space-4:4px;--space-8:8px;--space-12:12px;--space-16:16px;--space-20:20px;
+  --space-24:24px;--space-32:32px;--space-40:40px;--space-48:48px;--space-56:56px;
+  --space-64:64px;--space-80:80px;--space-120:120px;
+
+  --radius-m:calc(var(--corner-radius-m) * 1px); /* 8px — buttons */
+  --radius-s:5px;     /* button grid container */
+  --radius-panel:20px;/* info panels (Indention / Font cards) */
+  --radius-pill:800px;/* slider buttons */
+  --radius-round:50%; /* icon discs, colour swatches */
+
+  --shadow-float:0px 4px 16px 0px rgba(0,0,0,0.16); /* slider buttons */
+  --stroke-1:1px;
+
+  --control-h-s:28px;--control-h-m:36px;--control-h-l:44px;--control-h-xl:52px;
+}

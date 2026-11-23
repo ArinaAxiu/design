@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<title>Видеореклама Clarins</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Арина Аксютичева — графический и веб-дизайнер. Портфолио: кейсы SUPERPET, LAIKY, Clarins.">
+<script src="vendor/react.js"></script>
+<script src="support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;700;900&amp;family=Montserrat:wght@700&amp;display=swap" rel="stylesheet">
+<style>
+p,li,figcaption,h1,h2,h3,h4,blockquote,dd,td{text-wrap:pretty}
+
+body{margin:0;background:#E9EEF6}
+a:focus-visible,button:focus-visible,video:focus-visible{outline:3px solid #FF8A00;outline-offset:3px;border-radius:10px}
+button{font:inherit;color:inherit;cursor:pointer}
+.vg{display:flex;flex-direction:column;align-items:center;gap:40px}
+.sb{font-family:Montserrat,sans-serif;font-weight:700;font-size:16px;padding:12px 20px;min-height:48px;border-radius:999px;border:1.5px solid #D8DCE6;background:#fff;color:#4A4A55;transition:background .2s,border-color .2s,color .2s}
+.sb:hover{border-color:#D31245}
+.sb.on{border-color:#D31245;background:#FDE3EA;color:#B00F3B}
+.vf{margin:0;display:flex;flex-direction:column;gap:12px;min-width:0;width:100%;max-width:1000px}
+.vf.vt{max-width:400px}
+.vb{position:relative;width:100%;border-radius:16px;overflow:hidden;background:#000}
+.vb video,.vb img{position:absolute;inset:0;width:100%;height:100%;display:block;object-fit:cover}
+.pb{position:absolute;inset:0;padding:0;border:0;background:none}
+.pl{position:absolute;left:50%;top:50%;width:76px;height:76px;margin:-38px 0 0 -38px;border-radius:50%;background:#D31245;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px -8px rgba(211,18,69,.6);transition:transform .2s}
+.pb:hover .pl{transform:scale(1.06)}
+.cap{display:flex;gap:10px;align-items:baseline;flex-wrap:wrap;font-size:16px}
+.cap b{font-weight:700;color:#fff}
+.cap span{color:rgba(255,255,255,.6)}
+
+@media (prefers-reduced-motion: reduce){.pl{transition:none}}
+</style>
+</helmet>
+<div style="background: #E9EEF6; color: #0F1A2B; font-family: 'Golos Text', system-ui, sans-serif; min-height: 100vh">
+<nav style="position: sticky; top: 0; z-index: 10; background: rgba(233,238,246,.88); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border-bottom: 1px solid rgba(15,26,43,.08)"><div style="max-width: 1240px; margin: 0 auto; padding: 8px 24px; box-sizing: border-box">
+<a href="index.html#works" style="display: inline-flex; align-items: center; gap: 8px; color: #0F1A2B; background: #fff; text-decoration: none; font-weight: 700; font-size: 16px; padding: 10px 16px; border-radius: 12px; min-height: 44px; box-sizing: border-box"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="display: inline-block; vertical-align: -3px"><path d="M19 12H5"></path><path d="M11 6l-6 6 6 6"></path></svg> К&nbsp;проектам</a>
+</div></nav>
+<div style="max-width: 1240px; margin: 0 auto; padding: 22px 24px 80px; box-sizing: border-box; display: flex; flex-direction: column; gap: 40px">
+
+<header style="display: flex; flex-direction: column; gap: 18px">
+<img src="assets/5757ea083c8c.svg" alt="Clarins" width="146" height="32" style="display: block; width: 146px; height: auto; border-radius: 4px">
+<h1 style="margin: 0; font-weight: 900; font-size: clamp(36px, 5vw, 64px); line-height: 1.05; letter-spacing: -0.02em; text-wrap: balance">Видеореклама Clarins</h1>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; max-width: 720px">Ролики для&nbsp;YouTube, Instagram и&nbsp;TikTok: к&nbsp;8&nbsp;Марта и&nbsp;для&nbsp;крема Extra-Firming Energy. Каждый&nbsp;— в&nbsp;горизонтальном и&nbsp;вертикальном формате.</p>
+</header>
+
+<div style="display: flex; flex-direction: column; gap: 14px">
+<span style="font-weight: 700; font-size: 17px">Формат</span>
+<div role="tablist" aria-label="Формат ролика" style="display: flex; flex-wrap: wrap; gap: 8px">
+<sc-for list="{{tabs}}" as="t" hint-placeholder-count="2">
+<button type="button" role="tab" class="{{t.cls}}" aria-selected="{{t.on}}" onClick="{{t.pick}}">{{t.label}}</button>
+</sc-for>
+</div>
+</div>
+
+<section style="background: #121214; border-radius: 28px; padding: clamp(24px, 4vw, 48px); box-sizing: border-box">
+<div class="vg">
+<sc-for list="{{vids}}" as="v" hint-placeholder-count="2">
+<figure class="{{v.cls}}">
+<div class="vb" style="aspect-ratio: {{v.ar}}">
+<sc-if value="{{v.play}}" hint-placeholder-val="{{false}}"><video ref="{{v.ref}}" src="{{v.v}}" poster="{{v.p}}" controls="controls" autoplay="autoplay" playsinline="playsinline" aria-label="{{v.a}}"></video></sc-if>
+<sc-if value="{{v.idle}}" hint-placeholder-val="{{true}}"><img src="{{v.p}}" alt=""><button type="button" class="pb" onClick="{{v.start}}" aria-label="Смотреть: {{v.a}}"><span class="pl"><svg aria-hidden="true" width="34" height="34" viewBox="0 0 24 24"><path d="M9 6.2 L18.6 12 L9 17.8 Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"></path></svg></span></button></sc-if>
+</div>
+<figcaption class="cap"><b>{{v.l}}</b><span>{{v.s}}</span></figcaption>
+</figure>
+</sc-for>
+</div>
+</section>
+
+</div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":1440,"height":1300}}'>
+const V = [{"v": "assets/2c66175ffd2b.mp4", "p": "assets/d19133437f44.jpg", "ar": "16 / 9", "f": 0, "l": "8 Марта", "s": "1920 × 1080", "a": "Ролик Clarins к 8 Марта, YouTube"}, {"v": "assets/9541ec123a21.mp4", "p": "assets/3cd207323e3e.jpg", "ar": "16 / 9", "f": 0, "l": "Extra-Firming Energy", "s": "1920 × 1080", "a": "Ролик Clarins Extra-Firming Energy, YouTube"}, {"v": "assets/9e94bbc518b7.mp4", "p": "assets/5d170b28fe57.jpg", "ar": "9 / 16", "f": 1, "l": "8 Марта", "s": "1080 × 1920", "a": "Ролик Clarins к 8 Марта, Instagram и TikTok"}, {"v": "assets/3845b5f3f833.mp4", "p": "assets/dfd2fa099868.jpg", "ar": "9 / 16", "f": 1, "l": "Extra-Firming Energy", "s": "1080 × 1920", "a": "Ролик Clarins Extra-Firming Energy, Instagram и TikTok"}];
+const TABS = ["YouTube", "Instagram и TikTok"];
+const ADS = ["8 Марта", "Extra-Firming Energy"];
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { on: -1, f: 0 }; }
+  renderVals() {
+    const { on, f } = this.state;
+    return {
+      tabs: TABS.map((l, i) => ({ label: l, on: i === f ? 'true' : 'false', cls: 'sb' + (i === f ? ' on' : ''), pick: () => this.setState({ f: i, on: -1 }) })),
+      vids: V.map((v, i) => ({ ...v, play: on === i, idle: on !== i, cls: 'vf' + (v.f === 1 ? ' vt' : ''),
+        start: () => this.setState({ on: i }),
+        _i: i,
+        ref: (el) => { if (el && on === i) { try { const p = el.play(); if (p && p.catch) p.catch(() => {}); } catch (e) {} } } })).filter((v) => v.f === f)
+    };
+  }
+}
+</script>
+</body>
+</html>
